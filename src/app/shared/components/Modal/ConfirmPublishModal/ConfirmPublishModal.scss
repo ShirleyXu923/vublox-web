@@ -1,0 +1,45 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.custom-modal {
+  .modal-content {
+    padding: 24px;
+
+    .modal-title {
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+
+    .modal_button {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      padding-top: 0;
+      margin-top: 0;
+      width: 100%;
+      max-width: unset;
+
+      .btn {
+        flex: 1;
+        width: 100%;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .modal-content {
+      padding: 12px;
+      .modal_button {
+        gap: 12px;
+
+        .btn {
+          padding: 7px;
+          border-radius: 12px;
+        }
+      }
+    }
+
+  }
+}

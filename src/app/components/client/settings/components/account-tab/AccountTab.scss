@@ -1,0 +1,96 @@
+.account-tab {
+  textarea {
+    ~.form-text {
+      position: absolute;
+      right: 10px;
+      bottom: 5px;
+    }
+  }
+
+  .input-group {
+    &:has(.form-control:not(:placeholder-shown)), &:has(.form-control:focus) {
+      > .input-group-text {
+        svg {
+          transform: translateY(0.5rem);
+        }
+      }
+    }
+
+    > .form-floating {
+      .form-control:not(:placeholder-shown) ~ label, .form-control:focus ~ label {
+        transform: scale(0.85) translateY(-0.75rem) translateX(-2rem);
+      }
+      .form-control:not(:placeholder-shown) ~ .input-group-text, .form-control:focus ~ label {
+        transform: scale(0.85) translateY(-0.75rem) translateX(-2rem);
+      }
+
+      > label {
+        padding-left: 0;
+      }
+    }
+
+    .form-control {
+      padding-left: 0;
+    }
+  }
+
+  .input-group-text {
+    align-items: flex-start;
+    padding-top: 18px;
+  }
+
+  .profile-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: var(--bs-secondary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+  }
+
+  .tags-container {
+    position: relative;
+
+    label {
+      position: absolute;
+      z-index: 1;
+      left: 55px;
+      top: 8px;
+    }
+
+    .input-group {
+      flex-wrap: nowrap;
+    }
+
+    .ReactTags__tags {
+      padding: 1.55rem 0.75rem 0.25rem;
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.account-modal {
+  --bs-modal-header-padding: 1rem 1.5rem;
+  --bs-modal-padding: 0 1.5rem 1.5rem 1.5rem;
+
+  .description {
+    color: var(--bs-secondary-text);
+  }
+
+  .btn-danger {
+    color: var(--bs-body-color);
+  }
+
+  .btn-close {
+    margin-top: -20px;
+  }
+}

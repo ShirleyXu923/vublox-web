@@ -1,0 +1,577 @@
+// @import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.profile-page {
+  .profile-page-wrapper {
+    max-width: 930px;
+    margin: 0 auto;
+
+    .controls {
+      margin-top: 80px;
+
+      .btn-back {
+        margin-bottom: 37px;
+      }
+    }
+
+    .cover-wrapper {
+      position: relative;
+
+      .dropdown {
+        button.btn {
+          width: 100%;
+          background: transparent;
+          border: none;
+          padding: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+          .dropdown-menu {
+            .dropdown-item {
+              margin: 0;
+
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .cover-photo {
+        width: 100%;
+        height: 254.53px;
+        object-fit: cover;
+        border-radius: 16px;
+        cursor: pointer;
+        background: var(--bs-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;        /* Keep this as the background */
+
+      }
+
+      .upload-options {
+        z-index: 30;
+        position: absolute;
+        bottom: -45%;
+        right: 0;
+        background: var(--bs-secondary);
+        padding: 16px 0;
+        border-radius: 16px;
+        width: 150px;
+
+        .list {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+
+          .item {
+            padding: 8px 16px;
+            color: var(--bs-body-color);
+            cursor: pointer;
+
+            &:hover {
+              background: var(--bs-footer-bg);
+            }
+          }
+        }
+      }
+    }
+
+    .profile-section {
+      margin-top: 38.5px;
+
+      .profile-wrapper {
+        position: relative;
+
+        .dropdown {
+          button.btn {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 0;
+          }
+        }
+
+        .profile-photo {
+          cursor: pointer;
+          height: 140px;
+          width: 140px;
+          border-radius: 100%;
+          object-fit: cover;
+          background: var(--bs-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .profile-initials {
+            text-transform: uppercase;
+            color: var(--bs-placeholder-color);
+          }
+        }
+
+        .upload-options {
+          position: absolute;
+          bottom: -80%;
+          left: 0;
+          background: var(--bs-secondary);
+          padding: 16px 0;
+          border-radius: 16px;
+          width: 150px;
+
+          .list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            .item {
+              padding: 8px 16px;
+              color: var(--bs-body-color);
+              cursor: pointer;
+
+              &:hover {
+                background: var(--bs-footer-bg);
+              }
+            }
+          }
+        }
+      }
+
+      .bio-wrapper {
+        position: relative;
+
+        .expand {
+          cursor: pointer;
+
+          span {
+            width: 100%;
+            display: block;
+            word-break: break-word;
+            overflow-wrap: break-word;
+          }
+        }
+
+        .bio {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .b3 {
+            color: var(--bs-secondary-text);
+          }
+        }
+
+        .bio-modal {
+          position: absolute;
+          left: 0;
+          top: 30px;
+          padding: 24px;
+          border-radius: 16px;
+          box-shadow: var(--bs-dropshadow);
+          background: var(--bs-secondary);
+          width: 500px;
+          z-index: 100;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+
+          .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .close-btn {
+              cursor: pointer;
+            }
+          }
+
+          // There is no class used in the figma for this font
+          .body {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+            .bio {
+              word-break: break-word;
+              overflow-wrap: break-word;
+            }
+          }
+
+          .tags {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            .tag {
+              display: flex;
+              justify-content: center;
+              gap: 3px;
+              border-radius: 100px;
+              background: var(--bs-tag-bg);
+              padding: 5px 8px;
+            }
+          }
+        }
+      }
+
+      .info {
+        margin-top: -5px;
+        margin-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 8px;
+        color: var(--bs-secondary-text);
+        flex-wrap: wrap;
+
+        .star {
+          display: flex;
+          align-items: center;
+
+          .rate {
+            margin-left: 4px;
+            color: var(--bs-yellow);
+          }
+        }
+
+        .bio-wrapper {
+          .expand {
+            display: flex;
+            gap: 0px;
+            align-items: center;
+
+            .caption1 {
+              color: var(--bs-primary);
+            }
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        margin-top: 16px;
+
+        .btn {
+          flex: 1;
+
+          svg {
+            path {
+              fill: var(--bs-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .custom-loader {
+    width: 100% !important;
+  }
+
+  // .info,
+  // .caption1,
+  // .info span,
+  // .info div {
+  //   font-size: 10px; /* Set font size */
+  //   color: var(--bs-secondary-text); /* Text color */
+  //   display: flex; /* Flexbox layout for alignment */
+  //   align-items: center; /* Vertically align content */
+  //   white-space: nowrap; /* Prevent line breaks in text */
+  // }
+  .scrolling-pills-timeline {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    margin: 0px;
+    margin-top: 0px; //Make sure to have margins in web view
+
+
+    /* Hide scrollbar */
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+  .scrolling-pills-timeline .nav-link.active {
+      color: var(--bs-body-bg)!important;
+  }
+  .tab-link {
+    margin-top: 20px;
+    font-size: 14px; /* Font size */
+    height: 32px; /* Height */
+    width: 108px; /* Width */
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+    font-weight: 400; /* Default font weight */
+    width: 100% !important;
+    &.active {
+      font-size: 14px; /* Font size */
+      font-weight: bold; /* Active tab font weight */
+      background:var(--bs-primary);
+      color: var(--bs-body-bg)!important;
+    }
+  }
+
+
+  .profile-page .accordion-timeline {
+    margin-top: 0px;
+  }
+
+  .btn-followers {
+    color: currentColor;
+  }
+}
+
+// @media screen and (max-width: 425px) {
+//   .profile-page {
+//     .content-loader-circle {
+//       height: 75px;
+//       width: 200px;
+//       border-radius: 100%;
+//     }
+//   }
+// }
+  
+@include media-breakpoint-down(sm) {
+
+  .scrolling-pills-timeline {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    margin: 18px;
+    margin-top: 26px; //Make sure to have margins in web view
+
+
+    /* Hide scrollbar */
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+  .profile-page {
+    .caption1 {
+      font-size: 10px !important;
+    }
+    .search-bar {
+      width: auto; /* Default width on larger screens */
+    }
+    .col-4.home-page-create-button-mobile:first-child  span.b6{
+      margin-left: -8px !important;
+    }
+    .profile-page-wrapper .search-bar .search-icon-left {
+      position: absolute;
+      left: 5px;
+      top: 4px;
+   }
+    .search-bar .form-control:has(~ .search-icon-left) {
+      padding-left: 23px;
+    }
+  }
+  .profile-page .timeline-accordion-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+  //REMOVE THE PADDING UNDER DASHBOARD TSX TO ENSURE NO PADDING AND MARGIN EXTRA ON THE TOP
+  .dashboard-content .mt-2.pt-5 {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .tab-link {
+    margin-top: 0px;
+    height: 24px; /* Height */
+  }
+
+
+  .profile-page-wrapper {
+    position: relative; /* For correct positioning of child elements */
+    width: 100vw; /* Full viewport width */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);  /* Center align based on 50% */
+    margin: 0 !important; /* Override any default margins */
+  }
+
+  .profile-wrapper {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    position: relative; /* Ensure relative positioning for dropdown */
+  }
+
+  .profile-page .profile-page-wrapper .profile-section .profile-wrapper .profile-photo {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    background: var(--bs-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; // Prevent initials from overflowing
+
+  .profile-initials {
+    font-size: 1.75rem; // Adjust size to ensure fit
+    font-weight: bold;
+    color: var(--bs-placeholder-color);
+    text-transform: uppercase;
+    line-height: 1; // Prevent extra spacing around characters
+    text-align: center; // Center text within the span itself
+    display: flex;
+    align-items: center; // Ensure text is centered vertically within .profile-initials
+    justify-content: center; // Center text horizontally
+  }
+
+  }
+/* Ensure profile picture appears on top */
+
+  .cover-wrapper {
+    width: 100vw; /* Ensure the cover wrapper takes full viewport width */
+    position: relative; /* Keep relative positioning for children */
+    left: 50%; /* Center the wrapper */
+    transform: translateX(-50%); /* Adjust position to center */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+    overflow:unset; /* Ensure no overflow issues */
+    z-index: 15;
+  }
+
+  .cover-photo {
+    height: 226px; /* Set the height of the cover photo */
+    width: 100%; /* Make the cover photo take full width of the wrapper */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    background: var(--bs-secondary); /* Background color from theme */
+    z-index: -1; /* Keep it behind other elements */
+    border-radius: 0px !important;
+  }
+
+  .profile-row {
+    position: relative;
+    margin-top: -20px; /* Position profile picture above its container */
+  }
+
+  .profile-section {
+    .display-name, .info, .bio-wrapper {
+      display: flex; /* Flexbox layout */
+      justify-content: space-around; /* Distribute content evenly */
+      align-items: center; /* Vertically center align content */
+      text-align: center; /* Center text inside elements */
+      margin: .5rem 1rem; /* Margin for spacing */
+    }
+  }
+
+  .expand {
+     display: inline-flex; /* Align items horizontally in a row */
+    align-items: center; /* Vertically center the text and icon */
+    cursor: pointer; /* Make the entire div clickable */
+    span {
+      color: var(--bs-primary); /* Color of the 'View bio' text */
+    }
+  }
+
+
+  .badge-svg {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 30px;
+    height: 45px;
+    border-radius: 50%; /* Circular badge */
+    padding: 5px;
+  }
+.dropdown-item-custom {
+  // padding-left: 1rem; /* Adjust padding to make it slimmer */
+  // padding-right: 2rem; /* Adjust padding to make it slimmer */
+  padding: 0rem 2rem 0rem 0rem;
+  margin-right: 0;
+
+}
+
+.dropdown-item-custom div {
+  padding: 0; /* No extra padding inside the div */
+  text-align: right; /* Align text to the right */
+}
+
+//Adjust the bio modal if on small screen
+.bio-modal {
+  height: auto;
+  padding: 10px;
+  overflow-y: auto; /* Enables vertical scrolling */
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Breaks long words */
+
+  width: 100% !important;
+  left: 0px !important;
+  top: -15px !important;
+  .body {
+    text-align: left;
+  }
+}
+
+
+.bio-modal.expandable {
+  overflow: auto; /* add scroll if content overflows */
+}
+  .scrolling-pills-timeline {
+   margin: 0px;
+  }
+
+  .small-col-profile {
+    margin: 0;
+    padding: 0;
+  }
+
+  //Selects the filter
+  div.timeline-header-filters > div > div > div:nth-child(1) > div > span > div > span > span,
+  div.timeline-header-filters > div > div > div:nth-child(2) > div > span > div > span > span {
+    font-size: 12px;
+  }
+
+
+  .profile-page-dropdown-three-dots.button {
+    background-color: var(--bs-primary) !important;
+    border: none;
+    padding: 6px 12px; /* Slimmer padding */
+    width: 32px;
+    height: 32px; /* Match button height */
+    border-radius: 8px; /* Reduced rounding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+  }
+
+  .home-page-create-button-mobile button {
+     height: 32px;
+     border-radius: 8px !important;
+  }
+
+
+
+  .bio-mobile-screen {
+    font-size: 14px !important;
+    white-space: nowrap;        /* Prevents text from wrapping to the next line */
+    overflow: hidden;           /* Hides any overflow text */
+    text-overflow: ellipsis;    /* Adds ellipsis when text overflows */
+    max-width: 250px;                /* Make sure the width is controlled (or set a max-width) */
+    display: block;             /* Ensure it takes up full width */
+  }
+  .bio-wrapper .chevron-icon {
+    height: 12px;
+  }
+
+
+}
+
+@include media-breakpoint-up(lg){
+  .profile-page-give-gap {
+     margin-left: 1.5rem !important;
+  }
+}

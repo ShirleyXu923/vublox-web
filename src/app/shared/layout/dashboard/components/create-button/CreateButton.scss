@@ -1,0 +1,18 @@
+.dropdown-create {
+  .dropdown-menu {
+    padding: 5px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 120px;
+  }
+
+  .dropdown-item {
+    display: flex;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    padding: 6px 16px;
+  }
+}

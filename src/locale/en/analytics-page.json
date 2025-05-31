@@ -1,0 +1,40 @@
+{
+  "label": {
+    "title": "Analytics",
+    "views": "Views",
+    "followers": "Followers",
+    "viewers": "Viewers",
+    "nonFollowers": "Non-Followers",
+    "number": "Number",
+    "percentage": "Percentage",
+    "entireProfle": "Entire Profile",
+    "specific": "Specific Event, Post, or Timeline",
+    "events": "Events",
+    "posts": "Posts",
+    "timeline": "Timeline",
+    "allFollowers": "All (Followers)",
+    "custom": "Custom",
+    "followDuration": "Follow Duration",
+    "allViewers": "All Viewers",
+    "1d": "1D",
+    "7d": "7D",
+    "30d": "30D",
+    "6m": "6M",
+    "1y": "1Y",
+    "1y+": "1Y+",
+    "all": "All",
+    "last7Days": "Last 7 Days",
+    "last30Days": "Last 30 Days",
+    "last3Months": "Last 3 Months",
+    "lastYear": "Last Year",
+    "customDateRange": "Custom Date Range",
+    "startDate": "Start Date",
+    "endDate": "End Date"
+  },
+  "placeholder": {
+    "entitySearch": "Search Event, Post, or Timeline"
+  },
+  "button": {
+    "apply": "Apply"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "label": {
+    "beta": "Beta",
+    "live": "即時模式",
+    "past": "過去的",
+    "all": "所有的",
+    "post": "貼文",
+    "latest": "最新的",
+    "shareVia": "分享方式",
+    "facebook": "Facebook",
+    "x": "X",
+    "copy": "複製",
+    "noEvents": "無有效事件",
+    "noPosts": "無有效貼文",
+    "contactUs": "聯絡我們",
+    "contactDescription1": "如果您有任何問題或查詢，請立即與我們聯絡。",
+    "contactDescription2": "我們努力迅速回覆所有電子郵件，並期待聽到您的聲音。"
+  },
+  "button": {
+    "viewAll": "查看全部"
+  }
+}

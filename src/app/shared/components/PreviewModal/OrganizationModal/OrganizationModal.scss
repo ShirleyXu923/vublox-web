@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.organization-modal {
+  --bs-modal-padding: 0;
+  --bs-modal-header-padding: 1.5rem 2.2rem;
+
+  @include media-breakpoint-up(md) {
+    --bs-modal-width: 886px;
+  }
+
+  .modal-header {
+    gap: 12px;
+
+    .btn-close {
+      margin: 0;
+    }
+  }
+
+  .organization-page {
+    padding: 0;
+    margin-bottom: 0;
+
+    .organization-header {
+      .title {
+        margin-top: 0;
+      }
+    }
+  }
+}

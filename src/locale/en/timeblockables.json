@@ -1,0 +1,14 @@
+{
+  "label": {
+    "follower": "follower",
+    "delete": "Delete",
+    "moveRight": "Move Right",
+    "moveLeft": "Move Left",
+    "moveUp": "Move Up",
+    "moveDown": "Move Down",
+    "addATimeBlock": "Add a Time Block",
+    "event": "Event",
+    "organization": "Organization",
+    "timeline": "Timeline"
+  }
+}

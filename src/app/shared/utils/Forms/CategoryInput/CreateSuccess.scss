@@ -1,0 +1,42 @@
+.category-create-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bs-modal-overlay);
+
+  .modal-card {
+    margin: auto;
+    background: var(--bs-alert-text-primary);
+    padding: 32px;
+    border-radius: 18px;
+    width: 594px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .close {
+        cursor: pointer;
+      }
+    }
+
+    .body {
+      margin-top: 40px;
+
+      .b1 {
+        color: var(--bs-secondary-text);
+      }
+
+      .b2 {
+        color: var(--bs-primary);
+      }
+    }
+  }
+}

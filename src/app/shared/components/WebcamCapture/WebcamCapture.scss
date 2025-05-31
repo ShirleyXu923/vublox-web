@@ -1,0 +1,150 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.webcam-capture {
+  .webcam-capture-container {
+    background: var(--bs-tertiary-bg);
+    border-radius: 8px;
+    height: calc(298px - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .camera-icon {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #DAD9D9;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .btn-close-container {
+    position: absolute;
+    right: 25px;
+
+    .btn-close {
+      pointer-events: box-none;
+    }
+  }
+}
+
+.webcam-capture-modal {
+  .modal-header {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border-bottom: none;
+  }
+
+  .modal-body {
+    min-height: 500px;
+  }
+
+  .modal-footer {
+    border-top: none;
+
+    .btn-group {
+      border-radius: 8px;
+      border: var(--bs-border-width) solid var(--bs-primary);
+      padding: 0.5px;
+
+      svg {
+        margin-bottom: 2px;
+      }
+
+      .btn.active, .btn:hover {
+        svg > path {
+          fill: var(--bs-body-color);
+        }
+      }
+
+      .btn {
+        border-radius: 7px;
+        // border: none !important;
+
+        &.active, &:hover {
+          background: var(--bs-primary-gradient);
+        }
+      }
+    }
+
+    .btn-capture {
+      background: var(--bs-primary-gradient);
+      height: 60px;
+      width: 60px;
+      border-radius: 30px;
+      box-shadow: var(--dropdown-box-shadow);
+
+      &:hover {
+        filter: brightness(110%);
+      }
+      
+      svg {
+        margin-bottom: 2px;
+      }
+
+      .stop {
+        background: var(--bs-body-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        margin: auto;
+      }
+    }
+
+    .btn-upload {
+      font-weight: bold;
+      background: var(--bs-primary-gradient);
+      border-radius: 10px;
+      box-shadow: var(--dropdown-box-shadow);
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+
+    .btn-retry {
+      background: var(--bs-danger-gradient);
+    }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .webcam-capture-modal {
+    .webcam {
+      width: 500px !important;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .webcam-capture {
+    min-height: 190px !important;
+
+    .webcam-capture-container {
+      height: calc(190px - 2rem) !important;
+    }
+  }
+
+  .webcam-capture-modal {
+    .modal-header {
+      padding: 15px !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .webcam-capture-modal {
+    .webcam {
+      width: 350px !important;
+    }
+  }
+}

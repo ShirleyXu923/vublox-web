@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.create_timeblocks__page {
+  .skip_button__wrapper {
+    .btn-back {
+      margin: 0;
+    }
+    .btn-skip {
+      background: var(--bs-badge-bg);
+      padding: 4px !important;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .submit_buttons__wrapper {
+      .r-button {
+        padding: 6px !important;
+      }
+    }
+  }
+
+
+}

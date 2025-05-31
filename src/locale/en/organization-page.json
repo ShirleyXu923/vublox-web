@@ -1,0 +1,38 @@
+{
+  "label": {
+    "edit": "Edit Organization",
+    "bio": "Bio",
+    "outOfFive": "out of 5",
+    "followers": "followers",
+    "posts": "posts",
+    "claim": "Claim",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "share": "Share",
+    "viewInWorldEvents": "View in World View",
+    "timeline": "Timeline",
+    "members": "Members",
+    "rewardCenter": "Reward Center",
+    "store": "Store",
+    "viewPhoto": "View Photo",
+    "changePhoto": "Change Photo",
+    "privateTimeline": "The current timeline you are viewing is private.",
+    "viewInMap": "View in Map",
+    "upcoming" : "This is an Upcoming Feature",
+    "managePosts" : "Manage Posts",
+    "editOrg" : "Edit Org.",
+    "editOrganization": "Edit Organization",
+    "claimTimeline": "Claim Timeline",
+    "claimTimelineDesc": "To claim this timeline, please email us at {email}.",
+    "views": "view"
+  },
+  "success": {
+    "followed": "Organization page followed successfully",
+    "unfollowed": "Organization page unfollowed successfully",
+    "store": "Store",
+    "viewPhoto": "View Photo",
+    "changePhoto": "Change Photo",
+    "imageUpdated": "The Image has been updated!",
+    "upcoming": "This is an Upcoming Feature"
+  }
+}

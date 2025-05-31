@@ -1,0 +1,64 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.main-container {
+
+  .edit-timeline {
+    .btn-back {
+      margin-bottom: 48px;
+    }
+
+    .timeblockables_wrapper {
+      padding: 1.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      .timeblockables_wrapper {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .edit-timeline {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .page-tabs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 8px;
+
+    .tab-button {
+      border: none;
+      outline: none;
+      background: none;
+      padding: 11px 27px;
+      color: var(--bs-body-color);
+    }
+
+    .tab-button.active {
+      background: var(--bs-primary);
+      padding: 8px 27px;
+      border-radius: 100px;
+      color: var(--bs-alert-text-primary);
+    }
+  }
+
+  .page-actions {
+    width: 744px;
+    margin: 0 auto;
+    padding: 0;
+
+    .r-button {
+      width: 100%;
+    }
+  }
+}

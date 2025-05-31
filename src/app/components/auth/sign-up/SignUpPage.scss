@@ -1,0 +1,31 @@
+.sign-up {
+  .nav-tabs {
+    border-bottom: none;
+    background: var(--bs-body-bg);
+    border-radius: 100px;
+    padding: 3px 0;
+    display: inline-flex;
+
+    .nav-link {
+      color: var(--bs-body-color);
+      border-radius: 100px;
+
+      &.active {
+        border: none;
+        background: var(--bs-primary);
+        font-weight: bold;
+        color: var(--bs-body-bg);
+      }
+
+      &:hover {
+        cursor: pointer;
+        border-color: transparent;
+
+        &:not(&.active) {
+          color: var(--bs-primary);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

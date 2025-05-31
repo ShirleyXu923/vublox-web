@@ -1,0 +1,76 @@
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+
+.settings-page {
+
+  .nav-tabs {
+    border-bottom: none;
+    background: var(--bs-body-bg);
+    border-radius: 100px;
+    padding: 3px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical overflow */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+    white-space: nowrap; /* Prevents wrapping to multiple lines */
+    scrollbar-width: none; /* Firefox-specific: hides scrollbar */
+
+    .nav-link {
+      color: var(--bs-body-color);
+      border-radius: 100px;
+      padding: 7px 25px;
+      flex-shrink: 0; // Prevents items from shrinking
+      white-space: nowrap; // Ensures single-line items
+      background: var(--bs-tertiary-bg);
+
+      display: flex;
+      align-items: center;
+      justify-content: center; // Centers text horizontally and vertically
+      @include media-breakpoint-down(sm) {
+        height: 24px;
+      }
+      &.active {
+        border: none;
+        background: var(--bs-primary);
+        font-weight: bold;
+        color: var(--bs-body-bg);
+      }
+
+      &:hover {
+        cursor: pointer;
+        border-color: transparent;
+
+        &:not(&.active) {
+          color: var(--bs-primary);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .nav-tabs {
+      gap: 10px;
+    }
+  }
+
+  .action-button {
+    padding: 6.5px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .settings-page {
+    padding: 0 !important;
+
+    .form-column {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// @import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.event-page-wrapper {
+  @include media-breakpoint-down(sm){
+    .accordion-timeline {
+      margin-left: -10px;
+      margin-right: -5px;
+    } //To lessen the space in mobile view
+  
+  }
+}
+
+.accordion-timeline {
+  container-type: inline-size;
+
+  @include media-breakpoint-down(md) {
+    margin-right: 14px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 7px;
+  }
+}

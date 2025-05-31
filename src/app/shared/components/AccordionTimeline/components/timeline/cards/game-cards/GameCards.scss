@@ -1,0 +1,199 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.game-card-container {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  padding-top: 24px;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    gap: 10px;
+  }
+  > .card {
+    --bs-card-spacer-y: 14px;
+    width: 100%;
+    background: var(--bs-secondary);
+    border-radius: 18px;
+    border: none;
+    position: relative;
+    z-index: 1;
+
+    &.penalty-shootout {
+      background: rgba(var(--bs-yellow-rgb), 0.2);
+    }
+
+    .b6 {
+      color: var(--bs-secondary-text);
+    }
+
+    .card-body {
+      .title, .single-line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+
+    .badge {
+      border-radius: 16px;
+      padding: 2px 12px;
+      display: flex;
+      align-items: center;
+
+      &.primary2 {
+        svg > path, g > path {
+          fill: var(--bs-primary);
+        }
+      }
+
+      &.success2 {
+        padding: 4px 12px;
+      }
+
+      &.warning2 {
+        padding: 4px 12px;
+        svg > path, g > path {
+          fill: var(--bs-warning);
+        }
+      }
+
+      &.danger2 {
+        padding: 4px 12px;
+        svg > path, g > path {
+          fill: var(--bs-danger);
+        }
+      }
+
+      &.danger3 {
+        padding: 4px 12px;
+        background-color: var(--bs-red2) !important;
+        color: var(--bs-red);
+        svg > path, g > path {
+          fill: var(--bs-red);
+        }
+      }
+
+      &.bg-danger {
+        background-color: var(--bs-dark-red) !important;
+        color: var(--bs-danger);
+        svg > path, g > path {
+          fill: var(--bs-danger);
+        }
+      }
+
+      &.penalty-shootout {
+        padding: 4px 8px;
+        background-color: var(--bs-yellow2) !important;
+        color: var(--bs-secondary-dark);
+      }
+    }
+
+    .highlight {
+      font-weight: 700;
+    }
+
+    .highlight2 {
+      color: var(--bs-primary);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .goal-icon {
+    path {
+      fill: var(--bs-primary);
+    }
+  }
+
+  .pin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+
+    .line-b {
+      flex: 1;
+      margin-top: -6px;
+      position: unset;
+      margin-left: 0;
+      transform: none;
+    }
+
+    .line-t {
+      height: 100%;
+      bottom: 50%;
+    }
+
+    .pin-circle {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+
+  @include media-breakpoint-down(md) {
+    .ellipsis {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .pin {
+      .pin-circle {
+        height: 24px;
+        width: 24px;
+      }
+
+      .line-b {
+        top: 18px !important;
+      }
+
+      .line-t {
+        height: 120% !important;
+      }
+    }
+
+    .header {
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+
+    .single-line {
+      width: 100%;
+    }
+
+    .title, .single-line {
+      line-height: 16px;
+    }
+  }
+
+  @container (width < 576px) {
+    .header {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .single-line {
+      width: 100%;
+    }
+
+    .ellipsis {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.btn-back {
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(25, 190, 212, 0.1);
+  // width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px 12px 2px 2px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+}

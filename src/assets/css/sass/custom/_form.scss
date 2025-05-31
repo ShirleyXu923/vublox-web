@@ -1,0 +1,306 @@
+.input-group {
+  &:focus-within {
+    color: $input-focus-color;
+    background-color: $input-focus-bg;
+    border-color: $input-focus-border-color;
+    border-radius: $input-border-radius;
+    outline: 0;
+
+    @if $enable-shadows {
+      @include box-shadow($input-box-shadow, $input-focus-box-shadow);
+    }
+
+    @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: $input-focus-box-shadow;
+    }
+
+    .input-group-text {
+      border-color: transparent !important;
+    }
+  }
+
+  .form-control {
+    &:focus {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  &.is-valid {
+    .input-group-text {
+      border-color: var(--bs-form-valid-border-color);
+    }
+
+    .form-control {
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+
+  &.is-invalid {
+    .input-group-text {
+      border-color: var(--bs-form-invalid-border-color);
+    }
+
+    .form-control {
+      // border-left: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.form-floating {
+
+  >.form-control:focus,
+  >.form-control:not(:placeholder-shown),
+  >.form-control-plaintext,
+  >.form-select {
+    ~label {
+      text-transform: uppercase;
+    }
+  }
+
+  >label {
+    color: var(--bs-placeholder-color) !important;
+  }
+}
+
+/* react-tag-input */
+
+.ReactTags__tags {
+  position: relative;
+  padding: 0.75rem;
+  border-radius: 18px;
+  background: var(--bs-secondary-bg);
+}
+
+.ReactTags__clearAll {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  background: #f88d8d;
+  color: var(--bs-body-color);
+  border: none;
+}
+
+/* Styles for the input */
+.ReactTags__tagInput {
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.ReactTags__tagInput input.ReactTags__tagInputField,
+.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+  height: 31px;
+  margin: 0;
+  min-width: 220px;
+  border: none !important;
+  outline: none;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.ReactTags__editInput {
+  border-radius: 1px;
+}
+
+.ReactTags__editTagInput {
+  display: inline-flex;
+}
+
+/* Styles for selected tags */
+.ReactTags__selected span.ReactTags__tag {
+  border: 1px solid var(--bs-tag-bg);
+  background: var(--bs-tag-bg);
+  color: var(--bs-body-color);
+  display: inline-block;
+  padding: 0 7px 0 13px;
+  margin: 3px 5px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.ReactTags__selected a.ReactTags__remove {
+  color: var(--bs-body-color);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Styles for suggestions */
+.ReactTags__suggestions {
+  position: absolute;
+}
+
+.ReactTags__suggestions ul {
+  list-style-type: none;
+  box-shadow: 0.05em 0.01em 0.5em rgba(0, 0, 0, 0.2);
+  background: var(--bs-body-color);
+  width: 200px;
+}
+
+.ReactTags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.ReactTags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+  background: var(--bs-primary-static);
+  cursor: pointer;
+}
+
+.ReactTags__remove {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: var(--bs-body-color);
+}
+
+
+/* react-select */
+
+.react-select__control {
+  border-radius: 18px;
+  padding: 0.35rem !important;
+  border-color: transparent !important;
+  background: var(--bs-secondary-bg) !important;
+  height: auto;
+  min-height: 60px;
+
+  .react-select__single-value {
+    color: var(--bs-body-color) !important;
+  }
+
+  .react-select__input {
+    color: var(--bs-body-color) !important;
+  }
+}
+
+.react-select-floating-label {
+  font-size: 11px;
+  color: var(--bs-placeholder-color);
+}
+
+.react-select-floating {
+  position: relative;
+
+  label {
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 1;
+    left: 12px;
+    top: 8px;
+  }
+
+  .react-select__control {
+    padding: 1.2rem 0.35rem 0 0.35rem !important;
+  }
+
+  .react-select__indicators {
+    margin-top: -15px;
+  }
+
+  .react-select__value-container {
+    padding-left: 2px !important;
+    padding-right: 0 !important;
+  }
+}
+
+.is-invalid {
+  .react-select__control {
+    border-color: var(--bs-danger) !important;
+  }
+}
+
+.react-select__control--is-focused {
+  border-color: var(--bs-primary-border-subtle) !important;
+  box-shadow: 0 0 0 0.25rem var(--input-focus-box-shadow) !important;
+}
+
+.react-select__indicator-separator {
+  display: none;
+}
+
+
+.react-select__menu {
+  position: absolute !important;
+  border-radius: 15px !important;
+  box-shadow: var(--bs-dropshadow);
+  background-color: var(--bs-secondary-bg) !important;
+  z-index: 3 !important;
+  overflow: hidden;
+
+  .react-select__menu-list {
+    padding: 0 !important;
+    border-radius: 15px !important;
+  }
+
+  .react-select__option:not(.react-select__group *) {
+    padding: 1rem;
+
+    &:first-child {
+      border-top-left-radius: 15px !important;
+      border-top-right-radius: 15px !important;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 15px !important;
+      border-bottom-right-radius: 15px !important;
+    }
+  }
+
+  .react-select__option {
+    background-color: var(--bs-secondary-bg);
+
+    &:hover {
+      background: var(--bs-body-bg) !important;
+    }
+  }
+
+  .react-select__option--is-selected {
+    background: var(--bs-body-bg) !important;
+    color: var(--bs-primary);
+  }
+}
+
+.react-select__multi-value {
+  background-color: var(--bs-tag-bg) !important;
+  border-radius: 20px !important;
+  padding: 0 5px;
+
+  .react-select__multi-value__label {
+    color: var(--bs-body-color);
+    font-size: 12px !important;
+    padding: 2px;
+  }
+
+  .react-select__multi-value__remove {
+    color: var(--bs-body-color);
+    font-size: 12px !important;
+
+    svg {
+      background: var(--bs-secondary);
+      border-radius: 50px;
+    }
+
+    &:hover {
+      color: var(--bs-body-color);
+      background-color: var(--bs-primary-static);
+    }
+  }
+}
+
+.react-select__placeholder {
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--bs-placeholder-color) !important;
+}

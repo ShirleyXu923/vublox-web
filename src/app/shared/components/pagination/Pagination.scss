@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 4px;
+
+  .page-item {
+    border: none;
+
+    .page-link {
+      border: none;
+      border-radius: 50%;
+    }
+
+    .b6 {
+      color: var(--bs-alert-text-primary);
+    }
+  }
+}

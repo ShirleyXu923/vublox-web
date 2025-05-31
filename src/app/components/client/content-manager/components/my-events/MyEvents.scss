@@ -1,0 +1,75 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.my-events {
+  .header {
+    .event-filters {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(sm) {
+      .event-filters {
+        display: flex;
+        gap: 10px;
+
+        .filter {
+          flex: 1;
+          max-width: 31%;
+
+          svg {
+            height: 12px;
+          }
+
+          .b5 {
+            font-size: 10px;
+          }
+
+          .dropdown-button {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+
+        .search-bar {
+          width: auto;
+
+          svg {
+            height: 12px;
+            margin-top: 1px;
+          }
+
+          .form-control {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .events-grid {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @include media-breakpoint-down(xl) {
+
+
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .header {
+      .event-filters {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,81 @@
+// timeline-accordion-container
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeline-accordion-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  // Timeline Design
+  .timeline-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+
+    // Year Header
+    .accordion-cs {
+      padding: 15px 16px;
+      background: var(--bs-secondary);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-grow: 2;
+      z-index: 30;
+      color: var(--bs-body-color);
+      gap: 12px;
+      @include media-breakpoint-down(sm) {
+        height: 40px;
+        border-radius: 12px;
+      }
+      .arrow {
+        svg {
+          path {
+            stroke: var(--bs-body-color);
+          }
+        }
+      }
+    }
+  }
+  // Accordion design fix
+  .accordion {
+    padding: 0;
+
+    .accordion-item {
+      border: none;
+      padding: 0;
+      width: 100%;
+
+      .accordion-header {
+        padding: 0;
+        border: none;
+
+        .accordion-button {
+          padding: 0;
+          margin: 0;
+          background: none;
+          box-shadow: none;
+
+          &:focus {
+            z-index: unset;
+          }
+
+          &:hover {
+            z-index: unset;
+          }
+        }
+
+        .accordion-button::after {
+          display: none !important;
+        }
+      }
+
+      .accordion-body {
+        padding: 0;
+      }
+    }
+  }
+}

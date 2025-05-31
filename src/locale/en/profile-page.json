@@ -1,0 +1,32 @@
+{
+  "label": {
+    "editProfile": "Edit Profile",
+    "managePosts": "Manage Posts",
+    "share": "Share",
+    "viewPhoto": "View Photo",
+    "changePhoto": "Change Photo",
+    "followers": "followers",
+    "following": "following",
+    "posts": "posts",
+    "outOfFive": "out of 5",
+    "upcoming": "This is an Upcoming Feature",
+    "follow": "Follow",
+    "followBack": "Follow back",
+    "unfollow": "Unfollow",
+    "contribute" : "Contribute",
+    "viewBio": "View Bio",
+    "claim": "Claim",
+    "viewProfile": "View Profile",
+    "views": "view"
+  },
+  "placeholder": {
+    "searchFollowers": "Search Followers",
+    "searchFollowing": "Search Following"
+  },
+  "success": {
+    "uploaded": "Image Uploaded!",
+    "followed": "Profile page followed successfully",
+    "unfollowed": "Profile page unfollowed successfully",
+    "upcomming": "This is an upcomming feature"
+  }
+}

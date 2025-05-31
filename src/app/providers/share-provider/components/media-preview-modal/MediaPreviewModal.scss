@@ -1,0 +1,35 @@
+/* Styles for the full-screen display */
+.full-screen-container {
+  position: relative;
+
+  .full-screen-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-backdrop-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1031; // 1030 topnav
+  }
+
+  /* Your styles for the thumbnail image */
+  .live-image {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+.full-screen-backdrop > .full-screen-media {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}

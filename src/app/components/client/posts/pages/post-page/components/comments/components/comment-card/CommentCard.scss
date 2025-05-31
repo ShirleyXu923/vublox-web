@@ -1,0 +1,78 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.comment-card {
+  display: flex;
+  gap: 10px;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    .caption1 {
+      color: var(--bs-secondary-text);
+      margin-top: 4px;
+    }
+
+    .text-body {
+      width: 100%;
+      word-break: break-all;
+    }
+
+    .vote-share {
+      .vote {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .vote-icon {
+          cursor: pointer;
+
+          &:hover svg path {
+            fill: var(--bs-primary);
+          }
+        }
+
+        .separator {
+          height: 14px;
+          border: 0.25px solid var(--bs-secondary-text);
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .comment-card {
+    .info {
+      margin: 0;
+      gap: 0;
+      align-items: flex-start;
+
+      .comment {
+        margin-top: 12px;
+      }
+
+      .vote {
+        margin-top: 3px;
+
+        .form-label {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .comment-card {
+    .info {
+      .b3 {
+        font-size: 14px;
+      }
+    }
+  }
+}

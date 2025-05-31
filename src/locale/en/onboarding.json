@@ -1,0 +1,15 @@
+{
+  "label": {
+    "welcome": "Welcome to Vublox!",
+    "interestsDescription": "Select one or more of your favorite sports to get tailored suggestions based on your interests.",
+    "followDescription": "Here are recommended accounts based on your chosen sports. Follow one or more accounts to personalize your feed.",
+    "emptyOrganizations": "There are no organizations with your selected interests.",
+    "followUsers": "Follow more users to see more content on your feed."
+  },
+  "button": {
+    "continue": "Continue",
+    "done": "Done",
+    "follow": "Follow",
+    "following": "Following"
+  }
+}

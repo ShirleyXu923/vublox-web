@@ -1,0 +1,124 @@
+// post-card-container
+.post-card-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding-top: 24px;
+  overflow: hidden;
+  border-radius: 18px;
+
+  // Post Card Design
+  .child-card {
+    padding: 19px 16px;
+    background: var(--bs-secondary);
+    color: var(--bs-body-color);
+    border-radius: 18px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 30;
+
+    .main-image {
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 0;
+
+      .image {
+        position: relative;
+
+        .verified {
+          position: absolute;
+          top: 12px;
+          left: 12px;
+        }
+      }
+
+      .informative {
+        flex: 2;
+
+        .organization {
+          display: flex;
+          align-items: center;
+          margin-top: 32px;
+          gap: 10px;
+
+          .info {
+            .name {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            }
+
+            .date {
+              margin-top: 8px;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              .tab {
+                color: var(--bs-secondary-text);
+              }
+            }
+          }
+        }
+
+        .social {
+          margin-top: 16px;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .vote {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .upvote {
+              display: flex;
+              gap: 4px;
+              align-items: center;
+            }
+
+            .line {
+              height: 14px;
+              width: 1px;
+              background: var(--bs-secondary-text);
+            }
+          }
+
+          .interaction {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .comment {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+
+              .b5 {
+                color: var(--bs-secondary-text);
+              }
+            }
+          }
+        }
+
+        .description {
+          margin-top: 8px;
+        }
+
+        .b5 {
+          color: var(--bs-description-color);
+        }
+      }
+    }
+  }
+}

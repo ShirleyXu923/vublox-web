@@ -1,0 +1,70 @@
+.bottom-modal {
+  .modal-header {
+    .modal-title {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      .title {
+        font-weight: bold;
+        color: var(--primary);
+        font-size: 18px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    .close {
+      margin-left: 0;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &.fade .modal-dialog {
+      transform: translate3d(0, 100vh, 0);
+    }
+  
+    &.show .modal-dialog {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .modal-dialog {
+      bottom: 0;
+      right: 0;
+      left: 0;
+      max-width: 100%;
+      margin: 0;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .modal-dialog-centered {
+      align-items: flex-end !important;
+    }
+
+    .modal-header {
+      margin-top: 20px;
+    }
+
+    .modal-content {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .modal-body {
+      height: calc(100vh - 95px);
+      overflow-y: auto;
+    }
+
+    .close {
+      position: absolute;
+      right: 44.5%;
+      margin-bottom: 10px;
+      color: var(--gray);
+    }
+  }
+}

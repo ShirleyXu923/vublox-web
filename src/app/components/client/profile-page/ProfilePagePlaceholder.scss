@@ -1,0 +1,73 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+
+.logo-info-container {
+  display: flex; // Default display for larger screens
+  flex-direction: row; // Align items in a row
+  gap: 1rem; // Space between items
+  align-items: flex-start; // Align items to the start
+
+  @include media-breakpoint-down(sm) { // For small screens and below
+    flex-direction: column; // Change to column
+    align-items: flex-start; // Keep items aligned to the start
+  }
+
+  .content-loader-circle {
+    width: 140px; // Default size for larger screens
+    height: 140px; // Ensure width and height are equal
+    border-radius: 50%; // Ensure it's a perfect circle
+    flex-shrink: 0; // Prevent shrinking in flex layouts
+    overflow: hidden; // Prevent content overflow
+
+    @include media-breakpoint-down(sm) { // For small screens and below
+      width: 80px !important; // Smaller size for small screens
+      height: 80px !important; // Keep height equal to width for a perfect circle
+      min-height: 80px !important;
+      min-width: 80px !important;
+    }
+  }
+}
+
+.profile-page-wrapper .event-filter {
+  display: flex;
+  flex-wrap: wrap; // Enable wrapping for flexibility
+  gap: 1rem; // Adjust the gap between loaders
+  width: 100%;
+
+  // Extra large screens (laptops and above)
+  @include media-breakpoint-up(lg) {
+    .loader {
+      flex: 1 0 calc(25% - 1rem); // 4 loaders in one row
+    }
+  }
+
+  // Medium screens down (below laptops)
+  @include media-breakpoint-down(lg) {
+    .loader {
+      flex: 1 0 calc(33.33% - 1rem); // 3 loaders on the top row
+    }
+
+    .loader:last-child {
+      flex: 1 0 100%; // Last loader takes full width
+    }
+  }
+
+  // Mobile screens (small devices and below)
+  @include media-breakpoint-down(sm) {
+    .loader {
+      flex: 1 0 100%; // Stack loaders, each taking full width
+    }
+
+    .loader:nth-last-child(-n+2) {
+      flex: 1 0 calc(50% - 1rem); // Last two loaders share a row
+    }
+  }
+}
+
+.profile-section:has(.profile-page-wrapper.profile-placeholder) {
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px !important;
+  }
+}

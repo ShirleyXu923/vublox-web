@@ -1,0 +1,46 @@
+{
+  "label": {
+    "howTo": "How To",
+    "createPost": "Create a Post",
+    "createEvent": "Create an Event",
+    "createOrganization": "Create an Organization",
+    "createTimeline": "Create a Timeline",
+    "contribute": "Contribute",
+    "defineYourContentType": "Define Your Content Type"
+  },
+  "post": {
+    "title": "How to Create a Post",
+    "step1": "Click \"Create\" in the top navigation bar and select \"Post\" to start creating a post.",
+    "step2": "Enter the title and description, optionally upload media or embed a link, and set the date, time, and post type.",
+    "step3": "Enhance the visibility of your post by categorizing them under an event, organization, timeline, or location. Click \"Create Post\" to finalize and publish your post."
+  },
+  "event": {
+    "title": "How to Create an Event",
+    "step1": "Click \"Create\" in the top navigation bar and select \"Event\" to start creating an event.",
+    "step2": "Fill in the event title, description, and optionally upload cover photo. Set the date, time, and location of the event.",
+    "step3": "Enhance the visibility of your event by categorizing them under an event, organization, timeline, or location.",
+    "step4": "Select the event type — Past, Live, Upcoming, or Indefinite. Fill out the necessary details, and click \"Create Event\" to finalize and publish your event."
+  },
+  "organization": {
+    "title": "How to Create an Organization",
+    "step1": "Click \"Create\" in the top navigation bar and select \"Organization\" to start creating an organization.",
+    "step2": "Enter the organization name, and fill out the necessary details. Click \"Create Organization\" to finalize and create your Organization.",
+    "step3": "Structure your Organization Timeline by adding time blocks, including details like bio, cover photo, location, logo, or name. Click \"Publish Timeline\" to finalize and publish your organization’s timeline."
+  },
+  "timeline": {
+    "title": "How to Create a Timeline",
+    "step1": "Click \"Create\" in the top navigation bar and select \"Timeline\" to start creating an timeline.",
+    "step2": "Enter the timeline name, and fill out the necessary details. Click \"Create Timeline\" to finalize and create your timeline.",
+    "step3": "Build your Timeline by adding time blocks with details like events, organizations, or timelines. Click \"Publish Timeline\" to finalize and publish your timeline."
+  },
+  "contribute": {
+    "title": "How to Contribute",
+    "step1": "Click \"Contribute\" in the timeline of a Profile Page, Organization Page, Timeline Page, Event Page, or Game Event Page and select the type of contribution you want to make, such as a Post, Event, or Timeline.",
+    "step2": "The selected timeline is autofilled in the form. Fill out the remaining fields, and submit your contribution to the chosen timeline."
+  },
+  "contentType": {
+    "title": "How to Define Your Content Type",
+    "step1": "Click \"I Was There\" to contribute your firsthand experience of an event or moment you witnessed.",
+    "step2": "Click \"Contributing to History\" to share details about an event or moment you didn't witness but want to document as part of history."
+  }
+}

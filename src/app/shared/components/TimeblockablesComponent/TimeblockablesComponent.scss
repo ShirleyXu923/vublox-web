@@ -1,0 +1,62 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeblockable_component {
+  overflow-y: hidden;
+
+  .timeblockable_component__children {
+    margin-left: 38px;
+
+    .toggler-content {
+      display: flex;
+      align-items: center;
+      padding: 3px 12px;
+      border-radius: 10px;
+
+      svg {
+        margin-right: 4px;
+  
+        path {
+          fill: var(--bs-white);
+        }
+      }
+
+      .show-content {
+        display: none;
+        transition: all 0.5s;
+      }
+    }
+
+    &:not(:has(>.collapse.show)) {
+      .toggler-content {
+        svg {
+          rotate: -180deg;
+          transition: var(--bs-accordion-btn-icon-transition);
+        }
+
+        .hide-content {
+          display: none;
+          transition: all 0.5s;
+        }
+
+        .show-content {
+          display: contents;
+        }
+      }
+    }
+
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .timeblockable_component {
+    .mt-3 {
+      margin-top: 12px !important;
+    }
+
+    .btn-link {
+      padding: 0;
+    }
+  }
+}

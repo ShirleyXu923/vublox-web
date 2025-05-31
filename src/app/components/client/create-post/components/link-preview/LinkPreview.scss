@@ -1,0 +1,32 @@
+.link-preview {
+  position: relative;
+  max-width: 450px;
+
+  .card {
+    --bs-card-border-width: 0;
+    --bs-card-border-radius: 18px;
+    --bs-card-inner-border-radius: 18px;
+    --bs-card-bg: var(--bs-tertiary-bg);
+  }
+
+  .btn-danger {
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    right: -7px;
+    padding: 0px;
+    border-radius: 25px;
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

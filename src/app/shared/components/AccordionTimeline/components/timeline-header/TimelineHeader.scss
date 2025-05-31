@@ -1,0 +1,267 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@mixin timeline-header-filters-sticky {
+  position: sticky;
+  top: 251px;
+  z-index: 99;
+  background: var(--bs-body-bg);
+}
+
+//Only fits on the top when on profile page
+.full-container:has(.timeline-map) {
+  @include media-breakpoint-down(xl) {
+    .timeline-header-filters {
+      top: 420px !important;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .timeline-header-filters {
+      top: 258px !important;
+    }
+  }
+}
+
+.timeline-header {
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  @at-root .event-page-wrapper:has(.stadium:not(.show)) {
+    >.accordion-timeline {
+      >.timeline-header-filters {
+        top: 70px !important;
+        padding-bottom: 5px !important;
+      }
+    }
+  }
+
+  &+.timeline-header-filters {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: var(--bs-body-bg);
+    padding-top: 1px;
+    padding-bottom: 20px;
+    max-width: 100%;
+
+    &:has(+.game-timeline-header) {
+      position: sticky;
+      top: 375px;
+      z-index: 1001;
+      background: var(--bs-body-bg);
+      padding-bottom: 20px;
+      padding-top: 1px;
+    }
+
+    &:has(.stadium:not(.show)) {
+      .timeline-header-filters {
+        top: 230px !important; // Adjusted position when scoreboard is shown and stadium is not shown
+      }
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .dropdown,
+      .search-bar {
+        flex: 1;
+        min-width: 0;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      &:has(+.game-timeline-header) {
+        top: 475px;
+      }
+    }
+  }
+}
+
+
+.event-page-wrapper {
+  .timeline-header-filters {
+      position: sticky;
+      top: 0px;
+      z-index: 99;
+      background: var(--bs-body-bg);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 0px !important;
+      z-index: 1003;
+  }
+}
+
+  .timeline-header-filters {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: var(--bs-body-bg);
+    padding: 10px 0px;
+
+  .accordion-body {
+    background-color: var(--bs-tertiary-bg) !important;
+    padding-top: 6px;
+
+    label.b5 {
+      color: var(--bs-body-color);
+    }
+  }
+
+  .accordion-button {
+    background-color: var(--bs-tertiary-bg);
+    padding: 8px 8px;
+    font-family: var(--bs-body-font-family);
+    border: none;
+    /* Remove the border */
+    box-shadow: none;
+    /* Remove any shadows */
+    outline: none;
+    /* Remove the outline */
+
+    &:focus {
+      box-shadow: none;
+      border-color: rgba(0, 0, 0, 0.125);
+    }
+
+    &::after {
+      --bs-accordion-btn-icon: url('data:image/svg+xml,%3csvg width=%2718%27 height=%2718%27 viewBox=%270 0 18 18%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M4.5 9H13.5%27 stroke=%27%23FEFEFE%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3e%3cpath d=%27M9 13.5V4.5%27 stroke=%27%23FEFEFE%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3e%3c/svg%3e');
+      --bs-accordion-btn-active-icon: url('data:image/svg+xml,%3csvg width=%2718%27 height=%2718%27 viewBox=%270 0 18 18%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M4.5 9H13.5%27 stroke=%27%23FEFEFE%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3e%3c/svg%3e');
+      padding: 0;
+      /* Reduce padding for the accordion button */
+    }
+
+    .btn {
+      border: none;
+      /* Remove borders for buttons inside accordion-button */
+      box-shadow: none;
+      /* Optional: Remove any button shadow */
+    }
+
+  }
+}
+
+.event-page-wrapper {
+  // Default styles for timeline header filters
+  .timeline-header-filters {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background: var(--bs-body-bg);
+    padding: 10px 0px;
+  }
+  
+  // Game mode adjustments
+  &.game-mode {
+    &:not(:has(.scoreboard)) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 630px !important;
+      }
+  
+      @include media-breakpoint-down(md) {
+        top: 670px !important;
+      }
+  
+      @include media-breakpoint-down(sm) {
+        top: 340px !important;
+      }
+    }
+  
+    &:has(.scoreboard) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 730px !important;
+      }
+  
+      @include media-breakpoint-down(md) {
+        top: 730px !important;
+      }
+  
+      @include media-breakpoint-down(sm) {
+        top: 420px !important;
+      }
+    }
+  
+    &:has(.scoreboard .collapse.show) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 900px !important;
+      }
+  
+      @include media-breakpoint-down(md) {
+        top: 900px !important;
+      }
+  
+      @include media-breakpoint-down(sm) {
+        top: 420px !important;
+      }
+    }
+
+    // New condition: Scoreboard shown but stadium hidden
+    &:has(.scoreboard .collapse.show):has(.stadium:not(.show)) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 320px !important;
+      }
+    }
+    
+    // Stadium hidden but scoreboard not expanded
+    &:has(.stadium:not(.show)) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 110px !important;
+      }
+    }
+    
+    // Both stadium and scoreboard hidden
+    &:has(.stadium:not(.show)):has(.scoreboard .collapse:not(.show)) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 145px !important;
+      }
+      @include media-breakpoint-down(sm) {
+        top: 135px !important;
+      }
+    }
+    
+    // Stadium hidden, no scoreboard
+    &:has(.stadium:not(.show)):not(:has(.scoreboard)) .timeline-header-filters {
+      @include media-breakpoint-down(xl) {
+        top: 80px !important;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .location-page,
+  .profile-page,
+  .timeline-page,
+  .organization-page {
+    div.timeline-header-filters {
+      @include timeline-header-filters-sticky;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+
+  // Styles for dropdown buttons within filters
+  .filter .dropdown .dropdown-button {
+    min-width: 80px; // Minimum width for dropdown buttons
+    border-radius: 50px; // Rounded corners for the button
+    white-space: nowrap; // Prevent text from wrapping to the next line
+    padding: 6px 12px; // Padding around button content
+    background: var(--bs-secondary); // Background color from Bootstrap variable
+    max-height: 24px; // Maximum height for the button
+    background-color: var(--bs-secondary); // Ensure background color is set
+  }
+
+  // Styles for span elements with class 'b5'
+  span .b5 {
+    font-size: 12px; // Set font size for 'b5' class text
+  }
+}

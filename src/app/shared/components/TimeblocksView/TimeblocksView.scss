@@ -1,0 +1,193 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeblocks-view {
+  container-name: timeblocks-view;
+  container-type: inline-size;
+
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    .dropdown,.search-bar {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  .timeblock-card-item {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--bs-tertiary-bg);
+    border-radius: 16px;
+    min-height: 325px;
+    height: 100%;
+
+    .link {
+      color: inherit;
+      z-index: 1;
+      position: relative;
+    }
+
+    .title {
+      padding: 15px;
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .creator {
+      .dot {
+        margin: 0 3px;
+        background: var(--bs-secondary-text);
+        height: 3px;
+        width: 3px;
+        display: inline-block;
+        border-radius: 50%;
+        min-width: 3px;
+      }
+    }
+
+    .image {
+      text-align: center;
+      height: 220px;
+
+      .map {
+        height: 220px !important;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+
+      img {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      span {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--bs-description-color);
+      }
+    }
+
+    .description-only {
+      white-space: break-spaces;
+      word-break: break-all;
+      color: var(--bs-description-color);
+      font-size: 13px;
+      max-height: 190px;
+      overflow: hidden;
+    }
+
+    .time {
+      color: var(--bs-secondary-text);
+    }
+
+    @include media-breakpoint-down(sm) {
+      .description-only {
+        max-height: 138px;
+      }
+    }
+
+    .badge {
+      border-radius: 100px;
+    }
+
+    .btn-link {
+      padding: 2px 0 0 8px;
+    }
+
+    .avatar__consolidate {
+      position: relative;
+      height: 45px;
+      width: 45px;
+      min-width: 45px;
+
+      .avatar__1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .avatar__2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+
+    @include media-breakpoint-down(sm) {
+      .avatar__consolidate {
+        height: 35px;
+        width: 35px;
+        position: relative;
+        min-width: 35px;
+        .avatar__1 {
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .scores {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 215.64px;
+    font-weight: 500;
+    background: var(--bs-scoreboard-bg);
+    border-radius: 16px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 145px;
+    }
+
+    .competitor {
+      .team-logo {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@include color-mode(light) {
+  .timeblocks-view {
+    .timeblock-card-item, .timeblock-post-card {
+      background: var(--bs-secondary-bg);
+    }
+
+    .search-bar {
+      .form-control {
+        background-color: var(--bs-secondary-bg) !important;
+      }
+    }
+  }
+}
+
+@container timeblocks-view (width > 870px) {
+  .timeblocks-view {
+    .infinite-scroll-component {
+      > .col-md-6 {
+        width: 33.33%;
+      }
+    }
+  }
+}

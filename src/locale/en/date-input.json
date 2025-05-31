@@ -1,0 +1,11 @@
+{
+  "label": {
+    "format": "Select or enter it manually using the DD/MM/YYYY format",
+    "timePeriod": "Time Period",
+    "month": "Month",
+    "day": "Day",
+    "year": "Year",
+    "ad": "Anno Domini (AD)",
+    "bc": "Before Christ (BC)"
+  }
+}

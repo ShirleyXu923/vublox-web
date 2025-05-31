@@ -1,0 +1,33 @@
+.chart-filter {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  gap: 10px;
+  align-items: center;
+
+  .btn-group {
+    background: var(--bs-tertiary-bg);
+    padding: 6px;
+    border-radius: 100px;
+
+    .btn {
+      padding: 1px 15px;
+      font-size: 12px;
+      border-radius: 100px !important;
+      border: none;
+
+      &:not(.active) {
+        font-weight: normal;
+        color: var(--bs-secondary-text);
+      }
+
+      &.active {
+        border-radius: 100px;
+      }
+
+      &:hover {
+        color: var(--bs-tertiary-bg);
+      }
+    }
+  }
+}

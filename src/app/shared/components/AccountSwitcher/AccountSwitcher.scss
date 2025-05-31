@@ -1,0 +1,23 @@
+.account-switcher {
+  &.dropdown {
+    > .btn {
+      &:hover {
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+    background: var(--bs-tertiary-bg);
+    padding: 0;
+
+    .dropdown-item {
+      &:hover {
+        background-color: var(--bs-secondary-bg);
+      }
+    }
+  }
+}

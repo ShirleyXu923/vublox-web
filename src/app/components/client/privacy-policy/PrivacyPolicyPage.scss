@@ -1,0 +1,29 @@
+.privacy-policy-page {
+  .section {
+    margin-top: 35px;
+    
+    ul {
+      > li {
+        margin-top: 8px;
+      }
+    }
+
+    ol {
+      > li {
+        font-weight: bold;
+        margin-top: 15px;
+
+        ul {
+          list-style: circle;
+          > li {
+            font-weight: normal;
+
+            &::marker {
+              content: '•  ';
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,528 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.event-header {
+  max-width: 930px;
+  margin: 0 auto;
+
+  .btn-back {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .banner {
+    border-radius: 16px;
+  }
+
+  .team-link {
+    color: var(--bs-body-color);
+
+    &:hover {
+      color: var(--bs-primary);
+    }
+  }
+
+  .title {
+    margin-top: 37px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    .logo {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .informative {
+      width: 100%;
+      .bio-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .dropdown {
+          .btn {
+            background: none;
+            padding: 0;
+            border: none;
+          }
+
+          .dropdown-menu {
+            background: none;
+            box-shadow: none;
+          }
+        }
+
+        .icon-btn {
+          cursor: pointer;
+        }
+
+        .bio-modal {
+          // position: absolute;
+          right: 0;
+          // bottom: -536%;
+          background: var(--bs-secondary);
+          border-radius: 16px;
+          z-index: 1010;
+          max-width: 500px;
+          padding: 24px;
+          min-width: 500px;
+          height: fit-content;
+          box-shadow: var(--bs-dropshadow);
+
+          .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .body {
+            margin-top: 20px;
+            margin-bottom: 44px;
+          }
+
+          .links {
+            margin-top: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .link {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              svg {
+                path {
+                  fill: var(--bs-inactive-color);
+                }
+              }
+
+              a {
+                color: var(--bs-inactive-color);
+
+                &:hover {
+                  color: var(--bs-primary);
+                }
+              }
+            }
+          }
+
+          .tags {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+
+            .tag {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              background-color: var(--bs-tag-bg);
+              padding: 3px 8px;
+              border-radius: 25px;
+            }
+          }
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--bs-secondary-text);
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        .link {
+          height: auto; /* Ensure it inherits height naturally */
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .b3 {
+        color: var(--bs-secondary-text);
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+
+    .btn {
+      flex: 1;
+
+      svg {
+        path {
+          fill: var(--bs-primary);
+        }
+      }
+    }
+  }
+  img.banner {
+    //Making sure that the event banner will not be distorted in any screens
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .link {
+    color: var(--bs-secondary-text);
+  }
+
+  @include media-breakpoint-down(md) {
+    .bio-modal {
+      min-width: 100% !important;
+      max-width: 100% !important;
+      bottom: 0 !important;
+      top: 0;
+    }
+    //On medium screen making sure it will not be distorted
+    img.banner{
+      margin-top: 28px !important;
+      object-fit: cover;
+      width: 100%;
+    }
+
+  }
+
+}
+
+
+    //This section shows the mobile scoreboard
+  .game-timeline-header-mobile {
+    background-color: var(--bs-body-bg);
+    // margin-top: 5rem;
+    position: sticky;
+    top: -30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    z-index: 1002;
+
+    @include media-breakpoint-down(md) {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .scoreboard {
+      // color: var(--bs-body-color);
+
+      &:not(:has(>.collapse.show)) {
+        .toggler > svg {
+          rotate: -180deg;
+        }
+      }
+
+      .header {
+        background-color: var(--bs-scoreboard-header-bg);
+        padding: 5px 14px !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: var(--bs-body-color);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .event-page {
+    .profile-link {
+      color: var(--bs-body-color) !important;
+    }
+
+    .end-now-button-dropdown-toggle {
+      height: 38px;
+        border-radius: 12px;
+    }
+    .arrow.ms-2 svg path {
+      stroke: var(--bs-white) !important;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+   .event-page .location-container .event-apple-map {
+
+      width: 100vw;
+      margin-left: 50% !important;
+      transform: translateX(-50%);
+    }
+  }
+  @include media-breakpoint-down(sm) {
+
+    .event-page .location-container .event-apple-map {
+      height: 214px !important;
+      width: 100vw;
+      margin-left: 50% !important;
+      transform: translateX(-50%);
+    }
+    .event-page .timeline-accordion-container {
+      margin-top: 10px !important;
+    }
+    .event-page {
+      .end-now-button-dropdown-toggle {
+        height: 32px !important;
+      }
+      .end-date-dropdown-menu {
+        z-index: 1050; /* Adjust this value as needed */
+      }
+
+    }
+
+    .event-page-wrapper.container > div.col-md-12 > div > div > div:nth-child(1) > button > svg {
+      margin-right: -8px !important;
+    }
+    //Making sure that the event banner has margin on top and
+    .event-header .banner {
+      border-radius: 0px;
+      margin-top: 28px;
+      object-fit: cover;
+    }
+
+    //Remove the padding and margin to take the whole width
+    // .event-header.row > * {
+    //   padding-right: 0px;
+    //   padding-left: 0px;
+    // }
+    //Remove the padding and margin to take the whole width
+    // .event-page .event-page-wrapper {
+    //   max-width: 930px;
+    //   margin: 0 auto;
+    //   padding: 0px;
+    // }
+
+    //Set the bio on the right font, color and sizes
+
+    .informative h2 {
+      font-size: 20px;
+      font-family: 'Montserrat';
+      // margin-left: 20px;
+      margin-top: -18px;
+    }
+
+    //Set the bio on the right font, color and sizes
+    .bio-container .text-truncate {
+      font-size: 14px;
+      font-family: 'Inter';
+      // margin-left: 20px;
+      // margin-right: 20px;
+      color: var(--bs-secondary-text);
+      margin-bottom: 4px;
+    }
+
+
+
+    //When small screen the info container became flex and with flex wrap
+     .event-header .title .informative .info {
+      display: flex;
+      flex-wrap: wrap;             /* Allow wrapping of items */
+      align-items: center;         /* Align items vertically centered */
+      justify-content: flex-start;
+      // margin-left: 20px;
+      margin-top: 0px !important;
+      gap: 8px;
+      overflow: hidden;            /* Hide overflowing content */
+      margin: 0px !important;
+      .caption1 {
+        font-size: 12px;
+      }
+      .view-more-mobile {
+        color: var(--bs-primary);
+        div > svg {
+          height: 14px !important;
+        }
+      }
+      .link {
+        height: auto; /* Ensure it inherits height naturally */
+        display: flex;
+        align-items: center;
+      }
+      .item svg {
+        height: 12px !important;
+        margin-left: -5px;
+      }
+    }
+
+
+    .item {
+      flex-shrink: 0;              /* Prevent shrinking of the items */
+    }
+
+    .event-header .links {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  .event-header .bio-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .icon-btn {
+      cursor: pointer;
+       svg {
+        height: 14px;
+        width: 14px;
+      }
+    }
+
+    .bio-modal {
+      position: absolute;
+      left: -130px !important;
+      top: 15px !important;
+      background: var(--bs-secondary);
+      border-radius: 16px;
+      z-index: 1010;
+      padding: 24px;
+      box-shadow: var(--bs-dropshadow);
+      height: auto;
+
+      /* Setting max-width and min-width for shrinking and growing */
+      min-width: 300px !important; /* Minimum width */
+      max-width: 600px !important; /* Maximum width */
+      width: 100% !important; /* Modal will shrink or grow within the limits */
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .body {
+        margin-top: 20px;
+      }
+
+      .links {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          svg {
+            path {
+              fill: var(--bs-inactive-color);
+            }
+          }
+
+          a {
+            color: var(--bs-inactive-color);
+
+            &:hover {
+              color: var(--bs-primary);
+            }
+          }
+        }
+      }
+
+      .tags {
+        display: flex; // Ensure flexbox is enabled
+        flex-wrap: wrap; // Allow items to wrap into the next column
+        flex-direction: row; // Set the main direction to row
+        margin-top: 24px;
+        align-items: center;
+        gap: 16px;
+
+        .tag {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: var(--bs-tag-bg);
+          padding: 3px 8px;
+          border-radius: 25px;
+          .caption1 {
+            color: var(--bs-body-color);
+            font-size: 12px !important;
+            font-weight: 400 !important;
+          }
+        }
+      }
+    }
+  }
+
+
+    //This section shows the mobile scoreboard
+  .game-timeline-header-mobile {
+    background-color: var(--bs-body-bg);
+    // margin-top: 5rem;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 10px;
+    padding-top: 26px;
+
+    .scoreboard {
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: var(--bs-scoreboard-bg);
+      // color: var(--bs-body-color);
+
+      &:not(:has(>.collapse.show)) {
+        .toggler > svg {
+          rotate: -180deg;
+        }
+      }
+
+      .header {
+        background-color: var(--bs-scoreboard-header-bg);
+        padding: 5px 14px !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: var(--bs-body-color);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      // img {
+      //   width: 100%;
+      //   height: 123px;
+      //   object-fit: cover;
+      //   display: block;
+      // }
+
+
+      // .img-expand {
+      //   background: var(--bs-scoreboard-bg);
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   padding: 40px;
+      //   gap: 15px;
+      // }
+    }
+  }
+.maps-wrapper-mobile .map-location-view .map {
+      border-radius: 0px !important;
+    }
+
+
+}

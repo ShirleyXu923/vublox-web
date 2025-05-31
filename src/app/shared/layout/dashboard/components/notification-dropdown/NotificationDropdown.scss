@@ -1,0 +1,86 @@
+.notification-dropdown-container {
+  position: relative;
+
+  .notification-item {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .dropdown {
+    .btn {
+      padding: 0;
+      // background: none;
+      // border: none;
+    }
+
+    .dropdown-menu {
+      padding: 0;
+      width: 360px;
+
+      .b3 {
+        padding: 16px 16px 0 16px;
+      }
+
+      .nav {
+        margin-top: 10px;
+        padding-left: 16px;
+        display: flex;
+        gap: 8px;
+
+        .delete-option {
+          margin-left: auto;
+        }
+
+        .nav-item {
+          padding: 0;
+          cursor: pointer;
+          border-bottom: none !important;
+
+          .nav-link {
+            padding: 3px 12px;
+            border-radius: 18px !important;
+
+            &.active {
+              .tab-active {
+                color: var(--bs-body-bg);
+              }
+            }
+
+            .tab-active {
+              color: var(--bs-modal-body-bg);
+            }
+          }
+        }
+      }
+
+      .tab-content {
+        margin-top: 16px;
+      }
+
+      .view-all {
+        padding: 18px;
+        display: flex;
+        justify-content: center;
+
+        .view-all-link {
+          color: var(--bs-primary);
+        }
+      }
+    }
+
+    &.show {
+      svg>path {
+        stroke: var(--bs-primary);
+      }
+    }
+  }
+
+  .badge {
+    border-radius: 12px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    padding: 1px 5px;
+  }
+}

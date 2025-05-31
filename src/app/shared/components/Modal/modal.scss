@@ -1,0 +1,48 @@
+.custom-modal {
+  max-width: 940px;
+  height: 100vh;
+  display: flex;
+
+  .modal-content {
+    margin: auto;
+    padding: 32px;
+
+    .modal-header {
+      padding: 0;
+    }
+
+    .modal-body {
+      padding: 0;
+      margin-top: 42px;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .close {
+      cursor: pointer;
+    }
+  }
+
+.content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    padding: 32px;
+    background: var(--bs-body-bg);
+    border-radius: 18px;
+    gap: 40px;
+    max-height: 700px;
+    overflow: auto;
+  }
+
+  .input-to-disable {
+    input.form-control, span.input-group-text {
+      background: var(--bs-tertiary-bg);
+    }
+  }
+}

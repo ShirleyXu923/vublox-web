@@ -1,0 +1,22 @@
+.category-footer {
+  position: sticky;
+  width: 100%;
+  border-top: 1px solid var(--bs-tag-bg);
+  background: var(--bs-secondary-bg);
+  bottom: 0;
+  padding: 21px 12px;
+
+  .unverified {
+    color: var(--bs-tag-bg);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.react-select__control+div {
+  position: relative;
+}
+
+.react-select__control {
+  min-height: 56px;
+}

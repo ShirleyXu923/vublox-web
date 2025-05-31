@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.claim-modal {
+  --bs-modal-header-padding: 1.5rem 2rem 1rem;
+  --bs-modal-padding: 0 2rem 1.5rem 2rem;
+
+  @include media-breakpoint-up(md) {
+    --bs-modal-width: 560px;
+  }
+
+  .btn-close {
+    margin-bottom: 0;
+  }
+
+  .modal-body {
+    color: var(--bs-secondary-text) !important;
+
+    .btn-link {
+      text-decoration: underline;
+      padding: 0;
+      padding-bottom: 2px;
+    }
+  }
+}

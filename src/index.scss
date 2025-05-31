@@ -1,0 +1,69 @@
+@import '../src/assets/css/sass/custom/_system-wide.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~react-circular-progressbar/dist/styles.css';
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+
+@import './assets/css/sass/custom/_form.scss';
+@import './assets/css/sass/custom/_button.scss';
+@import './assets/css/sass/custom/_typography.scss';
+@import './assets/css/sass/custom/_badge.scss';
+@import './assets/css/sass/custom/_dropdown.scss';
+@import './assets/css/sass/custom/_datepicker.scss';
+@import './assets/css/sass/custom/_nav.scss';
+@import './assets/css/sass/custom/_alert.scss';
+
+// @import '~react-big-calendar/lib/css/react-big-calendar.css';
+// @import '~react-table/react-table.css';
+// @import './assets/css/sass/themes/gogo.light.green.scss';
+// @import '../node_modules/react-redux-toastr/src/styles/index';
+// @import '~rc-switch/assets/index.css';
+
+html,
+body,
+body > #root,
+body > #root > div,
+body > #root > div > .dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 45px 100px;
+  }
+
+  .dashboard-content {
+    &:has(.full-container) {
+      --bs-gutter-y: 0;
+      --bs-gutter-x: 0;
+    }
+
+    > .container:not(.container2):has(> .full-container) {
+      max-width: 1800px;
+      --bs-gutter-y: 0;
+      --bs-gutter-x: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .main-container {
+      padding: 0;
+
+      .content-loader {
+        // width: 100% !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .main-container {
+      padding: 10px;
+
+      .content-loader {
+        // width: 100% !important;
+      }
+    }
+  }
+}

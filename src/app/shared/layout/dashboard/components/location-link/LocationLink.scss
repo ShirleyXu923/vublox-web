@@ -1,0 +1,9 @@
+.location-link {
+  color: inherit;
+  z-index: 1;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

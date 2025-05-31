@@ -1,0 +1,121 @@
+.item-card {
+  --bs-card-border-width: 0;
+  --bs-card-bg: var(--bs-secondary-bg);
+  --bs-card-border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  .card-img-top {
+    object-fit: contain;
+    background: var(--bs-secondary-bg);
+  }
+
+  & > .image {
+    min-height: 185px;
+    text-align: center;
+
+    span {
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      margin-left: 4px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--bs-body-color);
+    }
+  }
+
+  .card-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+    .owner-section {
+      margin-top: auto;
+    }
+  }
+
+  .card-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--bs-placeholder-color);
+
+    .line {
+      background: var(--bs-placeholder-color);
+      height: 18px;
+      width: 1px;
+    }
+
+    .upvote {
+      cursor: pointer;
+
+      &:hover svg path {
+        fill: var(--bs-primary);
+      }
+    }
+
+    .downvote {
+      cursor: pointer;
+
+      &:hover svg path {
+        fill: var(--bs-danger);
+      }
+    }
+  }
+
+  .event {
+    color: var(--bs-secondary-text);
+
+    .event-icon {
+      flex-shrink: 0;
+      > path {
+        fill: var(--bs-secondary-text);
+      }
+    }
+  }
+
+  .video {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 185px;
+
+    .play-icon {
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+    }
+  }
+
+  .link {
+    color: var(--bs-body-color);
+  }
+
+  .share-icon {
+    margin-top: -2px;
+  }
+}

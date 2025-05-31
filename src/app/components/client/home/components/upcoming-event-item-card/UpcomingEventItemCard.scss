@@ -1,0 +1,49 @@
+.upcoming-event-item-card {
+  --bs-card-border-width: 0;
+  --bs-card-bg: var(--bs-secondary-bg);
+  --bs-card-border-radius: 16px;
+  height: 100%;
+
+  .details {
+    display: flex;
+    align-items: center;
+
+    small {
+      color: var(--bs-secondary-text);
+    }
+  }
+
+  .tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    .badge {
+      font-weight: normal;
+      background-color: var(--bs-tag2-bg) !important;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 15px;
+
+    .btn {
+      > svg > path {
+        fill: var(--bs-primary);
+      }
+      &:hover {
+        svg > path {
+          fill: var(--bs-dark);
+        }
+      }
+    }
+  }
+
+  .link {
+    z-index: 1;
+    position: relative;
+    color: inherit;
+  }
+}

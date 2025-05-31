@@ -1,0 +1,19 @@
+{
+  "label": {
+    "verifyYourAccount": "验证您的帐户",
+    "verifyDescription": "验证电邮已发送至 {email}。如果此电邮地址不正确，请点选{link}。",
+    "verifyDescription2": "点击您在电子邮件中收到的链接来完成注册过程。",
+    "here": "这里",
+    "back": "后退",
+    "verified": "已验证！",
+    "verifiedDescription": "您已成功验证您的 {companyName} 帐户。",
+    "verificationLinkExpired": "电子邮件验证链接已过期",
+    "verificationLinkExpiredDescription": "似乎验证链接已过期。不用担心，我们可以重新发送链接。验证链接将在 24 小时内到期。",
+    "verificationLinkSent": "验证链接已发送。"
+  },
+  "button": {
+    "continue": "继续",
+    "resendVerificationLink": "重新发送验证链接",
+    "goToHome": "返回主页"
+  }
+}

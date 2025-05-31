@@ -1,0 +1,43 @@
+{
+  "label": {
+    "search": "搜索",
+    "filters": "筛选器"
+  },
+  "button": {
+    "create": "创建",
+    "post": "帖子",
+    "event": "事件",
+    "signIn": "登录",
+    "signUp": "注册"
+  },
+  "account": {
+    "label": {
+      "viewProfile": "查看个人资料",
+      "switchAccount": "切换账户",
+      "analytics": "分析",
+      "settings": "设置",
+      "signOut": "登出",
+      "accounts": "账户",
+      "createOrganizationPage": "创建组织页面",
+      "languages": "语文"
+    }
+  },
+  "language": {
+    "title": "选择您的语言",
+    "label": {
+      "language": "语言",
+      "ar": "阿拉伯语 (AR)",
+      "zh-CN": "简体中文 (ZH-CN)",
+      "zh-HK": "繁体中文 (ZH-HK)",
+      "en": "英语 (美国)",
+      "fil": "菲律宾语 (FIL)",
+      "fr": "法语(FR)",
+      "de": "德语 (DE)",
+      "it": "意大利语 (IT)",
+      "jp": "日语 (JP)",
+      "kr": "韩语 (KR)",
+      "ru": "俄语(RU)",
+      "tr": "土耳其语 (TR)"
+    }
+  }
+}

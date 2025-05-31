@@ -1,0 +1,99 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeline-slider {
+  max-width: 940px;
+  height: 60px;
+  background: var(--bs-body-bg);
+
+  @include media-breakpoint-down(md) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .text {
+    white-space: nowrap;
+  }
+
+  .range-slider-container {
+    position: relative;
+
+    > .sliders-control {
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        pointer-events: all;
+        width: 16px;
+        height: 16px;
+        background-color: var(--bs-white);
+        border-radius: 100px;
+        box-shadow: 0 0 0 1px var(--bs-range-slider-bg);
+        cursor: pointer;
+      }
+
+      input[type=range]::-moz-range-thumb {
+        -webkit-appearance: none;
+        pointer-events: all;
+        width: 16px;
+        height: 16px;
+        background-color: var(--bs-white);
+        border-radius: 100px;
+        box-shadow: 0 0 0 1px var(--bs-range-slider-bg);
+        cursor: pointer;
+      }
+
+      input[type=range]::-webkit-slider-thumb:hover {
+        background: #f7f7f7;
+      }
+
+      input[type=range]::-webkit-slider-thumb:active {
+        box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+        -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 6px;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        background-color: var(--bs-range-slider-bg);
+        pointer-events: none;
+      }
+
+      .custom-from-slider {
+        height: 0 !important;
+        z-index: 1;
+      }
+      .custom-to-slider {
+        z-index: 0;
+
+        &.show {
+          z-index: 2;
+        }
+      }
+    }
+
+    .sliders-control:hover + .tooltip {
+      opacity: 1; /* Show the tooltip when slider is hovered */
+    }
+
+    .tooltip {
+      position: absolute;
+      top: -30px; /* Adjust the top position */
+      background-color: rgba(0, 0, 0, 0.8);
+      color: var(--bs-white);
+      padding: 5px;
+      border-radius: 5px;
+      pointer-events: none; /* Ensure the tooltip does not intercept pointer events */
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0; /* Initially hide the tooltip */
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    height: auto !important;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+.vote {
+  flex-shrink: 0;
+  gap: 7px;
+
+  .form-label {
+    color: var(--bs-secondary-text);
+  }
+
+  .btn-link {
+    &:hover {
+      &:not(.down) {
+        svg > path {
+          fill: var(--bs-primary);
+        }
+      }
+
+      svg > path {
+        fill: var(--bs-danger);
+      }
+    }
+  }
+}
+.vote > div {
+  flex-shrink: 0;
+  gap: 5px;
+}
+.vote-divider {
+  border-right: 0.6px solid var(--bs-secondary-text);
+  width: 1px;
+  height: 15px;
+}

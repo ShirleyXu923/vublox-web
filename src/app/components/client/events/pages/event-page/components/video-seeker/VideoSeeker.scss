@@ -1,0 +1,85 @@
+.video-seek-container:not(.sm) {
+  height: 90px;
+}
+.video-seek-container.lg {
+  height: 50px;
+}
+
+.video-seek-container {
+  .ads-container {
+    height: 28px;
+    div .s2 {
+      font-size: 15px ;
+    }
+    &::before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-left: 8px solid var(--bs-primary);
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 0px;
+    }
+
+    > .ads-content {
+      border-bottom-right-radius: 30px;
+      background-color: var(--bs-secondary-bg);
+      width: 100%;
+    }
+  }
+}
+
+
+//Make the video seeker mobile on inside the maps
+.video-seek-slider-mobile {
+  position: sticky; // Change this to sticky if you want it to stay at a certain position while scrolling
+  top: 10px; // Adjust this to position it correctly relative to other elements
+  left: 0;
+  right: 0;
+
+  z-index: 10; // Ensure it's below .fixed-stadium if needed
+
+}
+  .video-seeker-time-slider-info {
+    font-size: 10px !important;
+    line-height: 12px;
+  }
+.ads-wrapper-mobile {
+  width: 100%;           /* Full width of the parent container */
+  // max-width: 1920px;      /* Allow it to grow to the size of larger screens */
+  // min-width: 320px;       /* Ensure minimum width for smaller screens */
+  margin: 0 auto;         /* Center the wrapper */
+  margin-top: -11px;       /* Adjust margin as necessary */
+  padding-top: 0px;
+  background: var(--bs-body-tertiary-bg-dark);
+  div.s2 {
+    font-size: 15px;
+  }
+}
+
+.ads-container-mobile {
+  width: 100%;            /* Take full width of the parent container */
+  height: 28px;           /* Fixed height */
+  position: relative;     /* For positioning ::before element */
+  margin-top: 12px;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 8px solid var(--bs-primary);
+    border-bottom-left-radius: 30px;
+    z-index: 2;           /* Ensure it stays on top of the content */
+  }
+
+  .ads-content-mobile {
+    border-bottom-right-radius: 30px;
+    background-color: var(--bs-secondary-bg);
+    width: 100%;           /* Ensure the content spans the full width of the container */
+    overflow: hidden;       /* Prevent overflow */
+    z-index: 1;             /* Ensure content stays below the pseudo-element */
+  }
+}

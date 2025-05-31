@@ -1,0 +1,60 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+
+.world-event-alert-highlight-mobile {
+  @include media-breakpoint-down(sm) {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    min-height: 71px;
+    padding: 10px;
+    gap: 8px;
+    z-index: 1;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    button {
+      text-wrap: nowrap;
+      width: 118px;
+
+    }
+  }
+}
+
+.map {
+  position: relative;
+
+  :global {
+    .alert-highlight {
+      padding: 12px 18px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+
+    .sticky-map {
+      height: 40vh !important;
+
+      @include media-breakpoint-down(sm) {
+        height: 30vh !important;
+      }
+    }
+  }
+
+  &:global(:has(.sticky-map)) {
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+
+    @include media-breakpoint-down(sm) {
+      top: 80px !important;
+    }
+
+  }
+}

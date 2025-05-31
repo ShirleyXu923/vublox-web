@@ -1,0 +1,32 @@
+{
+  "label": {
+    "editOrganization": "Edit Organization",
+    "details": "Details",
+    "timeline": "Timeline"
+  },
+  "button": {
+    "saveChanges": "Save Changes"
+  },
+  "success": {
+    "updated": "Organization has been updated!"
+  },
+  "timeblocks": {
+    "label": {
+      "addTimeblock": "Add a Time Block",
+      "name": "Name",
+      "bio": "Bio",
+      "logo": "Logo",
+      "coverPhoto": "Cover Photo",
+      "location": "Location"
+    },
+    "success": {
+      "updated": "Organization has been updated!"
+    }
+  },
+  "form": {
+    "label": {
+      "organizationName": "Organization Name",
+      "contactDetails": "Contact Details"
+    }
+  }
+}

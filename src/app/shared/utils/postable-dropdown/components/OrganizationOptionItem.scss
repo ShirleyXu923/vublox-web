@@ -1,0 +1,26 @@
+.organization_option_item {
+  background: var(--bs-tag2-bg);
+  border-radius: 24px;
+  border: none;
+
+  .badge {
+    color: var(--bs-primary);
+    background: var(--bs-badge-bg) !important;
+  }
+
+  .info {
+    color: var(--bs-secondary-text);
+  }
+
+  .btn-clear {
+    background: none;
+    padding: 0;
+    border: none;
+
+    &:hover {
+      background: none;
+      outline: none;
+      border: none;
+    }
+  }
+}

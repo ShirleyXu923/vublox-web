@@ -1,0 +1,38 @@
+.badge-danger {
+  padding: 5px 12px;
+  border-radius: 10px;
+  background: rgba(var(--bs-danger-rgb), 0.1);
+  color: var(--bs-danger);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.badge {
+  &.tag {
+    background-color: var(--bs-tag-bg) !important;
+    font-weight: normal;
+  }
+  &.bg-secondary {
+    --bs-badge-color: var(--bs-body-color);
+  }
+}
+
+.badge.primary2 {
+  color: var(--bs-primary);
+  background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+}
+
+.badge.warning2 {
+  color: var(--bs-warning);
+  background-color: rgba(var(--bs-warning-rgb), 0.1) !important;
+}
+
+.badge.danger2 {
+  color: var(--bs-danger);
+  background-color: rgba(var(--bs-danger-rgb), 0.1) !important;
+}
+
+.badge.success2 {
+  color: var(--bs-success);
+  background-color: rgba(var(--bs-success-rgb), 0.1) !important;
+}

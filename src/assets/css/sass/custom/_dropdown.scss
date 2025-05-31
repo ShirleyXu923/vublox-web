@@ -1,0 +1,14 @@
+.dropdown.show {
+  .btn-dropdown {
+    background: var(--bs-primary);
+    color: var(--bs-dark);
+  }
+}
+
+.dropdown-menu {
+  border-radius: 16px;
+  border-color: transparent;
+  background: var(--bs-secondary-bg);
+  margin-top: 10px;
+  box-shadow: var(--bs-dropshadow);
+}

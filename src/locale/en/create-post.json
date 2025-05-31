@@ -1,0 +1,90 @@
+{
+  "title": "Create a Post",
+  "label": {
+    "title": "Title",
+    "description": "Description",
+    "date": "Start Date",
+    "time": "Time",
+    "follower": "follower",
+    "postable": "Select Event, Organization, Timeline, or Location",
+    "postableDescription": "Enhance the visibility of your post by categorizing them under an event, location, organization, or timeline.",
+    "event": "Event",
+    "location": "Location",
+    "organization": "Organization",
+    "timeline": "Timeline",
+    "events": "Events",
+    "locations": "Locations",
+    "custom_location": "Custom Location",
+    "organizations": "Organizations",
+    "timelines": "Timelines",
+    "mentions": "Mentions",
+    "tags": "Tags",
+    "tagsDescription": "Including irrelevant tags will negatively impact your profile rating.",
+    "verified": "Verified",
+    "unverifed": "Unverified",
+    "enableGpsLocation": "Enable GPS Location",
+    "enableLocation": "Please enable GPS location to verify your post's authenticity and credibility. This will mark your post as “Verified” and increase its trustworthiness. Adjusting the location pin manually or declining GPS access will keep your post unverified.",
+    "emptyResults": "No results to show.",
+    "capturedDescription": "When was this post captured?",
+    "organizedBy": "Organized by",
+    "transcoding": "Transcoding",
+    "postDescription": "This post will automatically appear on your profile.",
+    "enterPostTitle": "Enter post title",
+    "describeWhatYourPostIsAbout": "Describe what your post is about",
+    "postType": "Post Type",
+    "active": "I was there",
+    "historical": "Contributing to History",
+    "searchEvents": "Search Events",
+    "searchOrganizations": "Search Organizations",
+    "searchTimelines": "Search Timelines",
+    "searchLocations": "Search Locations",
+    "postWithoutContent": "A post must include at least one of the following elements: a descriptive text, an embedded link, or an attachment.",
+    "suggested": "Suggested",
+    "followers": "followers",
+    "posts": "posts",
+    "suitableFor18PlusAlert": "Please mark content as 18+ if needed. Failure to do so may lower your rating. Posts violating our {termsLink} may result in account blocking.",
+    "suitableFor18Plus": "Suitable for 18+ only",
+    "dontShowAgain": "Don't show again",
+    "termsAndCondition": "Terms and Condition",
+    "userNotAdult": "Users must be at least 18 years old to create a post containing a video or image.",
+    "noAvailableProfile": "No Profile Provided",
+    "dontShowToolTipTitle": "Hide Adult Content Warning",
+    "dontShowToolTipContent": "Once removed, this message won’t appear again. Are you sure you want to hide it?",
+    "warningTitle": "Creating Post",
+    "processingMetadataWarning": "You are about to leave this page, but your form has not been submitted yet. Any unsaved changes may be lost. Do you want to continue?"
+  },
+  "placeholder": {
+    "mentions": "Enter Mentions...",
+    "tags": "Enter Tags..."
+  },
+  "success": {
+    "createPost": "Post successfully created."
+  },
+  "button": {
+    "next": "Next",
+    "createPost": "Create Post",
+    "upload": "Upload",
+    "capture": "Capture",
+    "embedLink": "Embed Link",
+    "enableLocation": "Enable Location",
+    "marker": "Tap and hold to move",
+    "useCurrentLocation": "Use My Current Location",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "processingMetadata": "Processing ...",
+    "stay": "Stay on Page",
+    "leave": "Leave Anyway"
+  },
+  "embedLink": {
+    "title": "Embed Link",
+    "label": {
+      "url": "URL"
+    },
+    "button": {
+      "save": "Save"
+    }
+  },
+  "toast": {
+    "noMediaInfo": "Your browser is not supported for metadata processing."
+  }
+}

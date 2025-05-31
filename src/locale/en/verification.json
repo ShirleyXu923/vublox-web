@@ -1,0 +1,19 @@
+{
+  "label": {
+    "verifyYourAccount": "Verify your Account",
+    "verifyDescription": "Verification email has been sent to {email}. If this email address is incorrect, please {link}.",
+    "verifyDescription2": "Click on the link that you have received in the email to finish signing up.",
+    "clickHere": "click here",
+    "back": "Back",
+    "verified": "Verified!",
+    "verifiedDescription": "You have successfully verified your {companyName} account.",
+    "verificationLinkExpired": "Email verification link expired",
+    "verificationLinkExpiredDescription": "Looks like the verification link has expired. Not to worry, we can resend the link. Verification link will expire in 24 hours.",
+    "verificationLinkSent": "Verification link sent."
+  },
+  "button": {
+    "continue": "Continue",
+    "resendVerificationLink": "Resend Verification Link",
+    "goToHome": "Go to Home"
+  }
+}

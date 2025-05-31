@@ -1,0 +1,15 @@
+{
+  "label": {
+    "followers": "followers",
+    "posts": "posts",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "viewInWorldEvents": "View in World View",
+    "share": "Share",
+    "upcoming": "This is an Upcoming Feature"
+  },
+  "success": {
+    "followed": "Location followed successfully",
+    "unfollowed": "Location unfollowed successfully"
+  }
+}

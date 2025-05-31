@@ -1,0 +1,24 @@
+{
+  "label": {
+    "viewMore": "View More",
+    "viewLess": "View Less",
+    "share": "Share",
+    "details": "Details",
+    "comments": "Comments",
+    "location": "Location",
+    "categorizeUnder": "Categorized Under",
+    "mentions": "Mentions",
+    "tags": "Tags",
+    "shareYourThoughts": "Share your thoughts...",
+    "cancel": "Cancel",
+    "comment": "Comment",
+    "commentedSuccess": "Commented Successfully",
+    "votedSuccess": "Voted Successfully",
+    "upcoming": "This is an Upcoming Feature",
+    "report": "Report",
+    "historical": "Historical",
+    "contributedOn": "Contributed on {date}",
+    "happenedOn": "Happened on {date}",
+    "views": "view"
+  }
+}

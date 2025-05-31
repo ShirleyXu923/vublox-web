@@ -1,0 +1,22 @@
+{
+  "title": "Search results for {keyword}",
+  "label": {
+    "select": "Select",
+    "all": "All",
+    "events": "Events",
+    "posts": "Posts",
+    "timelines": "Timelines",
+    "organizations": "Organizations",
+    "profiles": "Profiles",
+    "empty": "No results found.",
+    "results": "Results",
+    "locations": "Locations",
+    "users": "Users",
+    "categories": "Categories",
+    "sports": "Sports",
+    "entertainment": "Entertainment",
+    "historical": "Historical",
+    "technology": "Technology",
+    "NoOptionsSelected": "To search, select an option or category to the left."
+  }
+}

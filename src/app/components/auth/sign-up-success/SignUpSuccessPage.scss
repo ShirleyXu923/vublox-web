@@ -1,0 +1,28 @@
+.sign-up-success {
+  height: 100vh;
+
+  .accent {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    border-radius: 875px;
+    opacity: 0.9;
+    background: var(--bs-auth-bg);
+    filter: blur(250px);
+    z-index: -1;
+
+    &.left {
+      top: -50%;
+      left: -50%;
+    }
+
+    &.right {
+      bottom: -50%;
+      right: -50%;
+    }
+  }
+
+  p {
+    color: var(--bs-secondary-text);
+  }
+}

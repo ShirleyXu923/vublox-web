@@ -1,0 +1,32 @@
+.not-found-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .accent {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    border-radius: 875px;
+    opacity: 0.9;
+    background: var(--bs-auth-bg);
+    filter: blur(250px);
+    z-index: -1;
+
+    &.left {
+      top: -50%;
+      left: -50%;
+    }
+
+    &.right {
+      bottom: -50%;
+      right: -50%;
+    }
+  }
+
+  .title2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+  }
+}

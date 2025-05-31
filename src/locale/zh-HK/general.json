@@ -1,0 +1,132 @@
+{
+  "copyright": "Gogo React ©️ 2018 All Rights Reserved.",
+  "table": {
+    "display_options": {
+      "title": "點擊這裏顯示選項",
+      "label": "顯示選項"
+    },
+    "placeholder": {
+      "search": "搜索"
+    },
+    "showing_data_entries": "顯示:from 到 :to :to of 所有條目"
+  },
+  "button": {
+    "cancel": {
+      "title": "點擊以取消",
+      "name": "取消"
+    },
+    "confirm": {
+      "title": "點擊以確認",
+      "name": "確認"
+    },
+    "save": {
+      "title": "點擊以儲存",
+      "name": "儲存"
+    },
+    "submit": {
+      "title": "點擊以提交",
+      "name": "提交"
+    },
+    "update": {
+      "title": "點擊以更新",
+      "name": "更新"
+    },
+    "add": {
+      "title": "點擊以新增",
+      "name": "新增"
+    },
+    "edit": {
+      "title": "點擊以編輯此記錄",
+      "name": "編輯"
+    },
+    "view": {
+      "title": "點擊以查看此記錄",
+      "name": "查看"
+    },
+    "delete": {
+      "title": "點擊以删除此記錄",
+      "name": "删除"
+    },
+    "go_home": {
+      "title": "點擊以返回主頁。",
+      "name": "返回主頁"
+    },
+    "back": "後退",
+    "share": "分享"
+  },
+  "error": {
+    "invalid_credentials": {
+      "title": "登錄失敗",
+      "message": "您的電郵地址和/或密碼不匹配。"
+    },
+    "throttle": {
+      "title": "嘗試次數太多了",
+      "message": "您請求的速度太快。您已被屏蔽了一段時間。請稍後再試。"
+    },
+    "invalid_request": {
+      "title": "無效請求",
+      "message": "無效請求。請重試。"
+    },
+    "establish_connection": {
+      "title": "連接錯誤",
+      "message": "我們無法與伺服器建立連線。請檢查您的網路連線或與管理員聯絡。"
+    },
+    "internal_server": {
+      "title": "伺服器內部錯誤",
+      "message": "我們目前無法處理您的請求。請稍後再試或聯絡管理員。"
+    },
+    "validation": {
+      "title": "驗證錯誤",
+      "message": "提供的數據有一些錯誤。請檢查字段。"
+    },
+    "default": {
+      "title": "錯誤",
+      "message": "您的请求有问题。请重试。"
+    },
+    "local_storage": {
+      "title": "應用程式錯誤",
+      "message": "我們偵測到您的瀏覽器不支援我們的一些功能。如果您處於隱身狀態，請使用正常模式或我們建議在Chrome瀏覽器中使用我們的應用程式。"
+    },
+    "firebase_support": {
+      "title": "不支援通知",
+      "message": "除了真正的通知外，一切都將同樣有效。如果您想要收到通知，我們建議您更新您的瀏覽器，或者我們建議使用Chrome瀏覽器"
+    },
+    "not_found": {
+      "title": "找不到頁面",
+      "message": "我們找不到您想要的東西。請聯絡我們以提供更好的協助。"
+    },
+    "file_too_large": "上傳的圖片超出了 {fileSizeLimit} 的大小限制。",
+    "file_type_invalid": "上傳的圖像格式無效。"
+  },
+  "validation": {
+    "no_email": "請輸入您的電郵地址",
+    "invalid_email": "無效的電郵地址",
+    "no_password": "請輸入您的密碼",
+    "invalid_password": "必須至少 3 個字符",
+    "required": "此欄位是必填項"
+  },
+  "upload": {
+    "title": "上傳文件",
+    "file": "文件",
+    "addFile": "新增文件",
+    "addFileSubTitle": "或丟棄要上傳的文件",
+    "checkboxDescription": "覆蓋任何目前有相同句柄的產品。現有值將用於任何缺少的列。",
+    "uploaded": "上傳完成",
+    "uploadProgress": ":load%",
+    "uploadProcess": "正在處理 :type",
+    "uploadFailed": "上傳失敗",
+    "success": {
+      "title": "上傳完成",
+      "message": "成功上傳文件。"
+    },
+    "dropzone": "點擊上傳",
+    "replace": "取代",
+    "filename": "文件名"
+  },
+  "placeholder": {
+    "search": "搜索"
+  },
+  "filter": {
+    "customDateRange": "自訂日期範圍"
+  }
+}

@@ -1,0 +1,15 @@
+//Container behind the x button in tags
+.tags-input-dark-circle-container {
+    background-color: var(--bs-secondary-dark);
+    border-radius: 100%;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+}

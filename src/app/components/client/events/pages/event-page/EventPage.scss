@@ -1,0 +1,669 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@mixin hide-and-show-button-styles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  gap: 8px;
+  text-decoration: none !important;
+  font-size: 14px;
+  color: var(--bs-white) !important; /* Custom text color */
+  background-color: var(--bs-primary) !important;
+  font-weight: 700;
+
+  svg {
+    color: var(--bs-body) !important;
+    width: 20px;
+    height: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 10px;
+    padding: 10px;
+    height: 20px;
+    width: 85px;
+    gap: 8px;
+    border-radius: 8px;
+
+    svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+.event-page {
+  .event-page-placeholder {
+    max-width: 930px;
+  }
+
+  .event-page-wrapper {
+    margin: 0 auto;
+
+    .private {
+      margin-top: 76px;
+
+      .b1 {
+        margin-top: 40px;
+        color: var(--bs-secondary-text);
+      }
+    }
+  }
+  .map, .event-apple-map  {
+    position: relative;
+
+    .venue-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--bs-tertiary-bg);
+      color: var(--bs-secondary-text);
+    }
+
+    .btn-refresh-game-format {
+      position: absolute;
+      right: 70px;
+      bottom: 20px;
+      display: flex;
+      height: 30px;
+      width: 134px;
+      padding: 14px 24px 14px 28px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      @include media-breakpoint-down(sm) {
+        right: 16px;
+        bottom: 120px;
+        width: 24px;
+        height: 24px;
+        padding: 11px 0px;
+        gap: 6px;
+        border-radius: 8px;
+      }
+    }
+     .custom-apple-zoom-control {
+        padding: 0;
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        right: 30px;
+        bottom: 20px;
+        display: flex;
+        width: 24px;
+        height: 48px;
+        background: var(--bs-secondary-bg) !important;
+        visibility: hidden;
+        @include media-breakpoint-down(sm) {
+          right: 16px;
+          bottom: 155px;
+        }
+        .divider {
+          width: 24px;
+          height: 1px !important;
+          background-color:  var(--bs-disabled-bg);
+          visibility: visible;
+
+        }
+         button {
+          padding: 0;
+          display: flex;
+          width: 24px;
+          height: 24px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          visibility: visible;
+          svg {
+            display: flex;
+            width: 14px;
+            height: 14px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+          }
+
+          &:first-child {
+            border-radius: 6px 6px 0px 0px; /* Top rounded corners for the first button */
+          }
+
+          &:last-child {
+            border-radius: 0px 0px 6px 6px; /* Bottom rounded corners for the second button */
+          }
+        }
+    }
+  }
+  /* Define the initial and scrolled states */
+  .top-navigation .top-nav {
+    transition: transform 0.5s ease; /* Apply transition effect */
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .top-navigation.top {
+    > .top-nav {
+      transform: translateY(0); /* Initial state (visible) */
+      // transition: height 0.5s ease;
+    }
+  }
+  .top-navigation.scrolled {
+    > .top-nav {
+      transform: translateY(-100%); /* Scrolled state (hidden) */
+    }
+  }
+  .hide-and-show-button-stadium {
+    @include hide-and-show-button-styles;
+    &.absolute {
+      position: absolute;
+      left: 12px;
+      z-index: 1020;
+      margin-left: 0px !important;
+      margin-top: 12px;
+    }
+    &.fixed {
+     @include media-breakpoint-down(sm) {
+       margin-left: 12px !important;
+      }
+    }
+  }
+  .hide-and-show-button-stadium-for-fixed-maps {
+    @include hide-and-show-button-styles;
+
+    position: absolute;
+    left: 20px;
+    z-index: 1010;
+    margin-top: 12px;
+    @include media-breakpoint-down(sm) {
+      left: 12px;
+    }
+  }
+   //Removing the zool control and the google maps icon logo on the EVENT PAGE only and small screen
+  a[href^="http://maps.google.com/maps"],
+  a[href^="https://maps.google.com/maps"],
+  a[href^="https://www.google.com/maps"] {
+      display: none !important;
+  }
+  #map > div > div > div.gm-style > div:nth-child(16) > div {
+        display: none !important;
+      }
+  div.gm-style > div:nth-child(13) > div > div > div > button:nth-child(1),
+  div.gm-style > div:nth-child(13) > div > div > div > button:nth-child(3) {
+    height: 24px !important;
+    width: 24px !important;
+    position: relative; /* Ensure proper positioning for pseudo-element */
+    visibility: visible;
+
+  }
+  /* Set the container divider size and background */
+  div.gm-style > div:nth-child(13) > div > div > div > div {
+    width: 24px !important;
+    height: 1px !important;
+    margin: 0px !important;
+    background: var(--bs-disabled-bg) !important;
+    visibility: visible;
+  }
+    /* Button 1 - Specific border-radius and SVG */
+  div.gm-style > div:nth-child(13) > div > div > div > button:nth-child(1) {
+    border-radius: 6px 6px 0px 0px !important;
+
+    /* Remove the image inside the button (if any) */
+    img {
+      display: none;
+    }
+
+    /* Use ::before to add the SVG */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 14px;
+      background: url('data:image/svg+xml,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M3.5%207H10.5%22%20stroke%3D%22%239AAEC7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%2F%3E%3Cpath%20d%3D%22M7%2010.5V3.5%22%20stroke%3D%22%239AAEC7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%2F%3E%3C%2Fsvg%3E') no-repeat center center;
+      background-size: contain;
+    }
+  }
+    /* Button 3 - Specific border-radius and SVG */
+  div.gm-style > div:nth-child(13) > div > div > div > button:nth-child(3) {
+    border-radius: 0px 0px 6px 6px !important;
+
+    /* Remove the image inside the button (if any) */
+    img {
+      display: none;
+    }
+
+    /* Use ::before to add the SVG */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M3.5%207H10.5%22%20stroke%3D%22%239AAEC7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+      position: absolute;
+      bottom: 58px !important;
+      right: 40px !important;
+      margin: 0; /* Remove any margin that might interfere */
+      z-index: 1; /* Ensure the controls stay above the map elements */
+
+      @include media-breakpoint-down(sm){
+        bottom: 195px !important;
+        right: 30px !important;
+      }
+      div {
+        background: var(--bs-disabled-bg)!important;
+      }
+      .gm-control-active {
+        background: var(--bs-secondary) !important;
+        border-radius: 5px;
+      }
+  }
+  
+  #map > div > div > div.gm-style > div:nth-child(13) > div > div {
+      visibility: hidden;
+  }
+
+  .xs {
+    --bs-gutter-x: 1.5rem;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    > .map {
+      width: 100vw !important;
+      margin-left: 50% !important;
+      transform: translateX(-50%);
+    }
+
+
+    // When there is **no** .scoreboard element present
+    @at-root .event-page-wrapper:not(:has(.scoreboard)) {
+      > .fixed-stadium {
+        top: 0px !important;  // Adjust top position when no scoreboard is present
+        padding-top: 10px !important;
+        padding-bottom: 5px !important;
+      }
+    }
+
+    // When .scoreboard is present but not expanded (i.e., no .collapse.show)
+    @at-root .event-page-wrapper:has(.scoreboard):not(:has(.scoreboard .collapse.show)) {
+      > .fixed-stadium {
+        top: 65px !important;  // Adjust when the scoreboard is not expanded
+        padding-top: 10px !important;
+      }
+    }
+
+    // When .scoreboard is present and **is expanded** (i.e., .collapse.show exists)
+    @at-root .event-page-wrapper:has(.scoreboard .collapse.show) {
+      > .fixed-stadium {
+        top: 185px !important;  // Adjust top position when the scoreboard is expanded
+        padding-top: 10px !important;
+      }
+    }
+
+    // Default state when .scoreboard is present
+    @at-root .event-page-wrapper:has(.scoreboard) {
+      > .fixed-stadium {
+        top: 170px !important;  // Adjust as necessary
+        padding-top: 10px !important;
+      }
+    }
+
+
+
+    background-color: var(--bs-body-bg);
+
+    &.xs {
+      --bs-gutter-x: 3rem;
+    }
+
+    //On default on mobile devices the stadium will be under the scoreboard
+    @include media-breakpoint-down(sm){
+      margin-top: 0px;
+      top: 50px;
+      padding-bottom: 0px !important;
+      width: 100vw !important;
+      margin-left: 50% !important;
+      transform: translateX(-50%);
+      // .location-container {
+      //   margin-left: -25px !important;
+      //   padding-left: 25px;
+      //   margin-right: -25px !important;
+      //   padding-right: 25px;
+      //   background: var(--bs-body-bg);
+      //   width: 100vw;
+      //   max-width: 100vw !important;
+      // }
+
+      // If no scoreboard exists at all
+      @at-root .event-page-wrapper:not(:has(.scoreboard)) {
+        > .fixed-stadium {
+          top: 0px !important;  // Set to 10px when scoreboard is not present
+          padding-top: 10px !important;
+        }
+      }
+
+      // On small screens, adjust the stadium when the scoreboard is expanded
+      @at-root .event-page-wrapper:has(.scoreboard .collapse.show) {
+        > .fixed-stadium {
+          // margin-top: 15px !important; // Adjust as necessary
+          top: 185px !important;       // Adjust as necessary
+          padding-top: 10px !important;
+        }
+      }
+
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .react-transform-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .stadium-gap-view {
+      padding-bottom: 0px;
+    }
+    .fixed-stadium .map {
+      position: sticky;
+      width: 100%;
+    }
+    .fixed-stadium {
+      padding-bottom: 0px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .fixed-stadium {
+      padding-bottom: 15px;
+    }
+    .stadium-gap-view {
+      padding-bottom: 350px;
+    }
+
+    .map {
+      height: 350px;
+    }
+  }
+
+  .location-container {
+    min-height: 160px;
+    position: relative;
+
+    .video__seeker {
+      overflow: hidden;
+      padding: 10px 0;
+    }
+
+    .event-apple-map {
+      height: 500px;
+      width: 100%;
+
+      // .syrup-canvas {
+      //   border-radius: 16px !important;
+      // }
+    }
+
+    .stadium-img {
+      border-radius: 18px;
+    }
+
+    .map {
+      pointer-events: auto !important;
+      // border-radius: 15px;
+      overflow: hidden;
+    }
+
+    @include media-breakpoint-up(xl) {
+      .map, .event-apple-map {
+        height: calc(100vh - 180px);
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      .map, .event-apple-map {
+        height: 523px;
+        width: 100%;
+      }
+    }
+
+    .controls {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        border-radius: 6px;
+        font-weight: normal;
+        background: var(--bs-tag-bg);
+        border: var(--bs-tag-bg);
+        color: var(--bs-primary);
+        margin-bottom: 1px;
+
+        &:first-child {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        &:nth-child(2) {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+    }
+  }
+
+  .alert-info {
+    background-color: var(--bs-secondary-bg);
+    border-radius: 100px;
+    color: var(--bs-secondary-text);
+    width: fit-content;
+    padding: 4px 8px;
+  }
+
+  &:has(.game-mode) {
+    .timeline-slider {
+      height: auto;
+    }
+  }
+
+  .range-slider-container {
+    position: relative;
+
+    > .sliders-control {
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        pointer-events: all;
+        width: 16px;
+        height: 16px;
+        background-color: var(--bs-white);
+        border-radius: 100px;
+        box-shadow: 0 0 0 1px var(--bs-range-slider-bg);
+        cursor: pointer;
+      }
+
+      input[type=range]::-moz-range-thumb {
+        -webkit-appearance: none;
+        pointer-events: all;
+        width: 16px;
+        height: 16px;
+        background-color: var(--bs-white);
+        border-radius: 100px;
+        box-shadow: 0 0 0 1px var(--bs-range-slider-bg);
+        cursor: pointer;
+      }
+
+      input[type=range]::-webkit-slider-thumb:hover {
+        background: #f7f7f7;
+      }
+
+      input[type=range]::-webkit-slider-thumb:active {
+        box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+        -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 6px;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        background-color: var(--bs-range-slider-bg);
+        pointer-events: none;
+      }
+
+      .custom-from-slider {
+        height: 0 !important;
+        z-index: 1;
+      }
+      .custom-to-slider {
+        z-index: 0;
+
+        &.show {
+          z-index: 2;
+        }
+      }
+    }
+
+    .sliders-control:hover + .tooltip {
+      opacity: 1; /* Show the tooltip when slider is hovered */
+    }
+
+    .tooltip {
+      position: absolute;
+      top: -30px; /* Adjust the top position */
+      background-color: rgba(0, 0, 0, 0.8);
+      color: var(--bs-white);
+      padding: 5px;
+      border-radius: 5px;
+      pointer-events: none; /* Ensure the tooltip does not intercept pointer events */
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0; /* Initially hide the tooltip */
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    overflow: clip;
+
+    .timeline-map {
+      top: 65px;
+    }
+
+    .map {
+        height: 214px !important;
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+
+      // .gm-bundled-control .gmnoprint {
+      //     display: block;
+      //     position: absolute;
+      //     left: 0px;
+      //     top: -100px;
+
+      // }
+      // .gmnoprint:not(.gm-bundled-control) {
+      //     display: none;
+      // }
+      .ads-wrapper-custom-width {
+        width: 93%;
+      }
+
+    .location-container {
+      .video__seeker {
+        padding: 3px 0;
+      }
+    }
+  }
+
+  :has(.scoreboard) {
+    .resizable-timeline {
+      .left-column {
+        top: 72px;
+
+        @include media-breakpoint-down(sm) {
+          top: 68px;
+        }
+      }
+    }
+  }
+
+  :has(.scoreboard .collapse.show) {
+    .resizable-timeline {
+      .left-column {
+        top: 250px;
+
+        @include media-breakpoint-down(xl) {
+          top: 240px;
+        }
+
+        @include media-breakpoint-down(md) {
+          top: 240px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    :has(.scoreboard .collapse.show) {
+      .timeline-header-filters {
+        top: 240px;
+      }
+    }
+
+    :has(.scoreboard) {
+      .timeline-header-filters {
+        top: 62px;
+      }
+    }
+
+    .resizable-timeline {
+      width: calc(100vw - 15px);
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // @include media-breakpoint-between(xl, md) {
+  //   :has(.scoreboard) {
+  //     .timeline-header-filters {
+  //       top: calc(40vh + 220px);
+  //     }
+  //   }
+  // }
+
+  // @include media-breakpoint-down(sm) {
+  //   :has(.scoreboard) {
+  //     .resizable-timeline {
+  //       .left-column {
+  //         top: 68px;
+  //       }
+  //     }
+  //   }
+  // }
+}

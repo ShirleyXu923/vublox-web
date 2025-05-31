@@ -1,0 +1,105 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.landing-page {
+  font-size: 14px;
+
+  h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  .email-input-group {
+    width: 40%;
+
+    > .form-control {
+      padding: 0.7rem 0.8rem;
+      font-size: 0.875rem;
+      border-radius: 16px;
+    }
+
+    > .btn {
+      padding: 0.7rem 2rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  .accent {
+    background: #003D45;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    filter: blur(250px);
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+
+    &.right {
+      right: -20px;
+      bottom: -180px;
+    }
+
+    &.left {
+      left: -20px;
+      bottom: -180px;
+    }
+  }
+
+  .card-benefit {
+    background: var(--bs-body-bg);
+    padding: 25px;
+    margin: 8px 10px;
+    border-radius: 12px;
+  }
+
+  .overview {
+    background: var(--bs-body-bg);
+
+    hr {
+      background-color: var(--bs-white);
+      position: absolute;
+      width: 100%;
+      top: 2px
+    }
+  }
+
+  .card-overview {
+    background: var(--bs-footer-bg);
+    padding: 25px 15px;
+    margin: 5px 10px;
+    border-radius: 12px;
+    min-height: 200px;
+
+    h1 {
+      color: var(--bs-placeholder-color);
+    }
+  }
+
+  .card-form {
+    background-color: var(--bs-footer-bg);
+  }
+
+  .btn-main {
+    width: 25%;
+  }
+
+  p, .title {
+    width: 50%;
+  }
+
+  @include media-breakpoint-down(md) {
+    .card-benefit {
+      min-height: 220px;
+    }
+
+    .card-benefit, .card-overview {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .btn-main, p, .title {
+      width: 75%;
+    }
+  }
+}

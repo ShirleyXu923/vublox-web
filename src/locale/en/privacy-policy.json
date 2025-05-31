@@ -1,0 +1,618 @@
+{
+  "title": "Privacy Policy",
+  "label": {
+    "effectiveDate": "Effective Date: {date}"
+  },
+  "sections": [
+    {
+      "title": "Introduction",
+      "description": "Vublox Limited (“Vublox,” “we,” “our,” or “us”) is committed to protecting your privacy and ensuring that your personal data is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use our website, mobile applications, and other services (collectively referred to as the “Platform”).\n\nThis Privacy Policy applies to all users of the Platform, including visitors, registered users, and contributors of content. By accessing or using the Platform, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Platform.\n\nVublox is committed to complying with applicable privacy laws, including the Personal Data (Privacy) Ordinance (PDPO) in Hong Kong, the General Data Protection Regulation (GDPR) in the European Union, and the California Consumer Privacy Act (CCPA) in the United States. We also ensure compliance with Google AdMob’s privacy and data protection requirements."
+    },
+    {
+      "title": "Definitions",
+      "description": "For the purposes of this Privacy Policy, the following definitions shall apply:",
+      "items": [
+        {
+          "title": "“Personal Data”:",
+          "description": "Any information that relates to an identified or identifiable individual, such as a name, email address, IP address, or any other data that can be used to identify a person"
+        },
+        {
+          "title": "“Processing”:",
+          "description": "Any operation or set of operations performed on Personal Data, whether by automated means or not, including collection, storage, use, disclosure, and deletion."
+        },
+        {
+          "title": "“Data Controller”:",
+          "description": "The entity that determines the purposes and means of processing Personal Data. For the purposes of this Privacy Policy, Vublox is the Data Controller."
+        },
+        {
+          "title": "“User”:",
+          "description": "Any individual who accesses, uses, or interacts with the Platform."
+        },
+        {
+          "title": "“Third-Party Service Providers”:",
+          "description": "External entities that assist Vublox in operating the Platform, providing services, or performing functions on our behalf, such as hosting, data analysis, marketing, and payment processing."
+        },
+        {
+          "title": "“Cookies”:",
+          "description": "Small text files that are stored on a user’s device when they visit a website, which can be used to recognize the user on subsequent visits and track their behavior."
+        }
+      ]
+    },
+    {
+      "title": "Data Collection",
+      "description": "Vublox collects various types of Personal Data from users, which may include:",
+      "items": [
+        {
+          "title": "Usage Data:",
+          "description": "Information about how you use the Platform, including your interactions, preferences, and content viewed or shared. "
+        },
+        {
+          "title": "Technical Data:",
+          "description": "Information related to the device and software you use to access the Platform, such as IP address, browser type, operating system, and device identifiers."
+        },
+        {
+          "title": "Location Data:",
+          "description": "Information about your location, which may be collected through GPS, Wi-Fi, or other technologies if you grant permission. "
+        },
+        {
+          "title": "Cookies and Tracking Data:",
+          "description": "Information collected through cookies and similar tracking technologies, which may include browsing history, click patterns, and interaction data."
+        }
+      ],
+      "footer": "Vublox may collect this data directly from you, automatically when you use the Platform, or from third parties such as social media platforms, advertising networks, or other partners."
+    },
+    {
+      "title": "Legal Basis for Processing",
+      "description": "Vublox processes Personal Data under various legal bases, depending on your location and the nature of the data processing:",
+      "items": [
+        {
+          "title": "Consent:",
+          "description": "We may process your Personal Data based on your explicit consent, which you may provide when you register for an account, subscribe to newsletters, or agree to personalized ads."
+        },
+        {
+          "title": "Contractual Necessity:",
+          "description": "We process Personal Data when it is necessary to perform a contract with you, such as providing access to the Platform or fulfilling your requests."
+        },
+        {
+          "title": "Legal Obligations:",
+          "description": "Vublox may process Personal Data to comply with legal obligations, such as regulatory requirements, court orders, or data protection laws."
+        },
+        {
+          "title": "Legitimate Interests:",
+          "description": "We may process your Personal Data when it is in our legitimate interest to do so, provided that this interest is not overridden by your rights and freedoms. This includes improving our services, enhancing user experience, and conducting analytics."
+        }
+      ]
+    },
+    {
+      "title": "Use of Personal Data",
+      "description": "Vublox uses the Personal Data collected from users for the following purposes:",
+      "items": [
+        {
+          "title": "Service Provision:",
+          "description": "To operate, maintain, and improve the Platform, including providing access to features, content, and services."
+        },
+        {
+          "title": "Personalization:",
+          "description": "To personalize your experience on the Platform, including customizing content, recommendations, and advertisements based on your preferences and behavior."
+        },
+        {
+          "title": "Marketing and Communication:",
+          "description": "To send you promotional messages, newsletters, and other information that may be of interest to you, with your consent where required by law."
+        },
+        {
+          "title": "Analytics and Research:",
+          "description": "To analyze usage patterns, trends, and user behavior to improve the Platform and develop new features and services."
+        },
+        {
+          "title": "Security and Fraud Prevention:",
+          "description": "To protect the Platform and its users from security threats, fraud, and other malicious activities."
+        },
+        {
+          "title": "Legal Compliance:",
+          "description": "To comply with applicable laws, regulations, and legal processes, including responding to requests from law enforcement or regulatory authorities."
+        }
+      ]
+    },
+    {
+      "title": "Use of Personal Data",
+      "description": "Vublox uses the Personal Data collected from users for the following purposes:",
+      "items": [
+        {
+          "title": "Service Provision:",
+          "description": "To operate, maintain, and improve the Platform, including providing access to features, content, and services."
+        },
+        {
+          "title": "Personalization:",
+          "description": "To personalize your experience on the Platform, including customizing content, recommendations, and advertisements based on your preferences and behavior."
+        },
+        {
+          "title": "Marketing and Communication:",
+          "description": "To send you promotional messages, newsletters, and other information that may be of interest to you, with your consent where required by law."
+        },
+        {
+          "title": "Analytics and Research:",
+          "description": "To analyze usage patterns, trends, and user behavior to improve the Platform and develop new features and services."
+        },
+        {
+          "title": "Security and Fraud Prevention:",
+          "description": "To protect the Platform and its users from security threats, fraud, and other malicious activities."
+        },
+        {
+          "title": "Legal Compliance:",
+          "description": "To comply with applicable laws, regulations, and legal processes, including responding to requests from law enforcement or regulatory authorities."
+        }
+      ],
+      "footer": "Vublox also integrates Google AdMob to display advertisements on the Platform. The use of Personal Data in connection with AdMob is further detailed in Section 6."
+    },
+    {
+      "title": "Ad Integration and Compliance",
+      "description": "Vublox integrates Google AdMob to serve ads on the Platform, and we are committed to complying with all applicable privacy and data protection regulations, including those imposed by Google AdMob.",
+      "items": [
+        {
+          "title": "Data Processing for Ads:",
+          "description": "Vublox may collect and process Personal Data, including device identifiers, location data, and browsing history, to serve relevant ads through Google AdMob. This data is used to personalize ad experiences and optimize ad performance."
+        },
+        {
+          "title": "User Consent:",
+          "description": "In accordance with GDPR, CCPA, and other relevant laws, Vublox obtains user consent before processing Personal Data for personalized ads. Users can manage their consent preferences and opt-out of personalized ads at any time."
+        },
+        {
+          "title": "Ad Placement and Content Compliance:",
+          "description": "Vublox ensures that ads are placed in a manner that complies with Google AdMob’s policies, including guidelines on ad placement and content. Ads will not be displayed on content that violates AdMob’s content policies, such as adult content or copyrighted material."
+        },
+        {
+          "title": "Third-Party Data Sharing:",
+          "description": "Vublox may share Personal Data with Google AdMob and other third-party advertising partners as necessary to deliver targeted ads. All third-party data sharing complies with relevant legal requirements and data protection standards."
+        }
+      ]
+    },
+    {
+      "title": "User Consent",
+      "description": "User consent is a fundamental aspect of Vublox’s data processing practices. We ensure that users are informed and empowered to make decisions about their Personal Data.",
+      "items": [
+        {
+          "title": "Obtaining Consent:",
+          "description": "Vublox obtains explicit consent from users before processing their Personal Data for specific purposes, such as personalized advertising, email marketing, and location tracking. Consent is obtained through clear, unambiguous consent forms or opt-in mechanisms."
+        },
+        {
+          "title": "Managing Consent:",
+          "description": "Users have the right to manage their consent preferences at any time. This includes the ability to withdraw consent, opt-out of certain types of data processing, or adjust cookie settings. Vublox provides easy-to-use tools and settings for managing consent on the Platform."
+        },
+        {
+          "title": "Children’s Consent:",
+          "description": "For users under the age of 18, Vublox requires parental consent for the collection and processing of Personal Data. We comply with COPPA and other child privacy regulations, ensuring that data from minors is handled with the highest level of care."
+        }
+      ]
+    },
+    {
+      "title": "Data Sharing and Disclosure",
+      "description": "Vublox is committed to protecting your privacy and only shares your Personal Data in specific circumstances outlined below:",
+      "items": [
+        {
+          "title": "Third-Party Service Providers:",
+          "description": "We may share your Personal Data with trusted third-party service providers who assist us in operating the Platform, conducting our business, or providing services to you. These providers include cloud hosting services, analytics providers, payment processors, and marketing partners. All third parties are required to adhere to strict data protection standards and are prohibited from using your Personal Data for any purpose other than providing services on our behalf."
+        },
+        {
+          "title": "Advertising Partners:",
+          "description": "Vublox shares certain Personal Data with advertising partners, including Google AdMob, to deliver targeted advertisements. This data sharing is conducted in compliance with GDPR, CCPA, and other relevant regulations, ensuring that your rights are respected."
+        },
+        {
+          "title": "Legal Obligations:",
+          "description": "We may disclose your Personal Data if required to do so by law, such as in response to a subpoena, court order, or other legal process, or to comply with regulatory requirements. We may also disclose your data to enforce our legal rights or to protect the safety of our users, employees, or the public."
+        },
+        {
+          "title": "Business Transfers:",
+          "description": "In the event that Vublox is involved in a merger, acquisition, reorganization, or sale of assets, your Personal Data may be transferred as part of that transaction. We will notify you before your data is transferred and becomes subject to a different privacy policy."
+        },
+        {
+          "title": "With Your Consent:",
+          "description": "We may share your Personal Data with third parties if you have provided your explicit consent for us to do so. This may include sharing data with social media platforms or other partners for promotional purposes."
+        }
+      ]
+    },
+    {
+      "title": "Data Transfer",
+      "description": "Vublox operates globally, and your Personal Data may be transferred to and processed in countries outside of your home country, including countries that may not have the same level of data protection as your jurisdiction.",
+      "items": [
+        {
+          "title": "Third-Party Service Providers:",
+          "description": "We may share your Personal Data with trusted third-party service providers who assist us in operating the Platform, conducting our business, or providing services to you. These providers include cloud hosting services, analytics providers, payment processors, and marketing partners. All third parties are required to adhere to strict data protection standards and are prohibited from using your Personal Data for any purpose other than providing services on our behalf."
+        },
+        {
+          "title": "Advertising Partners:",
+          "description": "Vublox shares certain Personal Data with advertising partners, including Google AdMob, to deliver targeted advertisements. This data sharing is conducted in compliance with GDPR, CCPA, and other relevant regulations, ensuring that your rights are respected."
+        },
+        {
+          "title": "Legal Obligations:",
+          "description": "We may disclose your Personal Data if required to do so by law, such as in response to a subpoena, court order, or other legal process, or to comply with regulatory requirements. We may also disclose your data to enforce our legal rights or to protect the safety of our users, employees, or the public."
+        },
+        {
+          "title": "Business Transfers:",
+          "description": "In the event that Vublox is involved in a merger, acquisition, reorganization, or sale of assets, your Personal Data may be transferred as part of that transaction. We will notify you before your data is transferred and becomes subject to a different privacy policy."
+        },
+        {
+          "title": "With Your Consent:",
+          "description": "We may share your Personal Data with third parties if you have provided your explicit consent for us to do so. This may include sharing data with social media platforms or other partners for promotional purposes."
+        }
+      ]
+    },
+    {
+      "title": "Data Retention",
+      "description": "Vublox retains your Personal Data for as long as necessary to fulfill the purposes for which it was collected, including to comply with legal obligations, resolve disputes, and enforce our agreements.",
+      "items": [
+        {
+          "title": "Retention Periods:",
+          "description": "The retention period for your Personal Data varies depending on the type of data and the purpose for which it was collected. For example, we retain account information for as long as your account is active, and we may retain certain financial data for a longer period to comply with legal and accounting obligations."
+        },
+        {
+          "title": "Criteria for Retention:",
+          "description": "We determine the appropriate retention period for Personal Data based on the nature of the data, the potential risks to your privacy, the purposes for which we process the data, and our legal obligations."
+        },
+        {
+          "title": "Deletion of Data:",
+          "description": "When your Personal Data is no longer necessary for the purposes for which it was collected, or when you request its deletion (subject to certain legal exceptions), we will securely delete or anonymize the data."
+        }
+      ]
+    },
+    {
+      "title": "User Rights",
+      "description": "Vublox respects your privacy rights and provides you with various options to control your Personal Data.",
+      "items": [
+        {
+          "title": "Access:",
+          "description": "You have the right to request access to the Personal Data we hold about you, including details on how we process and share your data."
+        },
+        {
+          "title": "Rectification:",
+          "description": "If you believe that any of your Personal Data is inaccurate or incomplete, you have the right to request that we correct or update it."
+        },
+        {
+          "title": "Erasure:",
+          "description": "You have the right to request the deletion of your Personal Data when it is no longer necessary for the purposes for which it was collected, or when you withdraw your consent for processing."
+        },
+        {
+          "title": "Data Portability:",
+          "description": "You have the right to request a copy of your Personal Data in a structured, commonly used, and machine-readable format, and to request that we transfer this data to another service provider where technically feasible."
+        },
+        {
+          "title": "Objection and Restriction:",
+          "description": "You have the right to object to the processing of your Personal Data for certain purposes, such as direct marketing, or to request that we restrict the processing of your data under certain circumstances."
+        },
+        {
+          "title": "Automated Decision-Making:",
+          "description": "You have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning you or similarly significantly affects you."
+        }
+      ]
+    },
+    {
+      "title": "Data Security",
+      "description": "Vublox takes the security of your Personal Data seriously and implements a variety of technical and organizational measures to protect it from unauthorized access, disclosure, alteration, or destruction.",
+      "items": [
+        {
+          "title": "Security Measures:",
+          "description": "We use industry-standard encryption technologies to protect your data during transmission and storage. Access to your Personal Data is restricted to authorized personnel who require it to perform their job duties."
+        },
+        {
+          "title": "Incident Response:",
+          "description": "In the event of a data breach, we have established procedures to respond promptly and mitigate the impact. We will notify you and the appropriate regulatory authorities if a breach poses a significant risk to your rights and freedoms."
+        },
+        {
+          "title": "User Responsibilities:",
+          "description": "While Vublox takes steps to secure your data, it is important that you also take precautions to protect your account. This includes using strong passwords, enabling two-factor authentication where available, and not sharing your login credentials with others."
+        }
+      ]
+    },
+    {
+      "title": "Cookies and Tracking Technologies",
+      "description": "Please refer to the Cookie Policy for more information on this section.",
+      "items": []
+    },
+    {
+      "title": "Children’s Privacy",
+      "description": "Vublox is committed to protecting the privacy of children and complies with the Children’s Online Privacy Protection Act (COPPA) in the United States, as well as other relevant child privacy laws globally.",
+      "items": [
+        {
+          "title": "Age Restrictions:",
+          "description": "The Platform is not intended for children under the age of 13, and we do not knowingly collect Personal Data from children under this age without verifiable parental consent."
+        },
+        {
+          "title": "Parental Consent:",
+          "description": "If we become aware that a child under 13 has provided us with Personal Data without parental consent, we will take steps to delete the data and terminate the child’s account. Parents or guardians can contact us to review or delete their child’s information."
+        },
+        {
+          "title": "Special Considerations for Minors:",
+          "description": "For users between the ages of 13 and 18, we take extra precautions to ensure that their data is protected. We may require additional verification to confirm the user’s age and parental consent where necessary."
+        }
+      ]
+    },
+    {
+      "title": "Behavioral Advertising",
+      "description": "Vublox engages in behavioral advertising to provide users with personalized ad experiences. This involves the collection and use of Personal Data to predict user preferences and display relevant ads.",
+      "items": [
+        {
+          "title": "Data Collection for Advertising:",
+          "description": "Vublox collects data such as browsing history, interactions with content, and demographic information to create user profiles for targeted advertising. This data is used in conjunction with Google AdMob to deliver personalized ads."
+        },
+        {
+          "title": "Opt-Out Options:",
+          "description": "Users have the right to opt out of behavioral advertising. Vublox provides tools and settings to manage your advertising preferences, including the ability to disable personalized ads through your account settings or via opt-out links provided in the ads."
+        },
+        {
+          "title": "Transparency and User Control:",
+          "description": "We are committed to transparency in how we use your data for advertising. You will be informed of how your data is being used, and you have the ability to control or limit data collection for advertising purposes."
+        }
+      ]
+    },
+    {
+      "title": "Automated Decision-Making and Profiling",
+      "description": "Vublox may use automated decision-making processes, including profiling, to enhance the user experience, provide personalized content, and improve the effectiveness of our services.",
+      "items": [
+        {
+          "title": "Use of Automated Systems:",
+          "description": "Automated systems may analyze your interactions with the Platform to make decisions about the content or ads you see. These systems use algorithms to evaluate data such as your browsing behavior, location, and preferences."
+        },
+        {
+          "title": "User Rights:",
+          "description": "Under GDPR, you have the right to object to automated decision-making processes, including profiling, that have legal effects or significantly impact you. You may also request human intervention in these decisions."
+        },
+        {
+          "title": "Minimizing Bias and Discrimination:",
+          "description": "Vublox takes steps to ensure that automated decision-making processes are fair, unbiased, and do not result in discrimination against any user."
+        }
+      ]
+    },
+    {
+      "title": "Third-Party Links",
+      "description": "The Vublox Platform may contain links to third-party websites, services, or content that are not owned or controlled by Vublox.",
+      "items": [
+        {
+          "title": "Third-Party Privacy Practices:",
+          "description": "Vublox is not responsible for the privacy practices of third-party websites or services. When you click on a link to a third-party site, you will be subject to their privacy policy and terms of use."
+        },
+        {
+          "title": "Due Diligence:",
+          "description": "While we strive to link to reputable sites, we encourage you to review the privacy policies of any third-party sites you visit to understand how your data will be handled."
+        },
+        {
+          "title": "User Discretion:",
+          "description": "You should exercise caution and discretion when providing Personal Data to third-party sites, especially when such sites are not affiliated with Vublox."
+        }
+      ]
+    },
+    {
+      "title": "Data Processing Agreements",
+      "description": "To ensure that your Personal Data is handled securely and in compliance with applicable laws, Vublox enters into Data Processing Agreements (DPAs) with third-party service providers who process data on our behalf.",
+      "items": [
+        {
+          "title": "Third-Party Obligations:",
+          "description": "These agreements require third-party processors to implement appropriate technical and organizational measures to protect Personal Data and to process the data only as instructed by Vublox."
+        },
+        {
+          "title": "Regular Audits:",
+          "description": "Vublox conducts regular audits and assessments of third-party service providers to ensure ongoing compliance with data protection standards."
+        },
+        {
+          "title": "Sub-Processors:",
+          "description": "If a third-party processor engages sub-processors, Vublox ensures that similar data protection obligations are imposed on them through contractual agreements."
+        }
+      ]
+    },
+    {
+      "title": "Consent Management and User Choices",
+      "description": "Vublox prioritizes giving users control over their Personal Data and how it is processed. We provide tools and options to manage your consent and privacy preferences.",
+      "items": [
+        {
+          "title": "Consent Management:",
+          "description": "Users can manage their consent for data processing activities through their account settings on the Platform. This includes opting in or out of personalized ads, data sharing with third parties, and the use of cookies."
+        },
+        {
+          "title": "Withdrawal of Consent:",
+          "description": "You have the right to withdraw your consent at any time. Withdrawing consent will not affect the lawfulness of processing based on consent before its withdrawal, but it may limit your ability to use certain features of the Platform."
+        },
+        {
+          "title": "Cookie Preferences:",
+          "description": "Vublox provides cookie management tools that allow you to customize your cookie settings, including enabling or disabling specific types of cookies."
+        }
+      ]
+    },
+    {
+      "title": "Data Controller and Contact Information",
+      "description": "Vublox Limited is the Data Controller responsible for your Personal Data. If you have any questions or concerns about this Privacy Policy or your data protection rights, you can contact us.",
+      "items": [
+        {
+          "title": "Vublox Limited"
+        },
+        {
+          "title": "Flat/Rm C, 6F, Wing Tat Commercial Building"
+        },
+        {
+          "title": "121-125 Wing Lok Street, Sheung Wan, Hong Kong"
+        }
+      ],
+      "footer": "Email: enquiries@vublox.com"
+    },
+    {
+      "title": "International Users",
+      "description": "Vublox operates globally, and this Privacy Policy is designed to comply with privacy laws across different jurisdictions, including the GDPR in the EU, CCPA in the USA, and PDPO in Hong Kong.",
+      "items": [
+        {
+          "title": "Jurisdiction-Specific Provisions:",
+          "description": "Users from different countries may have additional rights or obligations under local laws. Vublox provides specific information and options for users in the EU, USA, Hong Kong, and other regions to ensure compliance with local data protection regulations."
+        },
+        {
+          "title": "Cross-Border Data Compliance:",
+          "description": "For users in the European Economic Area (EEA), Vublox ensures compliance with GDPR requirements for cross-border data transfers, including the use of Standard Contractual Clauses (SCCs) or other approved transfer mechanisms."
+        }
+      ]
+    },
+    {
+      "title": "Privacy Policy Updates",
+      "description": "Vublox may update this Privacy Policy from time to time to reflect changes in our practices, technologies, or legal obligations.",
+      "items": [
+        {
+          "title": "Notification of Changes:",
+          "description": "When we make significant changes to this Privacy Policy, we will notify you by posting the updated policy on the Platform and, where required by law, obtaining your consent for the changes."
+        },
+        {
+          "title": "Reviewing the Policy:",
+          "description": "We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your data. The 'Last Updated' date at the top of the policy indicates when it was last revised."
+        },
+        {
+          "title": "Effective Date:",
+          "description": "The changes to the Privacy Policy will take effect on the date specified in the notification. Continued use of the Platform after the effective date signifies your acceptance of the updated policy."
+        }
+      ]
+    },
+    {
+      "title": "User Account Security",
+      "description": "Vublox is committed to protecting your account and Personal Data from unauthorized access and breaches.",
+      "items": [
+        {
+          "title": "User Responsibilities:",
+          "description": "You are responsible for maintaining the security of your account credentials, including your password. We recommend using strong, unique passwords and enabling two-factor authentication where available."
+        },
+        {
+          "title": "Vublox Security Measures:",
+          "description": "We employ a range of security measures, including encryption, access controls, and regular security audits, to safeguard your data. In the event of a security breach, we will notify affected users and take appropriate steps to mitigate the impact."
+        },
+        {
+          "title": "Account Recovery:",
+          "description": "If you believe your account has been compromised, please contact us immediately to secure your account and prevent further unauthorized access."
+        }
+      ]
+    },
+    {
+      "title": "Dispute Resolution",
+      "description": "Vublox is committed to resolving any disputes related to your privacy or the processing of your Personal Data in a fair and timely manner.",
+      "items": [
+        {
+          "title": "Resolution Process:",
+          "description": "If you have a complaint about how your Personal Data is being handled, please contact us using the information provided in Section 20. We will work with you to resolve the issue as quickly as possible."
+        },
+        {
+          "title": "Jurisdiction and Governing Law:",
+          "description": "Any disputes arising under this Privacy Policy will be governed by the laws of Hong Kong. If you are located in the European Union or another jurisdiction with specific data protection regulations, your rights under those laws will also be respected."
+        },
+        {
+          "title": "Mediation and Arbitration:",
+          "description": "For unresolved disputes, Vublox may offer mediation or arbitration as an alternative to litigation, in accordance with applicable laws."
+        }
+      ]
+    },
+    {
+      "title": "Contact and Support",
+      "sections": [
+        {
+          "description": "If you have any questions, concerns, or requests related to this Privacy Policy or your personal data, Vublox is here to assist you.",
+          "items": [
+            {
+              "title": "How to Reach Us:",
+              "description": "You can contact us via email at enquiries@vublox.com or by mail at the following address:",
+              "items": [
+                {
+                  "title": "Vublox Limited"
+                },
+                {
+                  "title": "Flat/Rm C, 6F, Wing Tat Commercial Building"
+                },
+                {
+                  "title": "121-125 Wing Lok Street, Sheung Wan, Hong Kong."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "We’re committed to addressing your inquiries promptly and ensuring that your privacy concerns are resolved effectively.",
+          "items": [
+            {
+              "title": "Support Resources:",
+              "description": "Vublox provides a range of support resources on our website, including FAQs, privacy rights explanations, and guides on managing your account and privacy settings."
+            },
+            {
+              "title": "Assistance with Privacy Rights:",
+              "description": "If you need assistance exercising your privacy rights, such as accessing or deleting your data, our support team is available to help you navigate these processes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": {
+    "title": "FAQs",
+    "sections": [
+      {
+        "title": "What types of personal data does Vublox collect?",
+        "items": [
+          {
+            "title": "We collect personal identification information (e.g., name, email), usage data (e.g., interactions on the Platform), technical data (e.g., IP address, device type), and location data. We also use cookies and similar tracking technologies."
+          }
+        ]
+      },
+      {
+        "title": "How does Vublox use my personal data?",
+        "items": [
+          {
+            "title": "Your data is used to provide and improve our services, personalize your experience, send you relevant communications, and ensure the security of the Platform. It’s also used for targeted advertising through Google AdMob."
+          }
+        ]
+      },
+      {
+        "title": "Does Vublox share my personal data with third parties?",
+        "items": [
+          {
+            "title": "Yes, we share your data with trusted third-party service providers, advertising partners like Google AdMob, and as required by law. We ensure that all third parties comply with strict data protection standards."
+          }
+        ]
+      },
+      {
+        "title": "How can I manage my consent and privacy preferences?",
+        "items": [
+          {
+            "title": "You can manage your consent and privacy settings through your account on the Platform. This includes opting out of personalized ads, managing cookies, and withdrawing consent for data processing."
+          }
+        ]
+      },
+      {
+        "title": "How does Vublox protect my data?",
+        "items": [
+          {
+            "title": "We use encryption, access controls, and regular security audits to safeguard your data. In case of a data breach, we’ll notify affected users and take appropriate action."
+          }
+        ]
+      },
+      {
+        "title": "What are my rights under this privacy policy?",
+        "items": [
+          {
+            "title": "You have rights to access, correct, delete your data, and more. You can also object to certain data processing activities or request data portability."
+          }
+        ]
+      },
+      {
+        "title": " How can I contact Vublox if I have privacy concerns?",
+        "items": [
+          {
+            "title": "You can contact us via email at {email}. We’re here to help with any privacy-related questions or requests."
+          }
+        ]
+      },
+      {
+        "title": " What happens if Vublox updates this Privacy Policy?",
+        "items": [
+          {
+            "title": "We’ll notify you of significant changes through the Platform and provide you with the updated policy. Continued use of the Platform after the changes signifies your acceptance."
+          }
+        ]
+      },
+      {
+        "title": "How can I resolve a privacy dispute with Vublox?",
+        "items": [
+          {
+            "title": "If you have a dispute, contact us first, and we’ll work to resolve it. If unresolved, we may use mediation or arbitration, depending on the jurisdiction."
+          }
+        ]
+      }
+    ]
+  }
+}

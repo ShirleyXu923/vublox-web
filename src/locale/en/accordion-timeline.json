@@ -1,0 +1,38 @@
+{
+  "label": {
+    "present": "Present",
+    "timeline": "Timeline",
+    "verified": "Verified",
+    "filters": "Filters",
+    "clearAll": "Clear All",
+    "all": "All",
+    "posts": "posts",
+    "taggedPosts": "Tagged Posts",
+    "yourTags": "Your Tags",
+    "latestToOldest": "Latest To Oldest",
+    "oldestToLatest": "Oldest To Latest",
+    "fiveMin": "5 minutes",
+    "thirtyMin": "30 minutes",
+    "oneHour": "1 hour",
+    "eightHours": "8 hours",
+    "twentyFourHours": "24 hours",
+    "oneMonth": "1 month",
+    "oneYear": "1 year",
+    "fiveYears": "5 years",
+    "tenYears": "10 years",
+    "oneSecond": "1 second",
+    "fiveSeconds": "5 seconds",
+    "tenSeconds": "10 seconds",
+    "twentySeconds": "20 seconds",
+    "sortAndFilter": "Filters"
+  },
+  "button": {
+    "createPost": "Create a Post",
+    "apply": "Apply",
+    "contribute": "Contribute",
+    "post": "Post",
+    "event": "Event",
+    "timeline": "Timeline",
+    "viewAll": "View All"
+  }
+}

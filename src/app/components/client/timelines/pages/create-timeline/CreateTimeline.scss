@@ -1,0 +1,28 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.create-timeline {
+  .btn-back {
+    margin-bottom: 48px;
+  }
+
+  .map-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+
+    .btn-current-location {
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: 15px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .create-timeline {
+    padding: 0;
+  }
+}

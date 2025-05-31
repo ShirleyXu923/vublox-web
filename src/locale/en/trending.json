@@ -1,0 +1,10 @@
+{
+  "label": {
+    "trending": "Trending",
+    "latest": "Latest",
+    "empty": "There are currently no posts related to your interests.",
+    "empty2": "Try {selectCategory} or {follow} to see more content on your feed",
+    "selectCategory": "selecting more sports",
+    "follow": "following more users"
+  }
+}

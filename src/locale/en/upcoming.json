@@ -1,0 +1,10 @@
+{
+  "label": {
+    "upcoming": "Upcoming",
+    "empty": "Set your filters to see upcoming events",
+    "coCreated": "Co-Created by "
+  },
+  "button": {
+    "notifyMe": "Notify Me"
+  }
+}

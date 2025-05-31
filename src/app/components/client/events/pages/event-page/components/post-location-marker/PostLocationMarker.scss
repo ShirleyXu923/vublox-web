@@ -1,0 +1,78 @@
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+
+.post-location-marker {
+  border-radius: 12px;
+  border: 4px solid var(--bs-primary);
+  // background: var(--bs-primary);
+  max-width: 158px;
+  margin-bottom: 12px;
+  @include media-breakpoint-down(sm) {
+    border-radius: 16px;
+    border: 4px solid var( --bs-secondary-text);
+  }
+
+  .banner {
+    object-fit: cover;
+  }
+
+  .banner-img {
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 70px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--bs-body-bg);
+
+    .image {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      span {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        margin-left: 2px;
+        color: var(--bs-body-color);
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: 110px;
+      height: 80px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 54px;
+      height: 46px;
+    }
+  }
+
+  .caption3 {
+    white-space: pre-wrap;
+    font-weight: normal;
+  }
+
+  .caret {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid var(--bs-primary);
+    @include media-breakpoint-down(sm) {
+      border-top: 12px solid var(--bs-secondary-text);
+    }
+  }
+}

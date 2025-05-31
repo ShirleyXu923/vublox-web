@@ -1,0 +1,132 @@
+.landing-layout {
+  .footer {
+    background: var(--bs-body-bg);
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-mobile-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .mobile-horizontal-divider {
+      width: 100%;
+      height: 1px;
+      background-color: var(--bs-secondary-color);
+      opacity: 0.5;
+      margin-bottom: 0.75rem;
+
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .footer-copyright {
+      margin-bottom: 0;
+
+      @media (min-width: 768px) {
+        margin-right: 0;
+      }
+    }
+
+    .footer-social {
+      display: flex;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+        margin-left: 8px;
+      }
+    }
+
+    .social-link {
+      padding: 0.25rem 0.5rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      @media (max-width: 767.98px) {
+        &:first-child {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+      }
+    }
+
+    .footer-link {
+      color: var(--bs-secondary-color) !important;
+      padding: 0.5rem;
+      text-align: center;
+
+      &.active {
+        color: var(--bs-secondary-color) !important;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media (min-width: 768px) {
+        padding: 0;
+        text-align: left;
+      }
+    }
+
+    .footer-divider {
+      height: 19px;
+      border: 0.75px solid var(--bs-secondary-color);
+      margin-left: 8px;
+      margin-right: 8px;
+
+      &.mobile-divider {
+        @media (max-width: 767.98px) {
+          display: inline-block !important;
+          height: 15px;
+          margin: 0 0.5rem;
+        }
+      }
+    }
+
+    // Add mobile dividers between links
+    // @media (max-width: 767.98px) {
+    //   .footer-link:not(:last-child)::after {
+    //     content: "|";
+    //     display: inline-block;
+    //     margin-left: 0.5rem;
+    //     color: var(--bs-secondary-color);
+    //   }
+    // }
+  }
+}

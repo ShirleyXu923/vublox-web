@@ -1,0 +1,97 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.delete-modal-custom {
+  height: 100vh;
+  display: flex;
+
+  .modal-content {
+    margin: auto;
+    padding: 0 10px 20px 10px;
+
+    .event {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+
+      .banner {
+        height: 80px;
+        width: 218px;
+        border-radius: 6px;
+
+        .image__cover {
+          display: flex;
+          text-align: center;
+          height: 100%;
+          border-radius: 18px;
+          background: var(--bs-secondary-bg);
+          color: var(--bs-body-color);
+
+          .image {
+            text-align: center;
+            width: 100%;
+            span {
+              display: -webkit-box !important;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: normal;
+              font-size: 20px;
+              font-weight: 700;
+              color: var(--bs-description-color);
+            }
+          }
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .description {
+          color: var(--bs-body-color);
+        }
+
+        .caption1 {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: var(--bs-secondary-text);
+
+          .seperator {
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background: var(--bs-body-color);
+          }
+        }
+      }
+    }
+
+    .event-form {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .modal-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+
+      .btn-danger {
+        color: var(--bs-body-color);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .modal-content {
+      padding: 0;
+    }
+  }
+}

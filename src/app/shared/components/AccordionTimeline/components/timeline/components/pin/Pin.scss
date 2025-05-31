@@ -1,0 +1,44 @@
+.pin {
+  position: relative;
+
+  .circle-container {
+    position: relative;
+    z-index: 5;
+  }
+
+  .line-t {
+    height: 80%;
+    width: 3px;
+    background: var(--bs-placeholder-color);
+    position: absolute;
+    height: 80%;
+    bottom: 89%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    z-index: 3;
+  }
+
+  .line-b {
+    width: 3px;
+    background: var(--bs-placeholder-color);
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    z-index: 3;
+  }
+
+  .shadow {
+    width: 3px;
+    background: var(--bs-tertiary-bg);
+    position: absolute;
+    top: -100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    height: 500vh;
+    z-index: 1;
+  }
+}

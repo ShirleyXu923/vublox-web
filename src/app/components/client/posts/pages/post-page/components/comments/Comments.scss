@@ -1,0 +1,69 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.post-comments-tab {
+  .comment-form {
+    border-radius: 16px;
+    padding: 20px;
+    background: var(--bs-secondary);
+
+    &.active {
+      box-shadow: 0px 0px 8.7px 0px var(--bs-primary);
+    }
+
+    .input {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .comment-input {
+        background: none;
+        border: none;
+        width: 100%;
+        padding: 10px 0;
+        outline: none;
+      }
+    }
+
+    .actions {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+
+      .btn {
+        padding: 4.5px 35.67px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .btn-secondary {
+        color: var(--bs-primary);
+        background: var(--bs-slider-bg);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .comment-form {
+      padding: 8px 16px;
+      border-radius: 12px;
+    }
+  }
+
+  .comments {
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .post-comments-tab {
+    padding: 0 16px;
+    padding-bottom: 24px;
+  }
+}

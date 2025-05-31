@@ -1,0 +1,32 @@
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.create-organization {
+
+  .btn-back {
+    margin-bottom: 48px;
+  }
+
+  .form-title {
+    color: var(--bs-secondary-text);
+    margin-top: 3rem;
+  }
+
+  .input {
+    border-top-right-radius: 18px !important;
+    border-bottom-right-radius: 18px !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .create-organization {
+    padding-left: 0;
+    padding-right: 0;
+
+    .page-title {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.my-posts {
+  .content {
+    .items {
+      @include media-breakpoint-down(md) {
+        .has-selected {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+
+          .action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  // @include media-breakpoint-down(sm) {
+  //   .filters div.dropdown-button {
+  //     height: 24px;
+  //     padding: 15px 8px;
+  //     gap: 8px;
+  //     span.b5 {
+  //       padding-left: 12px;
+  //     }
+  //   }
+  // }
+}

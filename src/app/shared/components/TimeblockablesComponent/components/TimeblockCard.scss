@@ -1,0 +1,130 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeblock_card {
+  display: flex;
+  gap: 16px;
+
+  .card {
+    flex: 1;
+    padding: 18px 16px;
+    border-radius: 18px;
+    border: none;
+    background: var(--bs-secondary-bg);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--bs-disabled-bg);
+    }
+
+    &.active {
+      background: var(--bs-disabled-bg);
+      border: 0.5px solid var(--bs-primary);
+    }
+
+    .timeblock_card__date {
+      color: var(--bs-secondary-text);
+    }
+
+    .timeblock_card__name, .timeblock_card__description {
+      color: var(--bs-body-color);
+    }
+
+    .timeblock_card__location {
+      color: var(--bs-secondary-text);
+    }
+
+    .timeblock_card__cocreators {
+      .caption1 {
+        color: var(--bs-secondary-text);
+      }
+    }
+
+    .timeblock_card__badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      color: var(--bs-primary);
+      background: var(--bs-badge-bg);
+      border-radius: 25px;
+      padding: 5px 12px;
+
+      .badge_icon {
+        path {
+          fill: var(--bs-primary);
+        }
+      }
+    }
+
+    .timeblock_card__controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-top: 0.5px solid var(--bs-placeholder-color);
+
+      .controls_button {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        align-items: center;
+        padding: 0 4px;
+        color: var(--bs-body-color);
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .timeblock_card__controls {
+        justify-content: space-between;
+        .controls_button {
+          .caption1 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .card {
+      border-radius: 12px;
+    }
+  }
+}
+
+.add_timeblock__dropdown {
+  margin-left: 15px;
+
+  .btn {
+    background: none;
+    padding: 0;
+    outline: none;
+    border: none;
+
+    position: relative;
+    left: 4%;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  .dropdown-item {
+    svg {
+      path {
+        fill: var(--bs-body-color);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .btn {
+      left: 10%;
+    }
+  }
+}

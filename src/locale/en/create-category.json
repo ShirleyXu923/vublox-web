@@ -1,0 +1,21 @@
+{
+  "label": {
+    "category": "Category",
+    "parentCategory": "Parent Category",
+    "addCategory": "Add Category",
+    "newCategory": "New Category",
+    "message": "This is where the new category will be placed under.",
+    "newCategoryCreated": "New Category Created",
+    "verify": "Verify your account",
+    "toCreate": "to create new categories."
+  },
+  "success": {
+    "create": "Category has been created successfully",
+    "createdCategory": "You have successfully added a new category, named",
+    "underParent": "under the parent category",
+    "verificationEmailSent": "Verification Link Sent to your Email"
+  },
+  "button": {
+    "save": "Save"
+  }
+}

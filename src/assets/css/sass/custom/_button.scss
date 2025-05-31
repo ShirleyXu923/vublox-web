@@ -1,0 +1,35 @@
+.btn-primary {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-body-color);
+}
+
+.btn-back {
+  color: var(--bs-primary);
+  font-weight: bold;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 3px 10px;
+  padding-left: 4px !important;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--bs-primary);
+    border-color: transparent;
+    background: rgba(var(--bs-primary-rgb), 0.3);
+  }
+}
+
+.btn-tertiary {
+  --bs-btn-hover-bg: #{lighten($tertiary, 5%)};
+  --bs-btn-bg: #{$tertiary};
+}
+
+.btn-dropdown {
+  border-radius: 18px;
+  font-weight: normal;
+  color: var(--bs-gray-500);
+  padding-left: 15px;
+  padding-right: 15px;
+}

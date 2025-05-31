@@ -1,0 +1,19 @@
+.notifications-tab {
+  .card {
+    --bs-card-border-width: 0;
+    --bs-card-border-radius: 18px;
+    --bs-card-inner-border-radius: 18px;
+    --bs-card-bg: var(--bs-tertiary-bg);
+    --bs-card-spacer-x: 1.5rem;
+
+    .switch {
+      .switch-button-container {
+        flex: 2;
+      }
+
+      .switch-label {
+        flex: 11;
+      }
+    }
+  }
+}

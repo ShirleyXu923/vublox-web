@@ -1,0 +1,161 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeline-form-container {
+  .timeline-form {
+
+    .input-group {
+      .input-group-text {
+        .form-text {
+          .text-muted {
+            color: var(--bs-placeholder-color) !important;
+          }
+        }
+      }
+    }
+
+    .input-map {
+      .map-location-view {
+        #map {
+          > div {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .form-floating {
+      position: relative;
+
+      .form-text {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+      }
+    }
+
+    .description-input {
+      & + .form-label {
+        text-transform: none !important;
+      }
+    }
+    .cover-image-preview {
+      width: 100%;
+      padding: 16px;
+      background: var(--bs-secondary);
+      border-radius: 17px;
+      margin-bottom: 20px;
+      position: relative;
+
+      .b5 {
+        margin-bottom: 16px;
+      }
+
+      .preview-image {
+        width: 100%;
+        border-radius: 17px;
+      }
+
+      .close-button {
+        z-index: 10;
+        position: absolute;
+        top: 44px;
+        right: 8px;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        background-color: var(--bs-danger);
+        padding: 3px;
+        cursor: pointer;
+
+        svg {
+          stroke: var(--bs-body-color);
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        .close-button {
+          height: 16.5px;
+          width: 16.5px;
+        }
+      }
+    }
+
+    .form-title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.36px;
+      text-align: left;
+      margin-top: 64px;
+      color: var(--bs-secondary-text);
+      text-transform: uppercase;
+    }
+
+    .input-to-disable {
+      input.form-control, span.input-group-text {
+        background: var(--bs-tertiary-bg);
+      }
+    }
+
+    .react-time-picker--disabled {
+      background: var(--bs-secondary-bg);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .timeline-form-container {
+    padding: 0;
+
+    .timeline-form {
+      margin-top: 48px;
+      margin-bottom: 48px;
+
+      .form-title {
+        margin-top: 24px;
+      }
+
+      .input-map {
+        height: auto;
+
+        > div:nth-child(2) {
+          height: 300px !important;
+        }
+
+        .input-apple-map-container {
+          height: 300px !important;
+        }
+
+        .map-location-view {
+          #map {
+            > div {
+              border-radius: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .timeline-form {
+    .timeline-submit-and-next-button-mobile button {
+      height: 36px;
+      border-radius: 12px !important;
+      width: 100%;
+      display:flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 16px 32px !important;
+      gap: 8px;
+      margin-bottom: 1rem;
+    }
+  }
+}

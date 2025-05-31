@@ -1,0 +1,27 @@
+.r-button {
+  display: flex !important;
+  align-items: center;
+  gap: 10px !important;
+  justify-content: center;
+  padding: 7px 0 8px 0 !important;
+  border-radius: 12px !important;
+  width: 100%;
+
+  &:disabled {
+    background: var(--bs-disabled-bg);
+    color: var(--bs-disabled-text);
+    outline: none;
+    border: none;
+  }
+}
+
+.r-button.btn-outline-primary {
+  &:hover {
+    background: var(--bs-badge-bg);
+    color: var(--bs-primary);
+  }
+}
+
+.r-button.is-form {
+  padding: 14px 0 18px 0 !important;
+}

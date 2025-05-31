@@ -1,0 +1,24 @@
+.empty-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .empty-body {
+    margin: auto;
+
+    .b5 {
+      font-style: italic;
+    }
+
+    .button-wrap {
+      display: flex;
+      justify-content: center;
+
+      .r-button {
+        margin-top: 24px;
+        max-width: 144px;
+      }
+    }
+  }
+}

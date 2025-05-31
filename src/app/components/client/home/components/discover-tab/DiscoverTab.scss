@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.discover {
+  .search-bar-container {
+    display: flex;
+    justify-content: flex-end; /* Default to flex-end alignment on larger screens */
+    width: auto; /* Allow the container to size based on content */
+
+    @include media-breakpoint-down(md) {
+      /* Applies to screens smaller than 768px (below the 'md' breakpoint) */
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      justify-content: flex-start; /* Align to start on smaller screens */
+    }
+  }
+
+  .search-bar {
+    width: auto; /* Default width on larger screens */
+
+    @include media-breakpoint-down(md) {
+      /* Full width for small screens */
+      width: 100%;
+      min-width: 0; /* Prevent overflow */
+    }
+
+  }
+
+  .infinite-scroll-component__outerdiv {
+    padding-bottom: 32px;
+  }
+}

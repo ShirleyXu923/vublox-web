@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.btn-skip {
+  padding: 5px 12px !important;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  border-radius: 10px !important;
+  color: var(--bs-primary) !important;
+  background: rgba(25, 190, 212, 0.1) !important;
+
+  span {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn-skip {
+    padding: 3px 7px !important;
+  }
+}

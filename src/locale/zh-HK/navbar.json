@@ -1,0 +1,43 @@
+{
+  "label": {
+    "search": "搜索",
+    "filters": "篩選器"
+  },
+  "button": {
+    "create": "建立",
+    "post": "貼文",
+    "event": "事件",
+    "signIn": "登入",
+    "signUp": "註冊"
+  },
+  "account": {
+    "label": {
+      "viewProfile": "查看個人資料",
+      "switchAccount": "切換帳戶",
+      "analytics": "分析",
+      "settings": "設定",
+      "signOut": "登出",
+      "accounts": "帳戶",
+      "createOrganizationPage": "建立組織頁面",
+      "languages": "語言"
+    }
+  },
+  "language": {
+    "title": "選擇你的語言",
+    "label": {
+      "language": "語言",
+      "ar": "阿拉伯文(AR)",
+      "zh-CN": "簡體中文 (ZH-CN)",
+      "zh-HK": "繁體中文 (ZH-HK)",
+      "en": "英文 (美國)",
+      "fil": "菲律賓文 (FIL)",
+      "fr": "法文 (FR)",
+      "de": "德文(DE)",
+      "it": "義大利文 (IT)",
+      "jp": "日文 (JP)",
+      "kr": "韓文 (KR)",
+      "ru": "俄文 (RU)",
+      "tr": "土耳其文 (TR)"
+    }
+  }
+}

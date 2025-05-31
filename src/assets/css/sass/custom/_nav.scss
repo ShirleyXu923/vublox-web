@@ -1,0 +1,12 @@
+.top-nav {
+  background: var(--bs-body-bg);
+}
+
+.nav-link {
+  color: $tab-inactive-color !important;
+  border-radius: 100px !important;
+
+  &.active {
+    color: var(--bs-white) !important;
+  }
+}

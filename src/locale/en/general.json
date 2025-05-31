@@ -1,0 +1,140 @@
+{
+  "copyright": "Gogo React © 2018 All Rights Reserved.",
+  "table": {
+    "display_options": {
+      "title": "Click here to show the options",
+      "label": "Display Options"
+    },
+    "placeholder": {
+      "search": "Search"
+    },
+    "showing_data_entries": "Showing :from to :to of :total entries"
+  },
+  "button": {
+    "cancel": {
+      "title": "Click to cancel",
+      "name": "Cancel"
+    },
+    "confirm": {
+      "title": "Click to confirm",
+      "name": "Confirm"
+    },
+    "save": {
+      "title": "Click to save",
+      "name": "Save"
+    },
+    "submit": {
+      "title": "Click to submit",
+      "name": "Submit"
+    },
+    "update": {
+      "title": "Click to update",
+      "name": "Update"
+    },
+    "add": {
+      "title": "Click to add",
+      "name": "Add"
+    },
+    "edit": {
+      "title": "Click to edit this record",
+      "name": "Edit"
+    },
+    "view": {
+      "title": "Click to view this record",
+      "name": "View"
+    },
+    "delete": {
+      "title": "Click to delete this record",
+      "name": "Delete"
+    },
+    "go_home": {
+      "title": "Click to go back home.",
+      "name": "Go to Home"
+    },
+    "back": "Back",
+    "share": "Share"
+  },
+  "error": {
+    "invalid_credentials": {
+      "title": "Login Failed",
+      "message": "Your email and/or password do not match."
+    },
+    "throttle": {
+      "title": "Too many attempts",
+      "message": "You're requesting too fast. You've been block for a moment. Please try again later."
+    },
+    "invalid_request": {
+      "title": "Invalid request",
+      "message": "Invalid request. Please try again."
+    },
+    "establish_connection": {
+      "title": "Connection Error",
+      "message": "We're having trouble connecting. Please check your internet or contact support for help."
+    },
+    "internal_server": {
+      "title": "Internal Server Error",
+      "message": "We couldn't process your request as of the moment. Please try again later or contact administrator."
+    },
+    "validation": {
+      "title": "Validation Error",
+      "message": "There were some errors with the given data. Please check the fields."
+    },
+    "default": {
+      "title": "Error",
+      "message": "There was a problem with your request. Please try again."
+    },
+    "local_storage": {
+      "title": "App Error",
+      "message": "We have detected that your browser doesn't support some of our features, if you're in incognito please use the normal mode or we recommend to use our app in a chrome browser."
+    },
+    "firebase_support": {
+      "title": "Notification Not Supported",
+      "message": "Everything will still work the same except for real notification. If you would like to receive a notification we advice you to update your browser or we recommend to use a chrome browser"
+    },
+    "not_found": {
+      "title": "Page Not Found",
+      "message": "We couldn't find what you're looking for. Please contact us to assist you better"
+    },
+    "file_too_large": "Uploaded image exceeds the size limit of {fileSizeLimit}.",
+    "file_type_invalid": "Uploaded image format is invalid."
+  },
+  "validation": {
+    "no_email": "Please enter your email address",
+    "invalid_email": "Invalid email address",
+    "no_password": "Please enter your password",
+    "invalid_password": "Value must be longer than 3 characters",
+    "required": "This field is required"
+  },
+  "upload": {
+    "title": "Upload file",
+    "file": "File",
+    "addFile": "Add File",
+    "addFileSubTitle": "or drop files to upload",
+    "checkboxDescription": "Overwrite any current products that have the same handle. Existing values will be used for any missing columns.",
+    "uploaded": "Uploaded",
+    "uploadProgress": ":loaded %",
+    "uploadProcess": "Processing :type",
+    "uploadFailed": "Failed to upload",
+    "success": {
+      "title": "Upload Complete",
+      "message": "Successfully uploaded the file."
+    },
+    "dropzone": "Click to upload",
+    "replace": "Replace",
+    "filename": "Filename",
+    "change": "Change",
+    "webcam": "Webcam",
+    "upload": "Upload",
+    "cameraPermission": "You’ve disallowed the camera permission in your browser. You’ll need to open your browser preferences to change that."
+  },
+  "placeholder":{
+    "search": "Search"
+  },
+  "filter": {
+    "customDateRange": "Custom Date Range"
+  },
+  "label": {
+    "timeZone": "Time Zone",
+    "localTimeZone": "Local Time Zone"
+  }
+}

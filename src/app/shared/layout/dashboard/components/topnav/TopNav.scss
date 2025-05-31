@@ -1,0 +1,180 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.top-nav {
+  @include media-breakpoint-down(sm) {
+    .ms-4.nav-item {
+      margin-left: 6px !important;
+    }
+
+    .mx-3.navbar-text {
+      margin-left: 6px !important;
+      margin-right: 6px !important;
+
+    }
+  }
+
+  padding: 0.75rem 0;
+
+  display: flex;
+  align-items: center; // Center items vertically
+  justify-content: space-between; // Space items evenly
+  flex-wrap: nowrap; // Prevent wrapping
+  overflow: visible; // Allow dropdowns to be visible
+  max-width: 100%; // Ensure it doesn't exceed the screen width
+  position: relative; // Positioning for dropdowns
+
+  .navbar-brand {
+    @include media-breakpoint-down(sm) {
+      margin-right: 20px;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    img {
+      @include media-breakpoint-down(sm) {
+        height: 20px; // Increase logo height for small screens and above
+        margin-right: 0px;
+        margin-bottom: 6px !important;
+      }
+    }
+
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+    padding-bottom: 4px;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 6px;
+    }
+
+    &:has(> .nav-link.active) {
+      border-bottom: 2px solid var(--bs-primary);
+    }
+
+    &:has(> .nav-link) {
+      border-bottom: 2px solid transparent;
+      padding: 0 15px;
+
+
+      @include media-breakpoint-down(sm) {
+        padding: 0 7px !important;
+        margin: 0 3px !important;
+      }
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 0;
+      color: var(--bs-secondary-text) !important;
+      border-radius: 0 !important;
+      font-size: 14px;
+      white-space: nowrap; // Ensure text stays in a single line, preventing wrapping
+
+      &.active {
+        color: var(--bs-primary) !important;
+        font-weight: 600;
+
+        svg>path {
+          stroke: var(--bs-primary) !important;
+        }
+      }
+    }
+
+  }
+
+  .navbar-text {
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0; // Adjust margin for small screens
+      margin-right: 0; // Adjust margin for small screens
+
+      flex-wrap: nowrap;
+    }
+  }
+
+
+
+
+  .search {
+    position: relative;
+
+    .d-flex {
+      align-items: center;
+    }
+
+    .form-control {
+      padding-left: 35px;
+      padding-right: 45px; // if you want longer search bar, edit it here
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .search-icon-left {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-60%);
+    }
+  }
+
+  .btn-filter {
+
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--bs-secondary-color);
+  }
+
+  .account-dropdown {
+    @include media-breakpoint-down(sm) {
+      min-width: 14px;
+      padding: 0px;
+      margin-left: 0px;
+    }
+
+    .dropdown-menu {
+      border-radius: 16px;
+      border-color: transparent;
+      background: var(--bs-secondary-bg);
+      min-width: 250px;
+
+      .dropdown-item {
+        display: flex;
+        align-items: center;
+        padding: 7px 20px;
+      }
+    }
+  }
+
+  .btn-post {
+    @include media-breakpoint-down(sm) {
+      min-width: 10px;
+      padding: 0 2px;
+      margin-left: 0px;
+    }
+
+    svg>path {
+      fill: var(--bs-primary);
+    }
+
+  }
+}

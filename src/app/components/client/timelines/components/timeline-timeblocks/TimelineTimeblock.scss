@@ -1,0 +1,249 @@
+.timeblock-container {
+  max-width: 46.5rem;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 2;
+
+  .contents-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+
+    .logo {
+      border-radius: 50%;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 81%;
+
+      .description {
+        color: var(--bs--body-color);
+      }
+
+      .location {
+        color: var(--bs-secondary-text);
+      }
+    }
+  }
+
+  .actions {
+    .badges {
+      svg > path {
+        fill: var(--bs-primary);
+      }
+    }
+  }
+}
+
+.timelines-container {
+  max-width: 744px;
+  margin: 52px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+
+  .timeblock-wrapper {
+    .timeblock-container {
+      gap: 16px;
+      background: var(--bs-secondary-bg);
+    }
+  }
+}
+
+.timeblock-card {
+  width: 100%;
+  display: flex;
+  gap: 16px
+}
+
+.skip-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown-custom {
+  max-width: 46.5rem;
+  margin: 0 auto;
+
+  .dropdown-menu {
+    gap: 16px;
+    border-radius: 10px;
+    // border: 1px solid var(--bs-placeholder-color);
+  }
+}
+
+.dropdown-button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+  color: var(--bs-primary);
+  cursor: pointer;
+}
+
+.dropdown-item {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+  color: var(--bs--body-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.action-button {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-top: 24px;
+  max-width: 46.5rem;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.timelines-main-container {
+  .skip-button {
+    max-width: 744px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .header-title {
+    max-width: 744px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .filter {
+
+      .text {
+        color: var(--bs-secondary-text);
+      }
+      .dropdown-menu.show {
+        padding: 2px 4px;
+        border-radius: 8px;
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .dropdown-item {
+        margin: 0;
+      }
+    }
+  }
+
+  .timecard {
+    cursor: pointer;
+
+    .timeblock-container.active {
+      border: 2px solid var(--bs-primary);
+    }
+  }
+
+  .add-timeblock-button {
+    // margin-bottom: 26px;
+    position: relative;
+    z-index: 2;
+    background: var(--bs-body-bg);
+    padding: 5px 0 15px 0;
+
+    .dropdown-item {
+      svg > path {
+        fill: var(--bs-body-color);
+      }
+    }
+  }
+
+  .timeblock-wrapper {
+    .line {
+      background: var(--bs-placeholder-color);
+      position: absolute;
+      top: 23px;
+      border: 2px solid var(--bs-placeholder-color);
+      border-radius: 18px;
+      height: 91%;
+      left: -33px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: var(--bs-placeholder-color);
+        top: -50px;
+        width: 2px;
+        border: 2px solid var(--bs-placeholder-color);
+        border-radius: 18px;
+        height: 91%;
+        left: -33px;
+      }
+    }
+
+    .extender-top {
+      background: var(--bs-placeholder-color);
+      position: absolute;
+      top: -72px;
+      border: 2px solid var(--bs-placeholder-color);
+      border-radius: 18px;
+      height: 47%;
+      left: -33px;
+      z-index: 0;
+    }
+
+    .extender-bottom {
+      background: var(--bs-placeholder-color);
+      position: absolute;
+      top: 40px;
+      border: 2px solid var(--bs-placeholder-color);
+      border-radius: 18px;
+      height: 80%;
+      left: -33px;
+      z-index: 1;
+    }
+
+    .fade-extender {
+      background: var(--bs-tertiary-bg);
+      position: absolute;
+      top: 22px;
+      border: 2px solid var(--bs-tertiary-bg);
+      border-radius: 18px;
+      height: 2000vh;
+      left: -33px;
+      z-index: 0;
+    }
+  }
+
+  .add-timeblock-container {
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .alert-container {
+    .alert-notif {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

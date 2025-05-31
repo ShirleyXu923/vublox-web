@@ -1,0 +1,106 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.event-modal {
+  --bs-modal-padding: 0;
+  --bs-modal-header-padding: 1.5rem 2.2rem;
+
+  @include media-breakpoint-up(md) {
+    --bs-modal-width: 886px;
+  }
+
+  .modal-header {
+    gap: 12px;
+
+    .btn-close {
+      margin: 0;
+    }
+  }
+
+  .event-page {
+    padding: 0;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(sm) {
+      .event-header {
+        .title {
+          margin-top: 0;
+        }
+      }
+
+      .event-page-wrapper:has(.scoreboard):not(:has(.scoreboard .collapse.show))>.fixed-stadium {
+        top: 50px !important;
+      }
+
+      .event-page-wrapper.game-mode:has(.scoreboard) .timeline-header-filters {
+        top: 565px !important;
+        padding-top: 1px !important;
+      }
+
+      .event-page-wrapper.game-mode:has(.scoreboard):has(.stadium:not(.show)) .timeline-header-filters {
+        top: 130px !important;
+      }
+
+    }
+
+    .hide-and-show-button-stadium.absolute {
+      z-index: 1000;
+    }
+
+    .game-timeline-header-mobile {
+      margin-right: -12px;
+      margin-left: -12px;
+      top: 0 !important;
+
+      .scoreboard {
+        margin-top: 0 !important;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .map,
+      .event-apple-map {
+        width: auto !important;
+        margin-left: 0 !important;
+        transform: none !important;
+      }
+
+      &:has(.scoreboard) {
+        .resizable-timeline {
+          .left-column {
+            top: 50px;
+          }
+        }
+
+        .timeline-slider {
+          margin: 0;
+        }
+      }
+    }
+
+    &:has(> .timeline-map) {
+      .timeline-header+.timeline-header-filters {
+        position: sticky;
+        top: 370px !important;
+        z-index: 99;
+        background: var(--bs-body-bg);
+        padding-top: 1px;
+        padding-bottom: 20px;
+
+        transition: linear;
+      }
+    }
+
+    .timeline-map {
+      top: 0 !important;
+    }
+
+    @include media-breakpoint-down(md) {
+      .event-page-wrapper :not(.game-mode) .timeline-header-filters {
+        top: 255px;
+      }
+    }
+  }
+
+}

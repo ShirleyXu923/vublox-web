@@ -1,0 +1,22 @@
+{
+  "label": {
+    "beta": "测试版",
+    "live": "实时模式",
+    "past": "过去的",
+    "all": "所有的",
+    "post": "帖子",
+    "latest": "最新的",
+    "shareVia": "分享方式",
+    "facebook": "Facebook",
+    "x": "X",
+    "copy": "复制",
+    "noEvents": "无有效事件",
+    "noPosts": "无有效帖子",
+    "contactUs": "联系我们",
+    "contactDescription1": "如果您有任何问题或查询，请立即与我们取得联系。",
+    "contactDescription2": "我们努力迅速回复所有电子邮件，并期待听到您的声音。"
+  },
+  "button": {
+    "viewAll": "查看全部"
+  }
+}

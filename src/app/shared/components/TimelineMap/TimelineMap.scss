@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeline-map {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  > .map {
+    height: calc(100vh - 65px);
+
+    @include media-breakpoint-down(xl) {
+      height: 370px !important;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 226px !important;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .timeline-map {
+    > .map {
+      height: calc(100vh - 60px);
+    }
+  }
+}

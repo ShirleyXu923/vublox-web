@@ -1,0 +1,76 @@
+// timeline-card-container
+.timeline-card-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding-top: 24px;
+
+  .timeline-card {
+    flex: 2;
+    padding: 16px;
+    background: var(--bs-secondary);
+    color: var(--bs-body-color);
+    border-radius: 18px;
+    z-index: 30;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .date {
+        color: var(--bs-secondary-text);
+      }
+
+      svg {
+        path {
+          stroke: var(--bs-body-color);
+        }
+      }
+    }
+
+    .body {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 16px;
+      gap: 12px;
+
+      .image {
+        width: 116px;
+        height: 42px;
+        border-radius: 8px;
+      }
+
+      .informative {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .title {
+          color: var(--bs-body-color);
+        }
+
+        .description {
+          color: var(--bs-body-color);
+        }
+
+        .location {
+          color: var(--bs-secondary-text);
+        }
+      }
+    }
+  }
+}
+
+.children {
+  padding-left: 5%;
+  width: 100%;
+
+  .post-card-container {
+    width: 95%;
+    .description, .b2, .organization, .social {
+      max-width: 350px !important;
+    }
+  }
+}

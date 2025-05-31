@@ -1,0 +1,80 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.followers-modal {
+  --bs-modal-width: 450px;
+  --bs-modal-header-padding: 1.5rem;
+  --bs-modal-padding: 0 1.5rem 1.5rem;
+
+  .badge {
+    color: var(--bs-primary);
+    background: var(--bs-badge-bg) !important;
+  }
+
+  .item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 12px 0;
+    justify-content: space-between;
+
+    .b1 {
+      color: var(--bs-body-color);
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &:hover {
+        .b1 {
+          color: var(--bs-primary);
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 4px;
+
+    .form-control {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 35px;
+      font-size: 14px;
+      border-radius: 50px;
+    }
+
+    .search-icon-left {
+      top: 13px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      .spinner-border {
+        margin-top: 6px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .search-icon-left {
+        top: 8px !important;
+      }
+
+      .form-control {
+        height: 32px !important;
+      }
+
+      .spinner-border {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .follow-button {
+    min-width: 110px;
+  }
+}

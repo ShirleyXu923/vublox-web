@@ -1,0 +1,42 @@
+.main-container {
+  .edit-container {
+    .page-title {
+      margin-top: 48px;
+    }
+
+    .tab-options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 32px;
+      gap: 20px;
+
+      .btn {
+        padding: 6px 20px;
+        border-radius: 25px;
+        color: var(--bs-body-bg);
+      }
+
+      .tab {
+        color: var(--bs-body-color);
+        cursor: pointer;
+      }
+    }
+
+    .timeline {
+      margin-top: 64px;
+
+      .action {
+        width: 78%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 64px;
+
+        .r-button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

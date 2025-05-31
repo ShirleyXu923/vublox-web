@@ -1,0 +1,212 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.about-page {
+    overflow: hidden;
+
+  .section-row {
+    position: relative;
+
+    &.last-row {
+      margin-bottom: 145px;
+    }
+
+    @include media-breakpoint-down(md) {
+      &.last-row {
+        margin-bottom: 42px;
+      }
+    }
+
+    .soccer-ball-1 {
+      position: absolute;
+      opacity: 0.25;
+      width: 419px;
+      height: 419px;
+      right: -20%;
+      top: -96px;
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        opacity: 0.25;
+        width: 175px;
+        height: 175px;
+        right: -46px;
+        top: -80px;
+      }
+    }
+
+    .soccer-ball-2 {
+      object-fit: contain;
+      position: absolute;
+      opacity: 0.25;
+      width: 210px;
+      height: 210px;
+      right: 8%;
+      bottom: -125px;
+      @include media-breakpoint-down(md) {
+        width: 88px;
+        height: 88px;
+        right: 65px;
+        bottom: 220px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 88px;
+        height: 88px;
+        right: 50px;
+        bottom: 220px; // Set a consistent bottom value here to avoid additional shifting
+      }
+
+      // Explicit adjustment for screens 375px or smaller
+      @media (max-width: 390px) {
+        right: 50px;
+        bottom: 270px; // Adjust this value slightly to anchor the position
+      }
+    }
+
+    .soccer-ball-3 {
+      object-fit: contain;
+      position: absolute;
+      opacity: 0.25;
+      width: 172px;
+      height: 172px;
+      left: -25%;
+      top: -28%;
+      @include media-breakpoint-down(md) {
+        object-fit: contain;
+        position: absolute;
+        opacity: 0.25;
+        width: 86px;
+        height: 86px;
+        left: -11%;
+        top: -5%;
+        background-blend-mode: lighten;
+      }
+    }
+
+    .soccer-ball-4 {
+      object-fit: contain;
+      position: absolute;
+      opacity: 0.25;
+      width: 357px;
+      height: 357px;
+      left: -20%;
+      bottom: -81%;
+      @include media-breakpoint-down(md) {
+        object-fit: contain;
+        position: absolute;
+        opacity: 0.25;
+        width: 149px;
+        height: 149px;
+        left: -7%;
+        bottom: 68%;
+      }
+    }
+
+    .eclipse {
+      object-fit: contain;
+      width: 558px;
+      height: 513px;
+      position: fixed;
+      right: -5%;
+      bottom: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      .eclipse {
+        height: 420px;
+        right: -10%;
+      }
+    }
+
+    .mib {
+      object-fit: contain;
+      position: absolute;
+      width: 683.5px;
+      height: 394.5px;
+      left: -31%;
+      top: 35%;
+      @include media-breakpoint-down(md) {
+        object-fit: contain;
+        position: absolute;
+        width: 380px;
+        height: 217px;
+        left: 3%;
+        top: 5%;
+      }
+    }
+  }
+
+  .title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include media-breakpoint-down(md) {
+      gap: $spacer * 0.75; // 12px
+      .b1 {
+        font-size: 16px;
+      }
+
+    }
+    .page-title-text {
+      color: var(--bs-primary);
+      @include media-breakpoint-down(md) {
+        margin-top: 5rem;
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+  }
+
+  .content-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .content-group {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 278px;
+      @include media-breakpoint-down(md) {
+        gap: $spacer * 0.75; // 12px
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+.about-page .section-row:nth-child(3) .content-row .content-group {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.about-page .section-row:last-child .content-row .content-group {
+  margin-bottom: 20px;
+}
+
+}
+[data-bs-theme='dark'] {
+  .about-page {
+    .section-row {
+      .mib {
+        mix-blend-mode: lighten;
+      }
+    }
+  }
+}
+
+
+[data-bs-theme='light'] {
+  .about-page {
+    .section-row {
+      [class^='soccer-ball-'], .mib {
+        mix-blend-mode: multiply;
+        opacity: 0.9;
+      }
+    }
+  }
+}

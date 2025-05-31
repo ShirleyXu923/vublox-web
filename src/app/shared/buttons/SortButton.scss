@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.filter {
+  .dropdown {
+    .dropdown-button, .dropdown-item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.94px;
+      text-align: left;
+      color: var(--bs-primary);
+      cursor: pointer;
+    }
+
+    .dropdown-button {
+      min-width: 135px;
+      border-radius: 50px;
+      padding: 6px 12px;
+      background: var(--bs-secondary);
+      max-height: unset !important;
+
+      .dropdown-icon {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.filter .dropdown-button .b5 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@include media-breakpoint-down(sm) {
+  .filter .dropdown-button .b5 {
+    font-size: 0.75rem;
+    color: var(--bs-secondary-text);
+    font-family: 'Inter', sans-serif;
+    text-wrap: nowrap;
+  }
+}

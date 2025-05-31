@@ -1,0 +1,48 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.instructions-page {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+
+    .col-btn {
+      position: relative;
+      width: 100%;
+      background: var(--bs-secondary-dark);
+      min-height: 15rem;
+      border-radius: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .b1 {
+        text-align: center;
+        color: var(--bs-secondary-text);
+      }
+
+      svg {
+        path {
+          fill: var(--bs-placeholder-color);
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+  }
+}

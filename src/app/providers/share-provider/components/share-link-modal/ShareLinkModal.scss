@@ -1,0 +1,135 @@
+.modal-share {
+  max-width: 800px;
+
+  .modal-title {
+    font-size: 32px;
+    color: #fefefe;
+    font-weight: 700;
+  }
+
+  .modal-body {
+    padding-top: 0;
+  }
+
+  .modal-content {
+    border-radius: 20px !important;
+    border-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal-header {
+    padding-bottom: 0 !important;
+    border: none;
+
+    .title {
+      color: var(--bs-body-color);
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+    }
+  }
+
+  .modal-body {
+    .link-container {
+      padding: 12px 18px;
+      border-radius: 18px;
+      background-color: var(--bs-secondary);
+
+      .flat-btn {
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        color: var(--bs-primary);
+
+        &:hover {
+          outline: none;
+          border-color: transparent;
+          background: transparent;
+        }
+
+        &:disabled {
+          color: var(--bs-secondary-text);
+        }
+      }
+    }
+
+    .qr-container {
+      .qr-wrapper {
+        min-width: 312px;
+        padding: 16px;
+        border-radius: 18px;
+        background-color: var(--bs-secondary);
+
+        .flat-btn {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          background: transparent;
+          color: var(--bs-primary);
+
+          &:hover {
+            outline: none;
+            border-color: transparent;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-share {
+    background-color: var(--bs-secondary) !important;
+    width: 110px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    border-radius: 18px;
+    font-size: 14px !important;
+    color: var(--bs-tertiary-color) !important;
+    height: 56px;
+    flex: 1;
+    max-width: 165px;
+
+    svg {
+      margin-left: 18px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .btn-share.active-btn {
+    background-color: var(--bs-primary) !important;
+    border: none;
+
+    span {
+      font-weight: 700;
+      color: var(--bs-secondary-dark) !important;
+    }
+
+    svg {
+      path {
+        stroke: var(--bs-secondary-dark);
+        fill: var(--bs-secondary-dark);
+      }
+    }
+
+    .qr-code {
+      path {
+        fill: var(--bs-secondary-dark);
+      }
+    }
+  }
+}
+  @media (max-width: 576px) {
+  .modal-share .btn-share {
+      padding: 0px;
+  }
+}

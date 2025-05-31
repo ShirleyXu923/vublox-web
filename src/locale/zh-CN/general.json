@@ -1,0 +1,132 @@
+{
+  "copyright": "Gogo React ©️ 2018 All Rights Reserved.",
+  "table": {
+    "display_options": {
+      "title": "点击这里显示选项",
+      "label": "显示选项"
+    },
+    "placeholder": {
+      "search": "搜索"
+    },
+    "showing_data_entries": "显示:from 到 :to :to of total 条目"
+  },
+  "button": {
+    "cancel": {
+      "title": "点击取消",
+      "name": "取消"
+    },
+    "confirm": {
+      "title": "点击确认",
+      "name": "确认"
+    },
+    "save": {
+      "title": "单击以保存",
+      "name": "保存"
+    },
+    "submit": {
+      "title": "点击提交",
+      "name": "提交"
+    },
+    "update": {
+      "title": "点击以更新",
+      "name": "更新"
+    },
+    "add": {
+      "title": "点击添加",
+      "name": "添加"
+    },
+    "edit": {
+      "title": "点击编辑此记录",
+      "name": "编辑"
+    },
+    "view": {
+      "title": "点击查看此记录",
+      "name": "查看"
+    },
+    "delete": {
+      "title": "单击以删除此记录",
+      "name": "删除"
+    },
+    "go_home": {
+      "title": "点击返回主页。",
+      "name": "返回主页"
+    },
+    "back": "后退",
+    "share": "分享"
+  },
+  "error": {
+    "invalid_credentials": {
+      "title": "登录失败",
+      "message": "您的电子邮件地址和/或密码不匹配。"
+    },
+    "throttle": {
+      "title": "尝试次数太多了",
+      "message": "您请求的速度太快。您已被屏蔽了一段时间，请稍后再试。"
+    },
+    "invalid_request": {
+      "title": "无效请求",
+      "message": "无效请求。请重试。"
+    },
+    "establish_connection": {
+      "title": "连接错误",
+      "message": "我们无法与服务器建立连接。请检查您的互联网或与管理员联系。"
+    },
+    "internal_server": {
+      "title": "服务器内部错误",
+      "message": "我们目前无法处理您的请求。请稍后再试或联系管理员。"
+    },
+    "validation": {
+      "title": "验证错误",
+      "message": "给定数据有一些错误。请检查字段。"
+    },
+    "default": {
+      "title": "错误",
+      "message": "您的请求有问题。请重试。"
+    },
+    "local_storage": {
+      "title": "应用错误",
+      "message": "我们检测到您的浏览器不支持我们的一些功能。 如果您处于隐身状态，请使用正常模式或者我们建议在Chrome浏览器中使用我们的应用程序。"
+    },
+    "firebase_support": {
+      "title": "不支持通知",
+      "message": "除了真正的通知外，一切都将正常运行。 如果您想要收到通知，我们建议您更新您的浏览器，或者我们建议使用Chrome浏览器。"
+    },
+    "not_found": {
+      "title": "找不到页面",
+      "message": "我们找不到您想要的东西。请联系我们更好地帮助您。"
+    },
+    "file_too_large": "上传的图片超出了 {fileSizeLimit} 的大小限制。",
+    "file_type_invalid": "上传的图像格式无效。"
+  },
+  "validation": {
+    "no_email": "请输入您的电子邮件地址",
+    "invalid_email": "无效的电子邮件地址",
+    "no_password": "请输入您的密码",
+    "invalid_password": "必须要至少 3 个字符",
+    "required": "此字段是必填项"
+  },
+  "upload": {
+    "title": "上传文件",
+    "file": "文件",
+    "addFile": "添加文件",
+    "addFileSubTitle": "或添加要上传的文件",
+    "checkboxDescription": "覆盖任何当前有相同句柄的产品。现有值将用于任何缺失的列。",
+    "uploaded": "上传完成",
+    "uploadProgress": ":load%",
+    "uploadProcess": "正在处理 :type",
+    "uploadFailed": "上传失败",
+    "success": {
+      "title": "上传完成",
+      "message": "成功上传文件。"
+    },
+    "dropzone": "点击上传",
+    "replace": "替换",
+    "filename": "文件名"
+  },
+  "placeholder": {
+    "search": "搜索"
+  },
+  "filter": {
+    "customDateRange": "自定义日期范围"
+  }
+}

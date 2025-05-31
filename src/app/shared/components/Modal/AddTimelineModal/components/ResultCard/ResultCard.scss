@@ -1,0 +1,51 @@
+.result-card {
+  padding: 18px 16px;
+  border-radius: 18px;
+  background: var(--bs-secondary-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .b2 {
+    color: var(--bs--body-color);
+  }
+
+  .b5 {
+    color: var(--bs--body-color);
+    margin-bottom: 0;
+  }
+
+  .caption1 {
+    color: var(--bs-secondary-text);
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .badges {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14.52px;
+      text-align: left;
+      color: var(--bs-primary);
+      background: var(--bs-badge-bg);
+    }
+  }
+}
+
+.result-card.selected {
+  border: 2px solid var(--bs-primary);
+}

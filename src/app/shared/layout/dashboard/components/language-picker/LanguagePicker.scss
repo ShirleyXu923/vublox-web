@@ -1,0 +1,52 @@
+.top-nav .language-picker {
+
+  .dropdown-item {
+    padding: 0.7rem 1.2rem;
+
+    &:hover {
+      background: var(--bs-highlight);
+    }
+
+    &.active {
+      background: var(--bs-highlight);
+      font-weight: 700;
+      color: var(--bs-primary);
+    }
+  }
+
+  .header-icon {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    &.btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .language-icon {
+      img {
+        width: 22px;
+        height: 22px;
+        border: 2px solid var(--bs-body-color);
+        border-radius: 11px;
+        margin-bottom: 3px;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: -5px;
+      right: 2.5px;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      min-width: 18px;
+    }
+  }
+}

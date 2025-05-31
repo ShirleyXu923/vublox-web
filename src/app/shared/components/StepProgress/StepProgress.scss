@@ -1,0 +1,31 @@
+.step-progress {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  .step {
+    background: var(--bs-secondary-bg);
+    color: var(--bs-secondary-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+
+    &.active {
+      background: var(--bs-primary);
+      color: var(--bs-body-bg);
+      font-weight: bold;
+    }
+
+    &.completed {
+      background: rgba(var(--bs-primary-rgb), 16%);
+
+      svg > path {
+        fill: var(--bs-primary);
+      }
+    }
+  }
+}

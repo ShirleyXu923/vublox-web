@@ -1,0 +1,251 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.timeline-item-card {
+  position: relative;
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--bs-secondary);
+  width: 100%;
+  border: none;
+  max-width: 1096px;
+
+  .more-menu {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      width: 24px;
+      background: transparent;
+      border: none;
+    }
+  }
+
+  > .timeline-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 12px;
+    width: 100%;
+
+    .image {
+      height: 61px;
+      width: 168px;
+      border-radius: 8px;
+      object-fit: contain;
+      aspect-ratio: 1;
+      grid-column: 1 / 2;
+    }
+
+    .image-default {
+      object-fit: contain;
+      background: var(--bs-body-bg);
+      border-radius: 18px;
+      max-height: 76px;
+
+      img {
+        border-radius: 18px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .image {
+        height: 90px;
+      }
+    }
+
+    .informations {
+      grid-column: 2 / 7;
+      width: 100%;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .dropdown {
+          .btn {
+            padding: 0;
+          }
+        }
+
+        .more-button {
+          cursor: pointer;
+          position: relative;
+
+          .more-options {
+            background: var(--bs-secondary);
+            padding: 16px;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            margin: 0;
+            top: 24px;
+
+            ul {
+              list-style-type: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        .title, .description, .dates {
+          max-width: 280px;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        .title, .description, .dates {
+          max-width: 270px;
+        }
+      }
+    }
+
+    .dates {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+
+      .separator {
+        height: 2px;
+        width: 2px;
+        border-radius: 100%;
+        background: var(--bs-secondary-text);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .more-menu {
+      right: 12px;
+      bottom: 12px;
+    }
+
+    > .timeline-item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .image {
+        width: 100%;
+        height: 90px;
+      }
+
+      .informations {
+        .description {
+          font-weight: 600;
+          color: var(--bs-secondary-text);
+        }
+
+        .dates {
+          .b5 {
+            font-size: 10px;
+            color: var(--bs-secondary-text);
+          }
+        }
+      }
+    }
+  }
+
+  .more-info {
+    margin-top: 24px;
+    display: flex;
+
+    .category, .privacy {
+      flex: 1;
+    }
+
+    .privacy {
+      .b3 {
+        text-transform: capitalize;
+      }
+    }
+
+    .caption1 {
+      color: var(--bs-placeholder-color);
+      margin-bottom: 12px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      .b3 {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .tags {
+    margin-top: 24px;
+
+    .caption1 {
+      color: var(--bs-placeholder-color);
+    }
+
+    .tag-items {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+
+      .tag-item {
+        border-radius: 100px;
+        background: var(--bs-tag2-bg);
+        color: var(--bs-body-color);
+        padding: 6.5px 12px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        .tag-item {
+          padding: 3px 9px;
+        }
+      }
+    }
+  }
+
+  .actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .badge {
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .timeline-item-card {
+    padding: 12px;
+    max-width: unset;
+
+    .actions {
+      a {
+        font-size: 12px;
+      }
+
+      .badge {
+        margin-right: 15%;
+      }
+    }
+  }
+}
+
+.card.selected {
+  border: 1px solid var(--bs-primary);
+}

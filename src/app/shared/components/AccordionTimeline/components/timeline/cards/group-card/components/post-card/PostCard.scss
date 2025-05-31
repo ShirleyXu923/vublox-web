@@ -1,0 +1,156 @@
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.group-post-card {
+  max-width: 342px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .image-container {
+    position: relative;
+
+    .historical-badge {
+      position: absolute;
+      bottom: 10px;
+      left: 13px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--bs-ghost-bg);
+      border-radius: 8px;
+      padding: 4px 10px;
+      opacity: 0.8;
+
+      svg {
+        margin-bottom: 1.5px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 342px;
+    z-index: 2;
+    height: 100%;
+
+    .description-only {
+      .description {
+        white-space: break-spaces;
+        word-break: break-all;
+        max-height: 190px;
+        overflow: hidden;
+        color: var(--bs-body-color);
+      }
+
+      @include media-breakpoint-down(sm) {
+        .description {
+          max-height: 145px;
+        }
+      }
+    }
+
+    .organization {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 13px;
+      margin-top: auto;
+      z-index: 2;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 8px;
+      }
+
+      .info {
+          overflow: hidden;
+
+       .b3 {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+
+       }
+        .caption1 {
+          color: var(--bs-secondary-text);
+        }
+
+        a {
+          &:hover {
+            text-decoration-color: var(--bs-body-color);
+          }
+        }
+      }
+    }
+
+    .social {
+      margin-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 2;
+
+      .vote {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        .upvote {
+          cursor: pointer;
+          display: flex;
+          gap: 4px;
+          align-items: center;
+
+          &:hover svg path {
+            fill: var(--bs-primary);
+          }
+        }
+
+        .downvote {
+          cursor: pointer;
+
+          &:hover svg path {
+            fill: var(--bs-danger);
+          }
+        }
+
+        .line {
+          height: 14px;
+          width: 1px;
+          background: var(--bs-secondary-text);
+        }
+      }
+
+      .interaction {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .comment {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .b5 {
+            color: var(--bs-secondary-text);
+          }
+        }
+
+        .share {
+          cursor: pointer;
+
+          svg {
+            margin-bottom: 2px !important;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: calc(100vw * 0.6) !important;
+    }
+  }
+}

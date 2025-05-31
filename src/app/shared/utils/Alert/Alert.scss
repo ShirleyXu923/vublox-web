@@ -1,0 +1,16 @@
+.alert-notif {
+    padding: 8px 10px 8px 10px;
+    gap: 8px;
+    border-radius: 12px;
+    background-color: var(--bs-alert-bg-primary);
+    display: inline-flex;
+    align-items: center;
+
+    .b5 {
+      color: var(--bs-dark);
+    }
+
+    .max-width {
+      max-width: 664px;
+    }
+}

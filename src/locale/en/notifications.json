@@ -1,0 +1,28 @@
+{
+  "label": {
+    "title": "Notifications",
+    "all": "All",
+    "unread": "Unread",
+    "clearAll": "Clear All",
+    "noNotification": "No notifications yet.",
+    "noUnreadNotification": "No unread notifications yet.",
+    "viewAll": "View All",
+    "your": "your",
+    "sharedYour": "shared your",
+    "upvotedYour": "upvoted your",
+    "following": "Following",
+    "followBack": "Follow Back",
+    "startedFollowing": "started following you.",
+    "commentedOnYour": "commented on your",
+    "today": "Today",
+    "earlier": "Earlier",
+    "and": "and",
+    "more": "more",
+    "invitedYouTo": "has invited you to an Invite-Only Event, {event}",
+    "accept": "Accept",
+    "decline": "Decline",
+    "declined": "declined",
+    "accepted": "accepted",
+    "eventMessage": "You have {action} to an Invite-Only Event, {event}"
+  }
+}

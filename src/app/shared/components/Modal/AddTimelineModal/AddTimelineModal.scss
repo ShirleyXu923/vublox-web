@@ -1,0 +1,57 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.search-result {
+  background: var(--bs-tertiary-bg);
+  padding: 24px 16px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  cursor: pointer;
+
+  .nav-pills {
+    .nav-item {
+      .nav-link {
+        color: var(--bs-secondary-text) !important;
+
+        &.active {
+          color: var(--bs-tertiary-bg) !important;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .results {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 454px;
+    overflow-y: auto;
+  }
+}
+
+.add-timeline-button {
+  margin-top: 40px;
+  width: 100%;
+
+  .btn.disabled {
+    background: var(--bs-disabled-bg);
+    border: none;
+    color: var(--bs-disabled-text);
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .add_timeblock__modal {
+    .modal-content {
+      padding: 10px;
+    }
+  }
+
+  .search-result {
+    padding: 10px;
+  }
+}

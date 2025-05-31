@@ -1,0 +1,33 @@
+{
+  "label": {
+    "trending": "Trending",
+    "past": "Past",
+    "live": "Live",
+    "discover": "Discover",
+    "upcoming": "Upcoming",
+    "trendingWorldEvents": "Trending World View",
+    "pastWorldView": "Past World View",
+    "liveWorldEvents": "Live World View",
+    "discoverWorldEvents": "Discover World View",
+    "upcomingWorldEvents": "Upcoming World View",
+    "filters": "Filters",
+    "date": "Date",
+    "anyDate": "Any Date",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "lastWeek": "Last Week",
+    "nextWeek": "Next Week",
+    "customDateRange": "Custom Date Range",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "tags": "Tags",
+    "searchTags": "Search Tags",
+    "enableLocation": "Please enable GPS location for a better experience."
+  },
+  "button": {
+    "refresh": "Refresh",
+    "apply": "Apply",
+    "enableLocation": "Enable Location",
+    "hideMap": "Hide Map"
+  }
+}

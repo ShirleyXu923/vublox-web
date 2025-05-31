@@ -1,0 +1,55 @@
+{
+  "title": "Revolutionising How You Experience Events In History, Present, and Future",
+  "label": {
+    "description": "Join Vublox for interactive timelines, exclusive content, and a vibrant community. Be the first to know when we launch!",
+    "description2": "Vublox is the ultimate platform for sports, entertainment, history, education and interactive content. We bring together live updates, historical data, and user-generated content in a dynamic, interactive format.",
+    "copyright": "© {date} Vublox",
+    "keyFeatures": "Key Features",
+    "keyFeatures1": "Interactive Timelines",
+    "keyFeaturesDescription1": "Explore events with rich multimedia content.",
+    "keyFeatures2": "Real-Time Updates",
+    "keyFeaturesDescription2": "Stay up-to-date with live sports, events and key moments.",
+    "keyFeatures3": "Exclusive Content",
+    "keyFeaturesDescription3": "Access content from your favorite influencers, athletes and celebrities.",
+    "keyFeatures4": "Community Engagement",
+    "keyFeaturesDescription4": "Share your experiences and connect with others.",
+    "benefits": "Benefits",
+    "benefits1": "Early Access",
+    "benefitsDescription1": "Be the first to experience Vublox.",
+    "benefits2": "Exclusive Updates",
+    "benefitsDescription2": " Receive sneak peeks and insider information.",
+    "benefits3": "Special Offers",
+    "benefitsDescription3": "Get access to special promotions and events.",
+    "overview": "Vublox Overview",
+    "overview1": "Sign Up",
+    "overviewDescription1": "Join our community and create your profile.",
+    "overview2": "Explore",
+    "overviewDescription2": "Discover interactive timelines and exclusive content.",
+    "overview3": "Engage",
+    "overviewDescription3": "Participate in events, share your experiences, and connect with others.",
+    "overview4": "Enjoy",
+    "overviewDescription4": "Experience the best of digital content in one place.",
+    "form": "Stay Updated with Vublox",
+    "formDescription": "We respect your privacy. Your email will only be used to provide updates about Vublox.",
+    "email": "Email",
+    "firstName": "First Name"
+  },
+  "placeholder": {
+    "email": "Email",
+    "firstName": "First Name"
+  },
+  "success": {
+    "createLead": "Email successfully registered."
+  },
+  "button": {
+    "submit": "Submit",
+    "tryBetaNow": "Try Beta Now",
+    "tryNow": "Try Now",
+    "getEarlyAccess": "Get Early Access",
+    "joinTheCommunity": "Join the Vublox Community",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms and Conditions",
+    "cookiePolicy": "Cookie Policy"
+  }
+}

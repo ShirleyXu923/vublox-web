@@ -1,0 +1,15 @@
+.sign-in {
+  .btn-social {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .alert-danger {
+    display: inline-flex;
+    border-color: transparent;
+    padding: 5px 20px;
+    border-radius: 100px;
+    align-items: center;
+  }
+}

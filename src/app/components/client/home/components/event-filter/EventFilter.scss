@@ -1,0 +1,54 @@
+.event-filter {
+
+  .dropdown-toggle {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-weight: normal;
+    width: 250px;
+    background-color: var(--bs-filter-bg) !important;
+
+    div {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    svg {
+      min-width: 20px;
+    }
+  }
+
+
+  &.show {
+    .dropdown-toggle {
+      background: var(--bs-primary);
+      color: var(--bs-dark);
+
+      svg > g > path {
+        fill: var(--bs-dark);
+      }
+    }
+  }
+
+  .dropdown-menu {
+    width: 280px;
+    
+    .sports {
+      max-height: 400px;
+      overflow: auto;
+    }
+    
+  }
+
+  .dropdown-item {
+    .form-check {
+      width: 100%;
+      cursor: pointer;
+    }
+    .form-check-label {
+      width: 100%;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+  }
+}

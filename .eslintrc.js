@@ -1,0 +1,142 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  ignorePatterns: ['/types/*.d.ts'],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+    },
+  },
+  extends: [
+    'airbnb',
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:react/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+    project: './tsconfig.json',
+  },
+  plugins: [
+    'react',
+    '@typescript-eslint',
+  ],
+  rules: {
+    'class-methods-use-this': 0,
+    'function-paren-newline': [ 'off', 'multiline' ],
+    'function-call-argument-newline': [ 'off' ],
+    'jsx-a11y/anchor-is-valid': 0,
+    'jsx-a11y/label-has-for': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/media-has-caption': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/jsx-filename-extension': 0,
+    'react/require-default-props': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/no-explicit-any': 0,
+    'import/order': [
+      'warn',
+      {
+        groups: [ [ 'builtin', 'external' ], 'internal', [ 'parent', 'index', 'sibling' ] ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+        },
+      },
+    ],
+
+    // new
+    'react/jsx-one-expression-per-line': 0,
+    'react/no-unescaped-entities': 0,
+    'linebreak-style': 0,
+    'react/prefer-stateless-function': 0,
+    'react/jsx-curly-spacing': 1,
+    'react/sort-comp': 0,
+    'react/state-in-constructor': 0,
+    'react/jsx-fragments': 0,
+    'react/static-property-placement': 0,
+    'react/prop-types': [
+      'error',
+    ],
+    'comma-spacing': [
+      'error',
+      {
+        before: false,
+        after: true,
+      },
+    ],
+    camelcase: [
+      'error',
+      {
+        ignoreDestructuring: true,
+        properties: 'never',
+      },
+    ],
+    'object-curly-spacing': [
+      'error',
+      'always',
+    ],
+    'array-bracket-spacing': [
+      'error',
+      'always',
+    ],
+    semi: 2,
+    'no-comma-dangle': 0,
+    'no-cond-assign': 0,
+    'no-console': 2,
+    'no-alert': 2,
+    'no-div-regex': 0,
+    'no-else-return': 2,
+    'no-shadow': 2,
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+      },
+    ],
+    'no-mixed-spaces-and-tabs': 2,
+    'no-multiple-empty-lines': 2,
+    'keyword-spacing': 2,
+    'space-before-blocks': 2,
+    'space-in-parens': 2,
+    'space-infix-ops': 2,
+    'space-unary-ops': 2,
+    'no-unused-vars': 2,
+    'no-underscore-dangle': 0,
+    eqeqeq: 2,
+    'no-return-assign': 1,
+    'no-unused-expressions': 2,
+    'no-plusplus': 0,
+    'no-lonely-if': 1,
+    radix: 0,
+    'prettier/prettier': 0,
+    'arrow-parens': 0,
+    'no-useless-rename': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+  },
+};

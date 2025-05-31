@@ -1,0 +1,45 @@
+.timeblock_pin {
+  position: relative;
+  height: inherit;
+  margin-top: 15px;
+
+  .timeblock_pin__circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--bs-primary);
+    box-shadow: 0 0 16px 0px var(--bs-primary);
+  }
+
+  .timeblock_pin__extender {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+    background-color: var(--bs-placeholder-color);
+    z-index: -1;
+  }
+
+  .timeblock_pin__line {
+    width: 3px;
+    height: 86%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bs-placeholder-color);
+    z-index: -1;
+  }
+
+  .timeblock_pin__shadow {
+    width: 3px;
+    height: 1000vh;
+    top: -100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bs-tertiary-bg);
+    z-index: -3;
+  }
+}

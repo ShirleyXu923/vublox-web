@@ -1,0 +1,102 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.start-modal-custom {
+  height: 100vh;
+  display: flex;
+  min-width: 800px;
+
+  .modal-content {
+    margin: auto;
+    padding: 0 10px 20px 10px;
+
+    .event {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+
+      .banner {
+        height: 80px;
+        width: 218px;
+        border-radius: 6px;
+
+        .image {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+
+        // Small screens and down
+        @include media-breakpoint-down(sm) {
+          width: 100% !important;
+          max-width: 180px;
+        }
+
+        // Extra-small screens
+        @include media-breakpoint-down(xs) {
+          max-width: 160px;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .description {
+          color: var(--bs-body-color);
+        }
+
+        .caption1 {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: var(--bs-secondary-text);
+
+          .seperator {
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background: var(--bs-body-color);
+          }
+        }
+      }
+
+      // Small screens and down
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .event-form {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      // Small screens and down
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    // Small screens and down
+    @include media-breakpoint-down(sm) {
+      padding: 10px !important;
+    }
+  }
+
+  // Small screens and down
+  @include media-breakpoint-down(sm) {
+    min-width: 350px !important;
+    padding: 0;
+  }
+
+  // Extra-small screens
+  @include media-breakpoint-down(xs) {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}

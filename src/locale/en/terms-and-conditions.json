@@ -1,0 +1,634 @@
+{
+  "title": "Terms and Conditions",
+  "label": {
+    "effectiveDate": "Effective Date: {date}"
+  },
+  "sections": [
+    {
+      "title": "Introduction",
+      "description": "Welcome to Vublox Limited (“Vublox”, “we”, “us” and “our”). These Terms and Conditions (“Terms”) govern your use of our website, mobile applications, and other services we provide (collectively referred to as the “Platform”). By accessing or using the Platform, you agree to comply with and be bound by these Terms. If you do not agree with any part of these Terms, you must immediately cease using the Platform.\n\nVublox is a social platform designed to democratize historical events by allowing users to contribute, share, and engage with content related to past occurrences. Our mission is to provide a space where history is preserved and discussed freely. However, the use of Vublox is subject to the following terms and conditions, which are set forth to ensure the safety, legality, and integrity of the platform."
+    },
+    {
+      "title": "Definitions",
+      "description": "For the purposes of these Terms, the following definitions shall apply:",
+      "items": [
+        {
+          "title": "User:",
+          "description": "Any individual or entity that accesses, registers, or contributes content to the Platform."
+        },
+        {
+          "title": "Content:",
+          "description": "All forms of data, text, audio, video, images, graphics, or other materials uploaded, posted, shared, or otherwise made available on the Platform by Users."
+        },
+        {
+          "title": "Platform:",
+          "description": "The website, mobile applications, and other digital services operated by Vublox."
+        },
+        {
+          "title": "Services:",
+          "description": "All features, functionalities, and offerings provided by Vublox, including content hosting, sharing, and community engagement."
+        },
+        {
+          "title": "Account:",
+          "description": "The registered profile created by a User to access certain features of the Platform."
+        },
+        {
+          "title": "Vublox:",
+          "description": "Refers to Vublox Limited, a company registered in Hong Kong, including its affiliates, subsidiaries, directors, officers, employees, and agents."
+        }
+      ]
+    },
+    {
+      "title": "Eligibility",
+      "description": "To use the Platform, you must meet the following eligibility criteria:",
+      "items": [
+        {
+          "title": "Age Requirement:",
+          "description": "If you are under the age of 18, you may use the Platform only with the consent of a parent or legal guardian. Certain content may be restricted to Users who are 18 years or older, and you are responsible for ensuring that you meet these age requirements before accessing such content."
+        },
+        {
+          "title": "Legal Capacity:",
+          "description": "By using the Platform, you represent and warrant that you have the legal capacity to enter into a binding agreement with Vublox under applicable law."
+        },
+        {
+          "title": "Compliance with Laws:",
+          "description": "You must comply with all local, national, and international laws, regulations, and policies that apply to your use of the Platform. Any use of the Platform in violation of such laws or regulations is strictly prohibited and may result in the termination of your Account."
+        }
+      ]
+    },
+    {
+      "title": "User Account Registration",
+      "description": "To access certain features of the Platform, including contributing content, you must register for an Account. When registering for an Account, you agree to:",
+      "items": [
+        {
+          "title": "Provide Accurate Information:",
+          "description": "You must provide accurate, complete, and up-to-date information during the registration process, including your name, date of birth, contact details, and any other information requested by Vublox. Failure to do so may result in the suspension or termination of your Account."
+        },
+        {
+          "title": "Maintain Account Security:",
+          "description": "You are responsible for maintaining the confidentiality of your Account credentials, including your username and password. You must not share your Account details with others or allow others to access your Account. You agree to notify Vublox immediately of any unauthorized use of your Account or any other breach of security."
+        },
+        {
+          "title": "Update Information:",
+          "description": "You must promptly update your Account information if there are any changes to ensure that it remains accurate and complete. Vublox is not responsible for any loss or damage arising from your failure to update your Account information."
+        },
+        {
+          "title": "One Account Per User:",
+          "description": "Each User is allowed to create and maintain only one Account. Creating multiple accounts is prohibited and may result in the termination of all associated accounts."
+        }
+      ]
+    },
+    {
+      "title": "User Obligations and Responsibilities",
+      "description": "As a User of the Platform, you agree to the following obligations and responsibilities:",
+      "items": [
+        {
+          "title": "Provide Truthful Information:",
+          "description": "You must ensure that all information you provide to Vublox, whether during registration or while using the Platform, is truthful, accurate, and not misleading."
+        },
+        {
+          "title": "Comply with Laws:",
+          "description": "You must comply with all applicable laws, regulations, and these Terms when using the Platform. This includes, but is not limited to, intellectual property laws, privacy laws, and content regulations."
+        },
+        {
+          "title": "Respect for Others:",
+          "description": "You must respect the rights and dignity of other Users. Harassment, abuse, or any form of misconduct towards other Users is strictly prohibited."
+        },
+        {
+          "title": "Prohibited Activities:",
+          "description": "You must not engage in any activities that are harmful, fraudulent, or illegal, including, but not limited to:",
+          "items": [
+            {
+              "title": "Spamming, phishing, or distributing unsolicited messages"
+            },
+            {
+              "title": "Attempting to gain unauthorized access to the Platform or other Users’ accounts"
+            },
+            {
+              "title": "Uploading or sharing malicious software, viruses, or other harmful code"
+            },
+            {
+              "title": "Engaging in activities that could damage, disable, overburden, or impair the Platform’s functionality"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "User-Generated Content",
+      "description": "Vublox allows Users to create, upload, share, and engage with content on the Platform. By contributing content to the Platform, you agree to the following terms:",
+      "items": [
+        {
+          "title": "Content Ownership:",
+          "description": "You retain ownership of the content you create and upload to the Platform. However, by posting content on the Platform, you grant Vublox a worldwide, non-exclusive, royalty-free, transferable, and sublicensable license to use, reproduce, distribute, prepare derivative works of, display, and perform the content in connection with the Platform’s operation and promotion."
+        },
+        {
+          "title": "Content Responsibility:",
+          "description": "You are solely responsible for the content you upload, post, or share on the Platform. You warrant that your content does not violate any laws, infringe on the intellectual property rights of others, or contain harmful, defamatory, or inappropriate material."
+        },
+        {
+          "title": "Immutable Content and Anti-Censorship Policy:",
+          "description": "Vublox upholds the values of transparency, responsibility, and anti-censorship. Once content is posted on the platform, it becomes permanent and is not subject to editing or deletion. Therefore, each post will remain indefinitely under the user’s name. We urge users to post responsibly, considering that they have only one opportunity to share. Should users make false claims or disseminate misinformation, those statements will persist on the platform forever, visibly tied to their name."
+        },
+        {
+          "title": "Prohibited Content:",
+          "description": "You agree not to post or share content that:",
+          "items": [
+            {
+              "title": "Promotes violence, discrimination, or illegal activities"
+            },
+            {
+              "title": "Contains explicit, pornographic, or sexually suggestive material"
+            },
+            {
+              "title": "Infringes on the copyrights, trademarks, or other intellectual property rights of third parties"
+            },
+            {
+              "title": "Is false, misleading, or deceptive"
+            },
+            {
+              "title": "Violates the privacy or rights of others"
+            }
+          ]
+        },
+        {
+          "title": "Content Moderation:",
+          "description": "Vublox reserves the right, but is not obligated, to monitor, review, and remove any content that violates these Terms, at its sole discretion. Vublox may also terminate or suspend your Account if you repeatedly violate these content guidelines."
+        }
+      ]
+    },
+    {
+      "title": "Content Licensing",
+      "description": "By submitting content to the Platform, you grant Vublox a license to use your content as follows:",
+      "items": [
+        {
+          "title": "License Scope:",
+          "description": "You grant Vublox a worldwide, non-exclusive, royalty-free, perpetual, irrevocable, and sublicensable license to use, reproduce, modify, adapt, publish, translate, distribute, publicly perform, and display your content in any media or distribution method now known or developed in the future. This license allows Vublox to operate the Platform, promote its services, and provide other Users with access to your content."
+        },
+        {
+          "title": "Moral Rights:",
+          "description": "You waive any moral rights or rights of attribution you may have in your content. This means that Vublox is not required to credit you as the author of the content, although it may choose to do so at its discretion."
+        },
+        {
+          "title": "Third-Party Rights:",
+          "description": "You represent and warrant that you have the necessary rights, licenses, and permissions to grant the above license to Vublox. You also agree to indemnify and hold Vublox harmless from any claims, damages, or liabilities arising from Vublox’s use of your content in accordance with these Terms."
+        }
+      ]
+    },
+    {
+      "title": "Intellectual Property Rights",
+      "description": "Vublox is committed to protecting its intellectual property rights as well as those of its Users. This section outlines the ownership, usage, and protection of intellectual property on the Platform.",
+      "items": [
+        {
+          "title": "Vublox’s Intellectual Property:",
+          "description": "All content, features, functionalities, designs, graphics, logos, trademarks, and software that are part of the Platform (collectively referred to as 'Vublox Content') are the exclusive property of Vublox or its licensors. This includes the overall appearance and feel of the Platform. You may not use, copy, distribute, or create derivative works from Vublox Content without our prior written consent."
+        },
+        {
+          "title": "Prohibition on Unauthorized Use:",
+          "description": "You are strictly prohibited from using Vublox’s intellectual property, including but not limited to, its design, code, business model, or any other proprietary information, for any purpose without express authorization. This includes the prohibition against reverse engineering, decompiling, or otherwise attempting to derive the source code of the Platform."
+        },
+        {
+          "title": "User Content:",
+          "description": "While you retain ownership of the content you create and share on the Platform, you acknowledge and agree that Vublox may use your content in accordance with the license granted under Section 7."
+        },
+        {
+          "title": "DMCA Compliance:",
+          "description": "Vublox respects the intellectual property rights of others and complies with the Digital Millennium Copyright Act (DMCA). If you believe that any content on the Platform infringes your copyright, you may submit a DMCA takedown notice as described in Section 18."
+        }
+      ],
+      "footer": "By using the Platform, you agree to comply with these intellectual property policies and respect the intellectual property rights of others."
+    },
+    {
+      "title": "Privacy and Data Collection",
+      "description": "Your privacy is important to Vublox. This section explains how we collect, use, and protect your personal information.",
+      "items": [
+        {
+          "title": "Data Collection:",
+          "description": "When you use the Platform, we may collect personal information such as your name, date of birth, email address, and other contact details. We may also collect information about your activities on the Platform, such as your interactions, content uploads, and usage patterns."
+        },
+        {
+          "title": "Purpose of Data Collection:",
+          "description": "The data we collect is used to provide and improve the Platform’s services, personalize your experience, ensure the security of the Platform, and comply with legal obligations. We may also use your information to communicate with you about updates, promotions, and other relevant information."
+        },
+        {
+          "title": "Data Protection:",
+          "description": "Vublox implements industry-standard security measures to protect your personal information from unauthorized access, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security."
+        },
+        {
+          "title": "User Consent:",
+          "description": "By using the Platform, you consent to the collection and use of your information as described in this section and our Privacy Policy. If you do not agree with our data practices, you must discontinue your use of the Platform."
+        },
+        {
+          "title": "Privacy Policy Reference:",
+          "description": "Our Privacy Policy provides further details on how we handle your personal information. It is incorporated into these Terms by reference, and you are encouraged to review it to understand our data protection practices fully."
+        }
+      ],
+      "footer": "Please review our Privacy Policy to understand how we collect, use, and protect your personal information."
+    },
+    {
+      "title": "Payment Terms (Future Use)",
+      "description": "While Vublox currently does not offer payment processing services, this section outlines the terms that will apply if such features are introduced in the future.",
+      "items": [
+        {
+          "title": "Payment Processing:",
+          "description": "Should Vublox introduce payment processing services, all transactions made through the Platform will be subject to these Terms and any additional terms that may apply at that time. Users will be required to provide accurate payment information, and Vublox may use third-party payment processors to facilitate transactions."
+        },
+        {
+          "title": "User Responsibility:",
+          "description": "You are responsible for ensuring that all payment details you provide are accurate and up-to-date. Any fees, charges, or taxes associated with your use of the Platform will be your sole responsibility."
+        },
+        {
+          "title": "Refunds and Disputes:",
+          "description": "The terms for refunds, cancellations, and dispute resolution related to payments will be clearly outlined if and when payment services are offered. Users will be informed of these terms at the time of any transaction."
+        },
+        {
+          "title": "Changes to Payment Terms:",
+          "description": "Vublox reserves the right to modify or discontinue payment services at any time. Users will be notified of any significant changes to payment terms through updates to these Terms or other means of communication."
+        }
+      ],
+      "footer": "These terms will apply to payment processing services once introduced. Please review these terms carefully at the time of any future payment transactions."
+    },
+    {
+      "title": "Ad Integration and Revenue Model",
+      "description": "Vublox’s revenue model is currently based on advertising, with the potential for future subscription services. This section details the use of ads and how they are integrated into the Platform.",
+      "items": [
+        {
+          "title": "Google AdMob Integration:",
+          "description": "Vublox uses Google AdMob to display ads on the Platform. By using the Platform, you agree to comply with Google’s AdMob policies, including those related to data collection and user privacy."
+        },
+        {
+          "title": "Data Collection for Ad Targeting:",
+          "description": "To provide personalized ad experiences, Vublox may collect information about your interactions with the Platform, including your browsing history, device information, and location data. This information is used to display ads that are relevant to your interests."
+        },
+        {
+          "title": "User Consent for Ads:",
+          "description": "By using the Platform, you consent to the display of ads and the collection of data for ad targeting purposes. If you do not wish to see ads or have your data collected for this purpose, you may choose to discontinue your use of the Platform."
+        },
+        {
+          "title": "Future Revenue Models:",
+          "description": "Vublox may introduce additional revenue models, such as subscription services, in the future. Users will be informed of any changes to the revenue model, and any associated terms will be provided at that time."
+        }
+      ]
+    },
+    {
+      "title": "Cookies and Tracking Technologies",
+      "description": "Vublox uses cookies and other tracking technologies to enhance user experience and collect data. Please refer to the Cookie Policy for more information."
+    },
+    {
+      "title": "KYC and Verification",
+      "description": "Vublox is committed to ensuring the integrity of the Platform by preventing fraudulent activities and ensuring user authenticity through Know Your Customer (KYC) procedures.",
+      "items": [
+        {
+          "title": "Future KYC Implementation:",
+          "description": "Vublox plans to implement KYC procedures in the future to verify the identities of Users. These procedures may include requiring Users to submit identification documents or other personal information to confirm their identity."
+        },
+        {
+          "title": "User Obligations:",
+          "description": "When KYC is implemented, you will be required to comply with the verification process. Failure to provide the necessary documentation or information may result in the suspension or termination of your Account."
+        },
+        {
+          "title": "Data Security:",
+          "description": "All information collected as part of the KYC process will be handled in accordance with Vublox’s data protection practices and applicable laws. We will take all reasonable measures to protect your information from unauthorized access or disclosure."
+        },
+        {
+          "title": "Prevention of Fraud:",
+          "description": "The KYC process is designed to prevent the creation of fake accounts, reduce fraud, and ensure the safety of the Platform. By participating in the KYC process, you help maintain the integrity of the Vublox community."
+        }
+      ]
+    },
+    {
+      "title": "Content Accessibility and Restrictions",
+      "description": "Vublox strives to make content accessible to all Users while ensuring that certain restrictions are in place to protect younger audiences and comply with legal requirements.",
+      "items": [
+        {
+          "title": "Open Access:",
+          "description": "Most content on the Platform can be accessed by any User, regardless of whether they have an Account. However, certain features, such as contributing content or interacting with other Users, may require Account registration."
+        },
+        {
+          "title": "Age Restrictions:",
+          "description": "Content that is deemed inappropriate for younger audiences may be restricted to Users who are 18 years or older. Vublox reserves the right to implement age verification mechanisms to enforce these restrictions."
+        },
+        {
+          "title": "User Discretion:",
+          "description": "Users are responsible for ensuring that they access content appropriate for their age and legal jurisdiction. Vublox is not liable for any harm or damage resulting from Users accessing content that is unsuitable for their age or location."
+        },
+        {
+          "title": "Content Filtering:",
+          "description": "Vublox may implement content filtering mechanisms to restrict access to certain types of content based on age or other criteria. These filters are intended to protect Users but are not guaranteed to be foolproof."
+        }
+      ]
+    },
+    {
+      "title": "Termination and Suspension",
+      "description": "Vublox reserves the right to terminate or suspend your access to the Platform at its sole discretion. This section outlines the circumstances under which such actions may be taken and their consequences.",
+      "items": [
+        {
+          "title": "Grounds for Termination:",
+          "description": "Your Account may be terminated or suspended for various reasons, including but not limited to:",
+          "items": [
+            {
+              "title": "Violation of these Terms or any other applicable policies"
+            },
+            {
+              "title": "Engaging in fraudulent, illegal, or harmful activities"
+            },
+            {
+              "title": "Failure to comply with KYC verification or other user obligations"
+            },
+            {
+              "title": "Inactivity for an extended period, as determined by Vublox"
+            }
+          ]
+        },
+        {
+          "title": "Notice of Termination:",
+          "description": "Vublox will attempt to provide you with notice of termination or suspension where feasible. However, in cases of severe violations or legal requirements, Vublox may act without prior notice."
+        },
+        {
+          "title": "Effect of Termination:",
+          "description": "Upon termination, your access to the Platform will be revoked, and any content you have posted may be removed or retained at Vublox’s discretion. You will not be entitled to any refunds or compensation for services lost due to termination."
+        },
+        {
+          "title": "User Rights After Termination:",
+          "description": "If you believe your Account was terminated in error, you may contact Vublox to request a review. However, Vublox’s decision regarding termination will be final and binding."
+        }
+      ]
+    },
+    {
+      "title": "Limitation of Liability",
+      "description": "To the fullest extent permitted by law, Vublox, its affiliates, officers, directors, employees, agents, licensors, and service providers shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from:",
+      "items": [
+        {
+          "title": "Use or Inability to Use the Platform:",
+          "description": "Any loss or damage arising from your inability to access or use the Platform, or any errors or omissions in the Platform's operation."
+        },
+        {
+          "title": "Content:",
+          "description": "Any content posted, transmitted, or otherwise made available through the Platform, including any errors or omissions in such content."
+        },
+        {
+          "title": "Unauthorized Access:",
+          "description": "Unauthorized access to or alteration of your transmissions or data."
+        },
+        {
+          "title": "Third-Party Actions:",
+          "description": "Any conduct, statements, or actions of any third party on or through the Platform."
+        },
+        {
+          "title": "Force Majeure:",
+          "description": "Events outside of Vublox’s reasonable control, including acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fires, floods, accidents, strikes, or shortages of transportation, facilities, fuel, energy, labor, or materials."
+        }
+      ],
+      "footer": "In no event shall Vublox’s total liability to you for all damages, losses, or causes of action exceed the amount you have paid to Vublox in the last six months, or if you have not made any payments, the sum of fifty U.S. dollars (USD $50)."
+    },
+    {
+      "title": "Indemnification",
+      "description": "You agree to indemnify, defend, and hold harmless Vublox, its affiliates, officers, directors, employees, agents, licensors, and service providers from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) that arise from:",
+      "items": [
+        {
+          "title": "Your Use of the Platform:",
+          "description": "Any actions you take in connection with your use of the Platform, including any content you post, transmit, or otherwise make available."
+        },
+        {
+          "title": "Violation of Terms:",
+          "description": "Your violation of these Terms or any applicable law or regulation."
+        },
+        {
+          "title": "Infringement:",
+          "description": "Your infringement of any third-party rights, including but not limited to intellectual property, privacy, or other proprietary rights."
+        },
+        {
+          "title": "Disputes with Other Users:",
+          "description": "Any disputes or issues arising between you and another User."
+        }
+      ]
+    },
+    {
+      "title": "Intellectual Property Violations and DMCA",
+      "description": "Vublox respects the intellectual property rights of others and expects Users to do the same. This section outlines the process for addressing claims of copyright infringement in compliance with the Digital Millennium Copyright Act (DMCA) and similar laws.",
+      "items": [
+        {
+          "title": "Notification of Infringement:",
+          "description": "If you believe that any content on the Platform infringes your copyright or other intellectual property rights, you may submit a DMCA takedown notice to Vublox’s designated copyright agent. The notice must include:",
+          "items": [
+            {
+              "title": "A physical or electronic signature of the copyright owner or a person authorized to act on their behalf"
+            },
+            {
+              "title": "Identification of the copyrighted work claimed to have been infringed"
+            },
+            {
+              "title": "Identification of the material that is claimed to be infringing and information reasonably sufficient to permit Vublox to locate the material"
+            },
+            {
+              "title": "Your contact information, including your address, telephone number, and email address"
+            },
+            {
+              "title": "A statement that you have a good faith belief that the use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law"
+            },
+            {
+              "title": "A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the copyright owner"
+            }
+          ]
+        },
+        {
+          "title": "Counter-Notification:",
+          "description": "If you believe that your content was removed or disabled as a result of mistake or misidentification, you may submit a counter-notification to Vublox’s designated copyright agent. The counter-notification must include:",
+          "items": [
+            {
+              "title": "Your physical or electronic signature"
+            },
+            {
+              "title": "Identification of the content that has been removed or to which access has been disabled and the location at which the content appeared before it was removed or disabled"
+            },
+            {
+              "title": "A statement under penalty of perjury that you have a good faith belief that the content was removed or disabled as a result of mistake or misidentification"
+            },
+            {
+              "title": "Your name, address, telephone number, and email address, and a statement that you consent to the jurisdiction of the federal court in your jurisdiction"
+            },
+            {
+              "title": "A statement that you will accept service of process from the person who provided the original DMCA notice or an agent of such person"
+            }
+          ]
+        },
+        {
+          "title": "Repeat Infringers:",
+          "description": "Vublox reserves the right to terminate the Accounts of Users who are found to be repeat infringers of intellectual property rights."
+        }
+      ]
+    },
+    {
+      "title": "Governing Law and Jurisdiction",
+      "description": "These Terms and any disputes arising out of or related to these Terms or the use of the Platform shall be governed by and construed in accordance with the laws of Hong Kong, without regard to its conflict of law principles.",
+      "items": [
+        {
+          "title": "Jurisdiction:",
+          "description": "You agree that any legal action or proceeding arising out of or relating to these Terms or the Platform shall be brought exclusively in the courts of Hong Kong. You consent to the jurisdiction of such courts and waive any objections based on venue or inconvenience of the forum."
+        },
+        {
+          "title": "International Use:",
+          "description": "Vublox makes no representation that the Platform is appropriate or available for use in locations outside of Hong Kong. Users who access the Platform from outside of Hong Kong do so at their own risk and are responsible for compliance with local laws."
+        }
+      ]
+    },
+    {
+      "title": "Dispute Resolution",
+      "description": "Vublox aims to resolve disputes amicably and efficiently. This section outlines the process for resolving disputes between Users and Vublox.",
+      "items": [
+        {
+          "title": "Informal Resolution:",
+          "description": "Before initiating any legal action, you agree to first attempt to resolve any dispute with Vublox informally by contacting us. Vublox will attempt to resolve the dispute informally within 30 days of receiving your notice."
+        },
+        {
+          "title": "Mandatory Arbitration:",
+          "description": "If a dispute cannot be resolved informally, you agree that any dispute, claim, or controversy arising out of or relating to these Terms or the use of the Platform shall be resolved through binding arbitration administered by the Hong Kong International Arbitration Centre (HKIAC) in accordance with its Arbitration Rules."
+        },
+        {
+          "title": "Arbitration Procedures:",
+          "description": "The arbitration shall be conducted by a single arbitrator in Hong Kong, and the language of the arbitration shall be English. The arbitrator’s decision shall be final and binding, and judgment on the award rendered by the arbitrator may be entered in any court having jurisdiction."
+        },
+        {
+          "title": "Class Action Waiver:",
+          "description": "You agree that any arbitration shall be conducted in your individual capacity only and not as a class action or other representative action. You expressly waive your right to file a class action or seek relief on a class basis."
+        },
+        {
+          "title": "Exceptions to Arbitration:",
+          "description": "Notwithstanding the above, Vublox reserves the right to seek injunctive or other equitable relief in any court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of its intellectual property rights."
+        }
+      ]
+    },
+    {
+      "title": "Amendments to the Terms",
+      "description": "Vublox reserves the right to modify, update, or amend these Terms at any time at its sole discretion.",
+      "items": [
+        {
+          "title": "Notice of Changes:",
+          "description": "If Vublox makes any material changes to these Terms, we will notify you by posting the updated Terms on the Platform and/or through other means of communication. The updated Terms will be effective as of the 'Last Updated' date at the top of the Terms."
+        },
+        {
+          "title": "User Responsibility:",
+          "description": "It is your responsibility to review these Terms periodically to stay informed of any changes. Continued use of the Platform after any changes to the Terms constitutes your acceptance of the new Terms."
+        },
+        {
+          "title": "Opt-Out Rights:",
+          "description": "If you do not agree with the revised Terms, you may terminate your Account and cease using the Platform. Your continued use of the Platform after the effective date of any changes will signify your acceptance of the revised Terms."
+        }
+      ]
+    },
+    {
+      "title": "Third-Party Services and Links",
+      "description": "The Platform may contain links to third-party websites, services, or resources that are not owned or controlled by Vublox. This section explains your rights and obligations concerning such third-party content.",
+      "items": [
+        {
+          "title": "No Endorsement:",
+          "description": "Vublox does not endorse or assume any responsibility for any third-party websites, services, or resources that may be accessed through the Platform. Links to third-party sites are provided for your convenience only, and your use of these sites is at your own risk."
+        },
+        {
+          "title": "Third-Party Terms:",
+          "description": "Your use of third-party services, including payment processors, social media platforms, and other integrated services, is subject to the terms and conditions of those third parties. You are responsible for reviewing and complying with those terms."
+        },
+        {
+          "title": "Liability:",
+          "description": "Vublox is not liable for any damages, losses, or issues that arise from your use of third-party services or your interactions with third-party content."
+        }
+      ]
+    },
+    {
+      "title": "Force Majeure",
+      "description": "Vublox shall not be held liable for any failure or delay in performing its obligations under these Terms if such failure or delay is caused by circumstances beyond its reasonable control, including but not limited to:",
+      "items": [
+        {
+          "title": "Natural Disasters:",
+          "description": "Earthquakes, floods, hurricanes, or other natural events."
+        },
+        {
+          "title": "Acts of War or Terrorism:",
+          "description": "Any actions taken by military forces, terrorist groups, or other hostile entities."
+        },
+        {
+          "title": "Government Actions:",
+          "description": "Any legal or regulatory changes, government orders, or other actions that impact the operation of the Platform."
+        },
+        {
+          "title": "Technical Failures:",
+          "description": "Any outages, interruptions, or failures of internet service providers, hosting services, or other technical infrastructure."
+        },
+        {
+          "title": "Labor Disputes:",
+          "description": "Strikes, lockouts, or other labor-related issues."
+        }
+      ],
+      "footer": "In the event of a force majeure event, Vublox will use reasonable efforts to mitigate the impact of the event and resume normal operations as soon as possible."
+    },
+    {
+      "title": "Miscellaneous",
+      "description": "This section covers various provisions that are important for the interpretation and enforcement of these Terms.",
+      "items": [
+        {
+          "title": "Entire Agreement:",
+          "description": "These Terms, along with any other legal notices or agreements published by Vublox on the Platform, constitute the entire agreement between you and Vublox concerning your use of the Platform. They supersede all prior or contemporaneous communications, proposals, and agreements, whether electronic, oral, or written, between you and Vublox with respect to the Platform."
+        },
+        {
+          "title": "Severability:",
+          "description": "If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, such provision will be enforced to the maximum extent permissible, and the remaining provisions of these Terms shall remain in full force and effect."
+        },
+        {
+          "title": "Waiver:",
+          "description": "No waiver of any term or condition of these Terms shall be deemed a further or continuing waiver of such term or condition or any other term or condition, and any failure to assert a right or provision under these Terms shall not constitute a waiver of such right or provision."
+        },
+        {
+          "title": "Assignment:",
+          "description": "Vublox may assign its rights and obligations under these Terms, in whole or in part, to any person or entity at any time without your consent. You may not assign or transfer any rights or obligations under these Terms without Vublox’s prior written consent."
+        },
+        {
+          "title": "Headings:",
+          "description": "The section headings in these Terms are for convenience only and have no legal or contractual effect."
+        }
+      ]
+    },
+    {
+      "title": "User Feedback and Suggestions",
+      "description": "Vublox welcomes feedback, suggestions, and ideas from Users to improve the Platform. However, any feedback or suggestions you provide will be subject to the following terms:",
+      "items": [
+        {
+          "title": "Non-Confidential:",
+          "description": "Any feedback, suggestions, or ideas you submit to Vublox will be considered non-confidential and non-proprietary."
+        },
+        {
+          "title": "Ownership of Feedback:",
+          "description": "By submitting feedback, suggestions, or ideas, you grant Vublox a worldwide, perpetual, irrevocable, royalty-free license to use, reproduce, modify, distribute, and implement your feedback in any manner, without compensation to you."
+        },
+        {
+          "title": "No Obligation:",
+          "description": "Vublox is under no obligation to use, implement, or respond to any feedback, suggestions, or ideas you submit."
+        }
+      ]
+    },
+    {
+      "title": "Notices",
+      "description": "Vublox may provide notices to you by posting them on the Platform, sending them via email to the address associated with your Account, or by any other means of communication deemed appropriate by Vublox.",
+      "items": [
+        {
+          "title": "Effective Date:",
+          "description": "Notices provided by Vublox will be effective immediately upon posting on the Platform or sending via email unless otherwise specified in the notice."
+        },
+        {
+          "title": "User Communications:",
+          "description": "All notices, inquiries, and other communications you send to Vublox should be directed to the contact information provided below. Such communications will be deemed effective when received by Vublox."
+        }
+      ]
+    },
+    {
+      "title": "Contact Information",
+      "description": "If you have any questions, concerns, or notices regarding these Terms or your use of the Platform, you may contact Vublox at the following:",
+      "items": [
+        {
+          "title": "Vublox Limited:",
+          "description": "You can contact Vublox via email at [support@vublox.com] or by mailing us at our registered address."
+        }
+      ],
+      "footer": "Email: {email}\n\nAddress: Vublox Limited, Flat/Rm C, 6F, Wing Tat Commercial Building, 121-125 Wing Lok Street, Sheung Wan, Hong Kong.\n\nVublox will attempt to respond to all inquiries and notices within a reasonable timeframe."
+    }
+  ]
+}

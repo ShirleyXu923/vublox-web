@@ -1,0 +1,53 @@
+.viewer-data {
+  padding: 20px 24px;
+  border-radius: 18px;
+  background: var(--bs-secondary);
+
+  .head {
+    .dropdown {
+      .dropdown-button {
+        background: var(--bs-body-accent);
+      }
+    }
+  }
+
+  .graphs {
+    .doughnut {
+      width: 381px;
+      height: 381px;
+
+      .doughnut-graph {
+        width: 381px;
+        height: 381px;
+      }
+    }
+  }
+
+  .data-wrapper {
+    width: 100%;
+
+    .data {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+
+      .text-body {
+        min-width: 100px;
+        width: 100px;
+        max-width: 100px;
+        display: block;
+      }
+
+      .bar-text {
+        flex: 1;
+
+        .bar {
+          height: 8px;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}

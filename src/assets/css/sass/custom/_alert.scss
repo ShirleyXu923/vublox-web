@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.alert-highlight {
+  --bs-alert-color: var(--bs-dark);
+  --bs-alert-bg: var(--bs-highlight);
+  --bs-alert-border-color: var(--bs-highlight);
+  --bs-alert-border-radius: 12px;
+
+  @include media-breakpoint-down(md) {
+    --bs-alert-padding-x: 0.5rem;
+    --bs-alert-padding-y: 0.5rem;
+    font-size: 12px;
+  }
+}

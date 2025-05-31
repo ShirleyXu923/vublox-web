@@ -1,0 +1,15 @@
+.verified {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bs-primary);
+  padding: 4px;
+  box-shadow: var(--bs-dropshadow);
+  border-radius: 8px;
+
+  svg {
+    path {
+      fill: var(--bs-body-color);
+    }
+  }
+}

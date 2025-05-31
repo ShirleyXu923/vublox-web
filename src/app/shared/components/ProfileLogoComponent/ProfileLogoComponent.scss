@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.profile-logo-component {
+  .image, .profile_name {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background: var(--bs-secondary);
+  }
+
+  @include media-breakpoint-down(md) {
+    .image, .profile_name {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  .profile_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .name {
+      text-transform: uppercase;
+      color: var(--bs-placeholder-color);
+    }
+
+    @include media-breakpoint-down(md) {
+      .name {
+        font-size: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "label": {
+    "search": "Search",
+    "filters": "Filters",
+    "home": "Home",
+    "worldEvents": "World View",
+    "aboutUs": "About Us"
+  },
+  "button": {
+    "create": "Create",
+    "post": "Post",
+    "event": "Event",
+    "organization": "Organization",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "account": {
+    "label": {
+      "viewProfile": "View Profile",
+      "switchAccount": "Switch Account",
+      "analytics": "Analytics",
+      "contactUs": "Contact Us",
+      "termsAndConditions": "Terms and Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "aboutUs": "About Us",
+      "howToUse": "How To Use",
+      "settings": "Settings",
+      "signOut": "Sign Out",
+      "accounts": "Accounts",
+      "createOrganizationPage": "Create an Organization Page",
+      "language": "Language",
+      "contentManager": "Content Manager",
+      "darkMode": "Dark Mode",
+      "on": "ON",
+      "off": "OFF"
+    }
+  },
+  "language": {
+    "title": "Select Your Language",
+    "label": {
+      "language": "Languages",
+      "ar": "Arabic (AR)",
+      "zh-CN": "Chinese Simplified (ZH-CN)",
+      "zh-HK": "Chinese Traditional (ZH-HK)",
+      "en": "English (US)",
+      "fil": "Filipino (FIL)",
+      "fr": "French (FR)",
+      "de": "German (DE)",
+      "it": "Italian (IT)",
+      "jp": "Japanese (JP)",
+      "kr": "Korean (KR)",
+      "ru": "Russian (RU)",
+      "tr": "Turkish (TR)"
+    }
+  }
+}

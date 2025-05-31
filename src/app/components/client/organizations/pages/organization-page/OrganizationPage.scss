@@ -1,0 +1,53 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.organization-page {
+  .organization-page-wrapper {
+    max-width: 930px;
+    margin: 0 auto;
+  }
+
+  .tabs-container {
+    margin-top: 26px;
+
+    .tab-pane:not(.timeline-tab) {
+      max-width: 930px;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+
+      .tab-item {
+        color: var(--bs-inactive-color);
+        padding: 7px 20px;
+        cursor: pointer;
+      }
+
+      .tab-item.active {
+        background-color: var(--bs-primary);
+        border-radius: 25px;
+        color: var(--bs-alert-text-primary);
+      }
+    }
+  }
+}
+
+.organization-main-container {
+    margin: 0 auto;
+
+  @include media-breakpoint-down(sm) {
+    .scrolling-pills-timeline {
+      margin-top: 20px !important;
+    }
+    .accordion-timeline {
+      margin-top: -45px !important;
+    }
+    .timeline-accordion-container {
+      margin-top: 10px !important;
+    }
+  }
+  }

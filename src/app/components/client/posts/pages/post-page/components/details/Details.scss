@@ -1,0 +1,62 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.post-locations-tab {
+  .locations {
+    border-radius: 18px;
+    padding: 16px;
+    background: var(--bs-secondary);
+  }
+
+  @include media-breakpoint-down(md) {
+    .locations {
+      border-radius: 6.14px;
+      padding: 12px;
+    }
+  }
+
+  .info-block {
+    margin-top: 30px;
+
+    .categorize-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+
+      .badge {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 10px;
+        border-radius: 84.62px;
+        background: var(--bs-badge-bg);
+
+        .badge2 {
+          color: var(--bs-primary);
+        }
+      }
+    }
+
+    .tags {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .tag {
+        display: inline-bloc;
+        background: var(--bs-tag-bg);
+        padding: 4px 12px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .post-locations-tab {
+    padding: 0 16px;
+  }
+}

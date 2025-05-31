@@ -1,0 +1,94 @@
+
+.post-group-post-card {
+  max-width: 342px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1;
+
+  .image {
+    max-width: 342px;
+    min-width: 342px;
+    height: 215.64px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 342px;
+
+    .organization {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 13px;
+
+      .info {
+        .caption1 {
+          color: var(--bs-secondary-text);
+        }
+      }
+    }
+
+    .social {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      .vote {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        .upvote {
+          cursor: pointer;
+          display: flex;
+          gap: 4px;
+          align-items: center;
+
+          &:hover svg path {
+            fill: var(--bs-primary);
+          }
+        }
+
+        .downvote {
+          cursor: pointer;
+
+          &:hover svg path {
+            fill: var(--bs-danger);
+          }
+        }
+
+        .line {
+          height: 14px;
+          width: 1px;
+          background: var(--bs-secondary-text);
+        }
+      }
+
+      .interaction {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .comment {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .b5 {
+            color: var(--bs-secondary-text);
+          }
+        }
+
+        .share {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

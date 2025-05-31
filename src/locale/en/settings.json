@@ -1,0 +1,87 @@
+{
+  "label": {
+    "accountSettings": "Account Settings",
+    "notificationsSettings": "Notifications Settings",
+    "passwordSettings": "Password Settings",
+    "security": "Security",
+    "settings": "Settings"
+  },
+  "button": {
+    "account": "Account",
+    "notifications": "Notifications",
+    "password": "Password"
+  },
+  "account": {
+    "label": {
+      "profilePhoto": "Profile Photo",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "bio": "Bio (Optional)",
+      "settings": "Settings",
+      "timelinePrivacy": "Timeline Privacy",
+      "private": "Private",
+      "public": "Public",
+      "deleteAccount": "Delete Account",
+      "password": "Password",
+      "verificationCode": "Verification Code",
+      "deleteDescription": "Enter your password to permanently delete your account. Please note that this action is irreversible.",
+      "deleteDescription1": "To permanently delete your account, a verification code will be sent to {email}. Are you sure you want to proceed with this action?",
+      "deleteDescription2": "To permanently delete your account, enter the 6-digit code sent to {email}. Please note that this action is irreversible.",
+      "disconnectEmail": "Disconnect Email",
+      "disconnectDescription": "To proceed with disconnecting your {social} account, please set a new password for your Vublox account.",
+      "disconnectEmailNote": "Disconnect your {social} account to change your email.",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "username": "Username",
+      "dateOfBirth": "Date of Birth",
+      "dateInputMessage": "Select or enter it manually using the DD/MM/YYYY format"
+
+    },
+    "button": {
+      "saveChanges": "Save Changes",
+      "deleteAccount": "Delete Account",
+      "disconnect": "Disconnect",
+      "proceed": "Proceed",
+      "sendVerificationCode": "Send Verification Code"
+    },
+    "success": {
+      "submit": "Profile successfully updated.",
+      "delete": "Account successfully deleted.",
+      "disconnect": "Email successfully disconnected."
+    }
+  },
+  "notifications": {
+    "label": {
+      "general": "General",
+      "desktopNotifications": "Desktop Notifications",
+      "receiveActivityNotifications": "Receive notifications from upvotes, comments, and shares of your posts",
+      "receiveFollowingNotifications": "Receive notifications from activities on profiles that you are following",
+      "receiveDesktopNotifications": "Receive desktop notifications",
+      "notificationPermission": "You've disallowed notifications in your browser. You'll need to open your browser preferences to change that.",
+      "off": "OFF",
+      "on": "ON"
+    },
+    "success": {
+      "submit": "Notification settings successfully updated."
+    },
+    "button": {
+      "saveChanges": "Save Changes"
+    }
+  },
+  "password": {
+    "label": {
+      "changePassword": "Change Password",
+      "current": "Current Password",
+      "password": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "passwordsNotMatch": "Passwords do not match."
+    },
+    "success": {
+      "changePassword": "Password successfully updated."
+    },
+    "button": {
+      "saveChanges": "Save Changes"
+    }
+  }
+}

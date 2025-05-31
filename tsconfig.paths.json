@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@config/*": [
+        "./src/app/config/*"
+      ],
+      "@components/*": [
+        "./src/app/components/*"
+      ],
+      "@reducers/*": [
+        "./src/app/reducers/*"
+      ],
+      "@services/*": [
+        "./src/app/services/*"
+      ],
+      "@shared/*": [
+        "./src/app/shared/*"
+      ],
+      "@app/*": [
+        "./src/app/*"
+      ],
+      "@locale/*": [
+        "./src/locale/*"
+      ],
+      "@root/package.json": ["package.json"]
+    }
+  }
+}

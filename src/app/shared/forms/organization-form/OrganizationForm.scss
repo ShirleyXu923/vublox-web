@@ -1,0 +1,134 @@
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.organization-form {
+  .form-title {
+    margin-top: 64px;
+    text-transform: uppercase;
+  }
+
+  .input-to-disable {
+    input.form-control, span.input-group-text {
+      background: var(--bs-tertiary-bg);
+    }
+  }
+
+  .info-warning {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .custom-form {
+    padding-left: 0;
+  }
+
+  .prefix-container {
+    text-align: left;
+
+    .label {
+      color: var(--bs-placeholder-color);
+      text-transform: uppercase;
+    }
+    .prefix {
+      span {
+        margin-left: 10px;
+        color: var(--bs-placeholder-color);
+      }
+    }
+  }
+
+  .form-check {
+    .form-check-label {
+      color: var(--bs-body-text);
+    }
+  }
+
+  .privacy-col {
+    .mb-3 {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .category__input {
+    .mb-3 {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .tag-col {
+    .mt-4 {
+      margin-top: 1rem !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .organization-form {
+    padding-top: 12px;
+    .form-title {
+      font-size: 14px;
+      margin-top: 32px;
+    }
+
+    .title-name {
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    .ad-bc-date-input {
+      margin: 0 !important;
+    }
+
+    .privacy-col, .tag-col {
+      .mb-3 {
+        .mt-4 {
+          margin-top: 1rem !important;
+        }
+      }
+    }
+
+    .form-check {
+      margin-right: 0;
+
+      .form-check-label {
+        font-size: 12px;
+      }
+    }
+
+    .info-warning {
+      .b3 {
+        font-size: 12px;
+      }
+    }
+
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .organization-form {
+    .alert-notif {
+      .b5 {
+        font-size: 10px;
+      }
+    }
+
+    .organization-submit-and-next-button-mobile button {
+      height: 36px;
+      border-radius: 12px !important;
+      width: 100%;
+      display:flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 16px 32px !important;
+      gap: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .react-datepicker-popper {
+      left: -5% !important;
+    }
+  }
+}
