@@ -27,7 +27,7 @@ function PasswordStrengthFeedback({ password = '' }: IPasswordStrengthFeedback) 
   const isValidLength = password.length >= 8;
   const isValidCase = /[A-Z]/.test(password);
   const isValidNumber = /[0-9]/.test(password);
-  const isValidChar = /[^\w\d\s]/.test(password);
+  const isValidChar = /[!@#$%^&*()_+]/.test(password);
 
   return (
     <div className="password-strength-feedback">
